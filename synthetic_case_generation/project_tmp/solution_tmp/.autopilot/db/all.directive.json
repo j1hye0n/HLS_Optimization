@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "case_9",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "case_9"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/hyeon/ironman/IronMan/synthetic_case_generation/script_tmp.tcl",
+    "sourceLine": 10,
+    "success": true
+  }
+]

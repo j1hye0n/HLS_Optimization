@@ -1,0 +1,10 @@
+/home/hyeon/ironman/IronMan/synthetic_case_generation/script_tmp.tcl:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_9_XLX_SEP_ PragmaOptions=name=case_9_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=case_9
+        ^
+HLS/case_9/case_9.cc:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=case_9_XLX_SEP_ PragmaOptions=variable=in_data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=in_data complete
+        ^
+HLS/case_9/case_9.cc:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=case_9_XLX_SEP_ PragmaOptions=variable=out_data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=out_data complete
+        ^
+3 warnings generated.

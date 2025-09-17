@@ -1,0 +1,455 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+  **** SW Build 5238294 on Nov  8 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Sep 16 17:29:14 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/xilinx/Vitis/2024.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'hyeon' on host 'DESKTOP-S15BKKL.localdomain' (Linux_x86_64 version 6.6.87.2-microsoft-standard-WSL2) on Tue Sep 16 17:29:18 KST 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/hyeon/ironman/IronMan/synthetic_case_generation'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script './script_tmp.tcl'
+INFO: [HLS 200-1510] Running: open_project project_tmp 
+INFO: [HLS 200-10] Opening project '/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp'.
+INFO: [HLS 200-1510] Running: set_top case_9 
+INFO: [HLS 200-1510] Running: add_files ./HLS/case_9//case_9.cc 
+INFO: [HLS 200-10] Adding design file './HLS/case_9//case_9.cc' to the project
+INFO: [HLS 200-1510] Running: open_solution solution_tmp 
+INFO: [HLS 200-10] Opening solution '/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./directive_tmp.tcl
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.12 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.56 seconds; current allocated memory: 364.039 MB.
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_9/case_9.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_8/case_8.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_7/case_7.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_6/case_6.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_5/case_5.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_4/case_4.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_3/case_3.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_2/case_2.cc' ... 
+INFO: [HLS 200-10] Analyzing design file 'HLS/case_1/case_1.cc' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 36.07 seconds. CPU system time: 6.13 seconds. Elapsed time: 47.8 seconds; current allocated memory: 365.648 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 24,862 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 945 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 881 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 881 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 881 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 919 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 920 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-248] Applying array_partition to 'in_data': Complete partitioning on dimension 1. (HLS/case_9/case_9.cc:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'out_data': Complete partitioning on dimension 1. (HLS/case_9/case_9.cc:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.02 seconds. CPU system time: 0.77 seconds. Elapsed time: 9.63 seconds; current allocated memory: 375.250 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 375.250 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 375.930 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 376.516 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'case_9' (HLS/case_9/case_9.cc:6:1)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 400.086 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 397.711 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'case_9' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'case_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=m162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=m42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=m38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln228) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.38 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.53 seconds; current allocated memory: 397.711 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 397.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'case_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/in_data_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_4' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_5' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_6' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_7' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_8' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_9' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_10' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_11' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_12' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_13' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_14' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_15' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_16' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_17' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_18' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_19' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_9/out_data_20' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'case_9' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'case_9/in_data_0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'case_9/in_data_1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'case_9/in_data_2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'case_9/in_data_5' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_6ns_6ns_6s_6_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5s_5s_5s_5_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6s_6s_4s_6_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6s_6s_6s_6_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_10s_10_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_3s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_4s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_6s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_7s_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_9s_10_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_11s_11s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_11s_4s_11_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_11s_6s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_11s_7s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_10s_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_8s_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_10s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_11s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_9s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_14s_4s_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_10s_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_12s_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_13s_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_2s_2s_2_1_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_2s_2s_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_2s_2s_4_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3s_2s_3_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3s_3s_3_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_2s_4_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_2s_6_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_3s_4_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_3s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_4s_4_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_4s_5_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_4s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_2s_5_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_4s_6_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_5s_5_1_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_2s_6_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_3s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_4s_8_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_5s_6_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_6s_6_1_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_6s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_3s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_3s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_4s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_4s_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_4s_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_5s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_5s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_6s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_6s_7_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_6s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_7s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_7s_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_7s_7_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_6s_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_6s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_7s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_7s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_8_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_4s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_5s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_6s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_6s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_6s_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_7s_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_8s_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_8s_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_9s_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'case_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.7 seconds; current allocated memory: 397.711 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.67 seconds. CPU system time: 1.16 seconds. Elapsed time: 15.64 seconds; current allocated memory: 406.188 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3.7 seconds. CPU system time: 0.05 seconds. Elapsed time: 3.86 seconds; current allocated memory: 415.027 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for case_9.
+INFO: [VLOG 209-307] Generating Verilog RTL for case_9.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.37 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:01:19; Allocated memory: 50.988 MB.
+INFO: [HLS 200-1510] Running: export_design -evaluate verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: /tools/xilinx/Vivado/2024.2/tps/lnx64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Sep 16 17:30:51 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/solution_tmp_data.json outdir=/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip srcdir=/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/misc
+INFO: Copied 1418 verilog file(s) to /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/verilog
+INFO: Copied 1410 vhdl file(s) to /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/vhdl
+INFO: Import ports from HDL: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/vhdl/case_9.vhd (case_9)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface in_data_0
+INFO: Add data interface in_data_1
+INFO: Add data interface in_data_2
+INFO: Add data interface in_data_3
+INFO: Add data interface in_data_4
+INFO: Add data interface in_data_5
+INFO: Add data interface in_data_6
+INFO: Add data interface in_data_7
+INFO: Add data interface in_data_8
+INFO: Add data interface in_data_9
+INFO: Add data interface in_data_10
+INFO: Add data interface in_data_11
+INFO: Add data interface out_data_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2024.2/data/ip'.
+INFO: Add data interface out_data_1
+INFO: Add data interface out_data_2
+INFO: Add data interface out_data_3
+INFO: Add data interface out_data_4
+INFO: Add data interface out_data_5
+INFO: Add data interface out_data_6
+INFO: Add data interface out_data_7
+INFO: Add data interface out_data_8
+INFO: Add data interface out_data_9
+INFO: Add data interface out_data_10
+INFO: Add data interface out_data_11
+INFO: Add data interface out_data_12
+INFO: Add data interface out_data_13
+INFO: Add data interface out_data_14
+INFO: Add data interface out_data_15
+INFO: Add data interface out_data_16
+INFO: Add data interface out_data_17
+INFO: Add data interface out_data_18
+INFO: Add data interface out_data_19
+INFO: Add data interface out_data_20
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/component.xml
+INFO: Created IP archive /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/xilinx_com_hls_case_9_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 16 17:31:27 2025...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+WARNING: /tools/xilinx/Vivado/2024.2/tps/lnx64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Sep 16 17:31:32 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado.tcl
+# source ./settings.tcl
+## set top_module case_9
+## set language verilog
+## set family zynq
+## set device xc7z020
+## set package -clg484
+## set speed -1
+## set clock ap_clk
+## set fsm_ext "off"
+## set add_io_buffers false 
+# source -notrace ./extraction.tcl
+# set vivado_proj_name project
+# set vivado_proj_dir .
+# set target_device "${device}${package}${speed}"
+# set target_clk_period_ns "10.000"
+# set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
+# set other_clks_freq_hz {}
+# set ip_vlnv xilinx.com:hls:case_9:1.0
+# set ip_repo_path ../ip
+# set bd_design_name bd_0
+# set bd_inst_name hls_inst
+# set bd_props {}
+# set has_synth true
+# set synth_design_args {-directive sdx_optimization_effort_high}
+# set synth_dcp ""
+# set synth_props {}
+# set has_impl 1
+# set impl_props {}
+# set report_options [dict create]
+# dict set report_options report_level 2
+# dict set report_options report_max_paths 10
+# dict set report_options stdout_hls_reports 1
+# dict set report_options stdout_vivado_reports 0
+# dict set report_options hls_project project_tmp
+# dict set report_options hls_solution solution_tmp
+# dict set report_options has_synth $has_synth
+# dict set report_options has_impl $has_impl
+# dict set report_options vivado_reportbasename $top_module
+# dict set report_options vivado_reportdir ./report
+# dict set report_options hls_impl_dir ..
+# dict set report_options hls_reportdir ../report/$language
+# dict set report_options target_clk_period $target_clk_period_ns
+# dict set report_options target_device $target_device
+# dict set report_options language $language
+# dict set report_options clock_name $clock
+# dict set report_options error_if_impl_timing_fails false
+# dict set report_options topmodule "case_9"
+# dict set report_options funcmodules {}
+# dict set report_options bindmodules {case_9_mul_6s_6s_6_1_1 case_9_mul_2s_2s_3_1_1 case_9_mul_8s_7s_10_1_1 case_9_mul_12s_8s_12_1_1 case_9_mul_3s_3s_3_1_1 case_9_mul_15s_12s_15_1_1 case_9_mul_2s_2s_2_1_1 case_9_mul_10s_3s_11_1_1 case_9_mul_5s_2s_5_1_1 case_9_mul_15s_10s_16_1_1 case_9_mul_13s_11s_13_1_1 case_9_mul_16s_13s_16_1_1 case_9_mul_5s_5s_5_1_1 case_9_mul_6s_5s_6_1_1 case_9_mul_7s_6s_7_1_1 case_9_mul_4s_4s_4_1_1 case_9_mul_7s_5s_7_1_1 case_9_mul_5s_4s_6_1_1 case_9_mul_7s_5s_8_1_1 case_9_mul_2s_2s_4_1_1 case_9_mul_4s_2s_6_1_1 case_9_mul_7s_4s_9_1_1 case_9_mul_4s_4s_5_1_1 case_9_mul_3s_2s_3_1_1 case_9_mul_6s_2s_6_1_1 case_9_mul_4s_2s_4_1_1 case_9_mul_9s_5s_10_1_1 case_9_mul_4s_3s_4_1_1 case_9_mul_4s_4s_8_1_1 case_9_mul_8s_6s_12_1_1 case_9_mul_4s_3s_7_1_1 case_9_mul_7s_3s_10_1_1 case_9_mul_7s_3s_7_1_1 case_9_mul_7s_7s_7_1_1 case_9_mul_6s_6s_7_1_1 case_9_mul_7s_7s_10_1_1 case_9_mul_6s_4s_8_1_1 case_9_mul_6s_3s_7_1_1 case_9_mul_8s_6s_8_1_1 case_9_mul_7s_6s_13_1_1 case_9_mul_7s_4s_7_1_1 case_9_mul_7s_4s_10_1_1 case_9_mul_10s_4s_10_1_1 case_9_mul_10s_7s_16_1_1 case_9_mul_12s_10s_12_1_1 case_9_mul_9s_6s_9_1_1 case_9_mul_10s_10s_10_1_1 case_9_mul_9s_4s_11_1_1 case_9_mul_10s_9s_10_1_1 case_9_mul_13s_9s_13_1_1 case_9_mul_10s_6s_10_1_1 case_9_mul_8s_8s_8_1_1 case_9_mul_13s_10s_13_1_1 case_9_mul_11s_7s_11_1_1 case_9_mul_14s_4s_14_1_1 case_9_mul_8s_7s_8_1_1 case_9_mul_9s_8s_9_1_1 case_9_mul_9s_8s_17_1_1 case_9_mul_7s_7s_12_1_1 case_9_mul_7s_6s_8_1_1 case_9_mul_11s_4s_11_1_1 case_9_mul_11s_11s_11_1_1 case_9_mul_9s_7s_9_1_1 case_9_mul_9s_6s_11_1_1 case_9_mul_11s_6s_11_1_1 case_9_mul_9s_9s_9_1_1 case_9_mul_9s_6s_10_1_1 case_9_mac_muladd_6s_6s_6s_6_4_1 case_9_mac_muladd_5s_5s_5s_5_4_1 case_9_am_addmul_6ns_6ns_6s_6_4_1 case_9_mac_muladd_6s_6s_4s_6_4_1}
+# dict set report_options max_module_depth 5
+# create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
+# set_property target_language $language [current_project]
+# if { ![file exists $ip_repo_path] } {
+#   error "Cannot find packaged HLS IP"
+# }
+# set_property ip_repo_paths [file normalize $ip_repo_path] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2024.2/data/ip'.
+# create_bd_design bd_0
+Wrote  : </home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
+# set cell_inst [create_bd_cell -type ip -vlnv $ip_vlnv $bd_inst_name]
+# if { [llength $bd_props] } { 
+#   set_property -dict $bd_props $cell_inst 
+# }
+# make_bd_pins_external $cell_inst
+# make_bd_intf_pins_external $cell_inst
+# set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
+# if { $target_clk_freq_hz ne "" } { 
+#   foreach bd_clk_port $bd_clk_ports {
+#     # Remove "_0" suffix from BD ports & interfaces so they match IP ports 
+#     set clk_name [regsub {_0$} [get_property name $bd_clk_port] {}]
+#     set port_freq_hz $target_clk_freq_hz
+#     if { [dict exists $other_clks_freq_hz $clk_name] } {
+#         set port_freq_hz [dict get $other_clks_freq_hz $clk_name]
+#     }
+#     set_property CONFIG.FREQ_HZ $port_freq_hz $bd_clk_port
+#   }
+# }
+# foreach bd_port [get_bd_intf_ports] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# foreach bd_port [get_bd_ports -filter {INTF!=TRUE}] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# set s_axi_addr_width_min 32
+WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}'
+# foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
+#   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
+#   if { $bd_port_addr_width < $s_axi_addr_width_min } {
+#     puts "INFO: Updating $bd_port CONFIG.ADDR_WIDTH to $s_axi_addr_width_min"
+#     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
+#   }
+# }
+# set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
+# assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Wrote  : </home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
+Verilog Output written to : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+# set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
+# add_files -norecurse $toprtl
+# set top_inst_name [file root [file tail $toprtl]]
+# puts "Using BD top: $top_inst_name"
+Using BD top: bd_0_wrapper
+# set xdc_files [glob -nocomplain ./*.xdc]
+# if { [llength $xdc_files] } {
+#     add_files -fileset constrs_1 -norecurse $xdc_files
+# }
+# launch_runs synth_1 -scripts_only
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Hardware Definition File /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1582.777 ; gain = 88.043 ; free physical = 1300 ; free virtual = 3606
+# foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+#   reset_run [get_runs $run]
+# }
+# set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
+# hls_vivado_reports_setup $report_options
+TIMESTAMP: HLS-REPORT: initialize report directories: 2025-09-16 17:31:50 KST
+# if { $has_synth || $has_impl } {
+#   # synth properties setting
+#   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+#   set ip_inst [get_ips -quiet ${bd_design_name}*${bd_inst_name}*]
+#   if { ![llength $ip_inst] } {
+#       error "Cannot find HLS IP instance: ${bd_design_name}*${bd_inst_name}*"
+#   }
+#   set synth_run [get_runs -filter {IS_SYNTHESIS == 1} ${ip_inst}*]
+#   if { ![llength $synth_run] } {
+#       error "Cannot find synth run for HLS IP: ${ip_inst}*"
+#   }
+# 
+#   if { [llength $synth_design_args] } {
+#       set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value $synth_design_args -objects $synth_run
+#   }
+# 
+#   if { [llength $synth_props] } {
+#     set_property -dict $synth_props $synth_run
+#   }
+# 
+#   # launch run synth
+#   launch_runs synth_1
+#   wait_on_run synth_1
+#   # synth reports
+#   hls_vivado_reports_synth synth_1 $report_options
+#   if { $synth_dcp ne "" } {
+#     file mkdir [file dirname $synth_dcp]
+#     set run_dcp [glob -nocomplain [get_property DIRECTORY $synth_run]/*.dcp]
+#     if { [llength $run_dcp] != 1 } { error "Cannot find single dcp file for run $synth_run" }
+#     file copy -force $run_dcp $synth_dcp
+#   }
+# }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Sep 16 17:31:51 2025] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Tue Sep 16 17:31:51 2025] Launched synth_1...
+Run output will be captured here: /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/synth_1/runme.log
+[Tue Sep 16 17:31:51 2025] Waiting for synth_1 to finish...
+WARNING: /tools/xilinx/Vivado/2024.2/tps/lnx64/jre11.0.16_1 does not exist.

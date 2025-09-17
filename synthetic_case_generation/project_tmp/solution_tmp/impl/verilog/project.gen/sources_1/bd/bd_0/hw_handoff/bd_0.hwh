@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 16 17:31:46 2025" VIVADOVERSION="2024.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_0" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ap_ctrl_done" SIGIS="undef" SIGNAME="hls_inst_ap_done">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_done"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ap_ctrl_idle" SIGIS="undef" SIGNAME="hls_inst_ap_idle">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_idle"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ap_ctrl_ready" SIGIS="undef" SIGNAME="hls_inst_ap_ready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_ready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_ctrl_start" SIGIS="undef" SIGNAME="hls_inst_ap_start">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_start"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_0" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_1" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_2" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_3" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_4" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_5" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_6" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_6">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_6"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_7" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_7">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_7"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_8" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_8">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_8"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_9" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_9">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_9"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_10" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_10">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_10"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in_data_11" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_11">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="in_data_11"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_0" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_0_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_0_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_0_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_1" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_10" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_10">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_10"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_10_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_10_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_10_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_11" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_11">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_11"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_11_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_11_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_11_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_2" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_3" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_4" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_5" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_6" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_6">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_6"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_7" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_7">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_7"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_8" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_8">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_8"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_9" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_9">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_9"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_12" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_12">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_12"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_12_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_12_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_12_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_13" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_13">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_13"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_13_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_13_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_13_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_14" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_14">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_14"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_14_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_14_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_14_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_15" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_15">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_15"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_15_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_15_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_15_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_16" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_16">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_16"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_16_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_16_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_16_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_17" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_17">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_17"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_17_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_17_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_17_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_18" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_18">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_18"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_18_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_18_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_18_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_19" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_19">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_19"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_19_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_19_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_19_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_1_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_1_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_1_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="out_data_20" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_20">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_20"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_20_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_20_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_20_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_2_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_2_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_2_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_3_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_3_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_3_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_4_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_4_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_4_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_5_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_5_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_5_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_6_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_6_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_6_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_7_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_7_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_7_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_8_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_8_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_8_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_data_9_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_9_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="out_data_9_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_ap_ctrl" NAME="ap_ctrl" TYPE="TARGET">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="done" PHYSICAL="ap_ctrl_done"/>
+        <PORTMAP LOGICAL="idle" PHYSICAL="ap_ctrl_idle"/>
+        <PORTMAP LOGICAL="ready" PHYSICAL="ap_ctrl_ready"/>
+        <PORTMAP LOGICAL="start" PHYSICAL="ap_ctrl_start"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="2114263170" FULLNAME="/hls_inst" HWVERSION="1.0" INSTANCE="hls_inst" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="case_9" VLNV="xilinx.com:hls:case_9:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bd_0_hls_inst_0"/>
+        <PARAMETER NAME="II" VALUE="37"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="36"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_done" SIGIS="undef" SIGNAME="hls_inst_ap_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_idle" SIGIS="undef" SIGNAME="hls_inst_ap_idle">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_idle"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_ready" SIGIS="undef" SIGNAME="hls_inst_ap_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_start" SIGIS="undef" SIGNAME="hls_inst_ap_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_0" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_1" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_2" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_3" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_4" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_5" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_6" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_7" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_8" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_9" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_10" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in_data_11" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_in_data_11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in_data_11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_0" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_0_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_0_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_0_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_1" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_10" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_10_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_10_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_10_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_11" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_11_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_11_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_11_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_12" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_12_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_12_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_12_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_13" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_13_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_13_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_13_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_14" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_14_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_14_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_14_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_15" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_15_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_15_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_15_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_16" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_16"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_16_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_16_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_16_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_17" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_17">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_17"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_17_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_17_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_17_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_18" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_18">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_18"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_18_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_18_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_18_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_19" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_19">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_19"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_19_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_19_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_19_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_1_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_1_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_1_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_2" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_3" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_4" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_5" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_6" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_7" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_8" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_9" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="out_data_20" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_out_data_20">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_20"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_20_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_20_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_20_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_2_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_2_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_2_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_3_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_3_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_3_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_4_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_4_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_4_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_5_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_5_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_5_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_6_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_6_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_6_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_7_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_7_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_7_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_8_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_8_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_8_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_data_9_ap_vld" SIGIS="undef" SIGNAME="hls_inst_out_data_9_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_data_9_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_ap_ctrl" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="done" PHYSICAL="ap_done"/>
+            <PORTMAP LOGICAL="idle" PHYSICAL="ap_idle"/>
+            <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
+            <PORTMAP LOGICAL="start" PHYSICAL="ap_start"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

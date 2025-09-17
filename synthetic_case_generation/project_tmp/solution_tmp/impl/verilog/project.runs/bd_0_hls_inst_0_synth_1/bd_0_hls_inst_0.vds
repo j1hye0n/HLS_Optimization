@@ -1,0 +1,419 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Sep 16 17:31:54 2025
+# Process ID         : 103024
+# Current directory  : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
+# Running On         : DESKTOP-S15BKKL
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+# CPU Frequency      : 2808.008 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 4050 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 5124 MB
+# Available Virtual  : 3661 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 103032
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1888.316 ; gain = 421.797 ; free physical = 163 ; free virtual = 2501
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'case_9' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_6s_6s_6_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_6s_6_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_6s_6s_6_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_6s_6_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_2s_2s_3_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_2s_2s_3_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_2s_2s_3_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_2s_2s_3_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_8s_7s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_7s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_8s_7s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_7s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_12s_8s_12_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_12s_8s_12_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_12s_8s_12_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_12s_8s_12_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_3s_3s_3_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_3s_3s_3_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_3s_3s_3_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_3s_3s_3_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_15s_12s_15_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_15s_12s_15_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_15s_12s_15_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_15s_12s_15_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_2s_2s_2_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_2s_2s_2_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_2s_2s_2_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_2s_2s_2_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_10s_3s_11_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_3s_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_10s_3s_11_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_3s_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_5s_2s_5_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_5s_2s_5_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_5s_2s_5_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_5s_2s_5_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_15s_10s_16_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_15s_10s_16_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_15s_10s_16_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_15s_10s_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_13s_11s_13_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_13s_11s_13_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_13s_11s_13_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_13s_11s_13_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_16s_13s_16_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_16s_13s_16_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_16s_13s_16_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_16s_13s_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_5s_5s_5_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_5s_5s_5_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_5s_5s_5_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_5s_5s_5_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_6s_5s_6_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_5s_6_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_6s_5s_6_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_5s_6_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_6s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_6s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_6s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_6s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_4s_4s_4_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_4s_4_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_4s_4s_4_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_4s_4_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_5s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_5s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_5s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_5s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_5s_4s_6_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_5s_4s_6_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_5s_4s_6_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_5s_4s_6_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_5s_8_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_5s_8_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_5s_8_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_5s_8_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_2s_2s_4_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_2s_2s_4_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_2s_2s_4_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_2s_2s_4_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_4s_2s_6_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_2s_6_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_4s_2s_6_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_2s_6_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_4s_9_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_4s_9_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_4s_9_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_4s_9_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_4s_4s_5_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_4s_5_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_4s_4s_5_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_4s_5_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_3s_2s_3_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_3s_2s_3_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_3s_2s_3_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_3s_2s_3_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_6s_2s_6_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_2s_6_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_6s_2s_6_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_2s_6_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_4s_2s_4_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_2s_4_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_4s_2s_4_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_2s_4_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_5s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_5s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_5s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_5s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_4s_3s_4_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_3s_4_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_4s_3s_4_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_3s_4_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_4s_4s_8_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_4s_8_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_4s_4s_8_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_4s_8_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_8s_6s_12_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_6s_12_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_8s_6s_12_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_6s_12_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_4s_3s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_3s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_4s_3s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_4s_3s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_3s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_3s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_3s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_3s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_3s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_3s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_3s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_3s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_7s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_7s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_7s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_7s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_6s_6s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_6s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_6s_6s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_6s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_7s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_7s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_7s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_7s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_6s_4s_8_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_4s_8_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_6s_4s_8_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_4s_8_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_6s_3s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_3s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_6s_3s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_6s_3s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_8s_6s_8_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_6s_8_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_8s_6s_8_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_6s_8_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_6s_13_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_6s_13_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_6s_13_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_6s_13_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_4s_7_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_4s_7_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_4s_7_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_4s_7_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_4s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_4s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_4s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_4s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_10s_4s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_4s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_10s_4s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_4s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_10s_7s_16_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_7s_16_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_10s_7s_16_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_7s_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_12s_10s_12_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_12s_10s_12_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_12s_10s_12_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_12s_10s_12_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_6s_9_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_6s_9_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_6s_9_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_6s_9_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_10s_10s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_10s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_10s_10s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_10s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_4s_11_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_4s_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_4s_11_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_4s_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_10s_9s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_9s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_10s_9s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_9s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_13s_9s_13_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_13s_9s_13_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_13s_9s_13_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_13s_9s_13_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_10s_6s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_6s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_10s_6s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_10s_6s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_8s_8s_8_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_8s_8_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_8s_8s_8_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_8s_8_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_13s_10s_13_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_13s_10s_13_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_13s_10s_13_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_13s_10s_13_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_11s_7s_11_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_7s_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_11s_7s_11_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_7s_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_14s_4s_14_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_14s_4s_14_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_14s_4s_14_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_14s_4s_14_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_8s_7s_8_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_7s_8_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_8s_7s_8_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_8s_7s_8_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_8s_9_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_8s_9_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_8s_9_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_8s_9_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_8s_17_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_8s_17_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_8s_17_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_8s_17_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_7s_12_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_7s_12_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_7s_12_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_7s_12_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_7s_6s_8_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_6s_8_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_7s_6s_8_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_7s_6s_8_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_11s_4s_11_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_4s_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_11s_4s_11_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_4s_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_11s_11s_11_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_11s_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_11s_11s_11_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_11s_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_7s_9_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_7s_9_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_7s_9_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_7s_9_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_6s_11_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_6s_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_6s_11_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_6s_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_11s_6s_11_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_6s_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_11s_6s_11_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_11s_6s_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_9s_9_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_9s_9_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_9s_9_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_9s_9_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mul_9s_6s_10_1_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_6s_10_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mul_9s_6s_10_1_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mul_9s_6s_10_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mac_muladd_6s_6s_6s_6_4_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mac_muladd_6s_6s_6s_6_4_1_DSP48_0' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mac_muladd_6s_6s_6s_6_4_1_DSP48_0' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mac_muladd_6s_6s_6s_6_4_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mac_muladd_5s_5s_5s_5_4_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mac_muladd_5s_5s_5s_5_4_1_DSP48_0' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mac_muladd_5s_5s_5s_5_4_1_DSP48_0' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mac_muladd_5s_5s_5s_5_4_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'case_9_am_addmul_6ns_6ns_6s_6_4_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'case_9_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_am_addmul_6ns_6ns_6s_6_4_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mac_muladd_6s_6s_4s_6_4_1' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'case_9_mac_muladd_6s_6s_4s_6_4_1_DSP48_0' [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mac_muladd_6s_6s_4s_6_4_1_DSP48_0' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_9_mac_muladd_6s_6s_4s_6_4_1' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'case_9' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port rst in module case_9_mac_muladd_6s_6s_4s_6_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module case_9_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module case_9_mac_muladd_5s_5s_5s_5_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module case_9_mac_muladd_6s_6s_6s_6_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[14] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[13] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[12] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[11] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[10] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[9] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[8] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[7] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[6] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[5] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[4] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[3] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[2] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[1] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_0[0] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[14] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[13] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[12] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[11] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[10] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[9] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[8] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[7] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[6] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[5] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[4] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[3] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[2] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[1] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_1[0] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[14] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[13] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[12] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[11] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[10] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[9] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[8] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[7] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[6] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[5] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[4] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[3] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[2] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[1] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_2[0] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[14] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[13] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[12] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[11] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[10] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[9] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[8] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[7] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_3[6] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[14] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[13] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[12] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[11] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[10] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[9] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[8] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[7] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_4[6] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[14] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[13] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[12] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[11] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[10] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[9] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[8] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[7] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[6] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[5] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[4] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[3] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[2] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[1] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_5[0] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[14] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[13] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[12] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[11] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[10] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[9] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[8] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_6[7] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_7[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_8[15] in module case_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_8[14] in module case_9 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.223 ; gain = 533.703 ; free physical = 91 ; free virtual = 2380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.223 ; gain = 533.703 ; free physical = 91 ; free virtual = 2380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.223 ; gain = 533.703 ; free physical = 91 ; free virtual = 2380
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2000.223 ; gain = 0.000 ; free physical = 91 ; free virtual = 2380
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/case_9_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/case_9_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2133.004 ; gain = 0.000 ; free physical = 84 ; free virtual = 2374
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2133.004 ; gain = 0.000 ; free physical = 84 ; free virtual = 2373
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2133.004 ; gain = 666.484 ; free physical = 84 ; free virtual = 2374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2141.008 ; gain = 674.488 ; free physical = 84 ; free virtual = 2374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2141.008 ; gain = 674.488 ; free physical = 84 ; free virtual = 2374
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2141.008 ; gain = 674.488 ; free physical = 83 ; free virtual = 2374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   3 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               37 Bit    Registers := 1     
+	               18 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 5     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 32    
+	                6 Bit    Registers := 30    
+	                5 Bit    Registers := 14    
+	                4 Bit    Registers := 25    
+	                3 Bit    Registers := 13    
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln357_reg_2807_reg' and it is trimmed from '8' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9.v:2590]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_4s_6_4_1_U135/case_9_mac_muladd_6s_6s_4s_6_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:44]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_4s_6_4_1_U135/case_9_mac_muladd_6s_6s_4s_6_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_4s_6_4_1_U135/case_9_mac_muladd_6s_6s_4s_6_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_4s_6_4_1_U135/case_9_mac_muladd_6s_6s_4s_6_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_4s_6_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm72_reg_2206_reg' and it is trimmed from '8' to '7' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9.v:1432]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_6ns_6ns_6s_6_4_1_U134/case_9_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '43' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_6ns_6ns_6s_6_4_1_U134/case_9_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:40]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_6ns_6ns_6s_6_4_1_U134/case_9_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0_U/ad_reg_reg' and it is trimmed from '9' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_5s_5s_5s_5_4_1_U133/case_9_mac_muladd_5s_5s_5s_5_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '5' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:44]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_5s_5s_5s_5_4_1_U133/case_9_mac_muladd_5s_5s_5s_5_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '5' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_5s_5s_5s_5_4_1_U133/case_9_mac_muladd_5s_5s_5s_5_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '5' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_5s_5s_5s_5_4_1_U133/case_9_mac_muladd_5s_5s_5s_5_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '5' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_5s_5s_5s_5_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_6ns_6ns_6s_6_4_1_U134/case_9_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_am_addmul_6ns_6ns_6s_6_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_6s_6_4_1_U132/case_9_mac_muladd_6s_6s_6s_6_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:44]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_6s_6_4_1_U132/case_9_mac_muladd_6s_6s_6s_6_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_6s_6_4_1_U132/case_9_mac_muladd_6s_6s_6s_6_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6s_6s_6s_6_4_1_U132/case_9_mac_muladd_6s_6s_6s_6_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '6' bits. [/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e6df/hdl/verilog/case_9_mac_muladd_6s_6s_6s_6_4_1.v:34]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

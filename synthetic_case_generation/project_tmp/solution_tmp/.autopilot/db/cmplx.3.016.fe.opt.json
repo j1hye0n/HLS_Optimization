@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "case_9.cc",
+    "fileloc": 6,
+    "instructions": 920,
+    "loads": {
+      "T": 8
+    },
+    "name": "case_9",
+    "stores": {
+      "T": 21
+    },
+    "total_instructions": 920
+  }
+}

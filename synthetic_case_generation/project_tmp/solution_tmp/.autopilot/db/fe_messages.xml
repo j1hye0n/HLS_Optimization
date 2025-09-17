@@ -1,0 +1,66 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/synthetic_case_generation/script_tmp.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_9" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=case_9" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_9/case_9.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_9" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_9/case_9.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_9" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_8/case_8.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_8/case_8.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_7/case_7.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_7" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_7/case_7.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_7" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_6/case_6.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_6" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_6/case_6.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_6" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_5/case_5.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_5" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_5/case_5.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_5" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_4/case_4.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_4/case_4.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_3/case_3.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_3/case_3.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_2/case_2.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_2/case_2.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_1/case_1.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS/case_1/case_1.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS/case_9/case_9.cc:10:0" msg_body="Applying array_partition to 'in_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="in_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS/case_9/case_9.cc:10:0" msg_body="Applying array_partition to 'out_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="out_data"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
