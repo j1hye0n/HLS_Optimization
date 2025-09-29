@@ -1,0 +1,226 @@
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/run_hls.tcl:43:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=name=case_1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=case_1
+        ^
+case_1.cc:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=variable=in_data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=in_data complete
+        ^
+case_1.cc:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=variable=out_data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=out_data complete
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:2:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m20_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m20
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:3:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m21_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m21
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:4:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m22_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m22
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:11:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m29_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m29
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m30_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m30
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m33_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m33
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m34_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m34
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m35_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m35
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m37_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m37
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m38_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m38
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m39_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m39
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m41_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m41
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:24:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m42_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m42
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m45_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m45
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m46_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m46
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m49_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m49
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m50_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m50
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m51_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m51
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m55_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m55
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m56_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m56
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:40:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m58_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m58
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m59_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m59
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:46:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m64_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m64
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:47:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m65_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m65
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m67_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m67
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:50:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m68_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m68
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:51:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m69_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m69
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:55:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m73_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m73
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:56:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m74_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m74
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:57:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m75_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m75
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:58:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m76_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m76
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m77_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m77
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:60:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m78_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m78
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:61:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m79_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m79
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m80_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m80
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:63:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m81_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m81
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:64:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m82_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m82
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:66:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m84_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m84
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:67:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m85_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m85
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:68:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m86_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m86
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m88_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m88
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:72:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m90_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m90
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:77:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m95_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m95
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:78:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m96_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m96
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:79:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m97_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m97
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:80:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m98_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m98
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:83:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m101_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m101
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:86:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m104_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m104
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:87:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m105_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m105
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:88:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m106_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m106
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m107_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m107
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:90:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m108_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m108
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:91:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m109_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m109
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:92:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m110_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m110
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:99:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m117_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m117
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:100:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m118_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m118
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:102:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m120_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m120
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:104:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m122_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m122
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:106:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m124_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m124
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:107:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m125_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m125
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:108:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m126_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m126
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:111:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m129_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m129
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:113:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m131_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m131
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:115:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m133_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m133
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:116:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m134_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m134
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:117:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m135_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m135
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m136_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m136
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:119:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m137_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m137
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:122:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m140_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m140
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:123:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m141_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m141
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:124:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m142_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m142
+        ^
+/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_3_directive.tcl:125:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=case_1_XLX_SEP_ PragmaOptions=impl=fabric op=mul variable=m143_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m143
+        ^
+75 warnings generated.

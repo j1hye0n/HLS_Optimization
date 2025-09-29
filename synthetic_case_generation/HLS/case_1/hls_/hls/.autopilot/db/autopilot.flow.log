@@ -1,0 +1,15 @@
+Execute         source -notrace -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute           source -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_/hls opened at Mon Sep 29 16:58:08 KST 2025
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         write_ini /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_/hls_config.cfg -apsfile /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_/hls/hls.aps -filepaths relative -quiet 
+Execute     add_files case_1.cc 
+INFO: [HLS 200-1510] Running: add_files case_1.cc 
+INFO: [HLS 200-10] Adding design file 'case_1.cc' to the project
+Execute     set_top case_1 
+INFO: [HLS 200-1510] Running: set_top case_1 
+Execute     open_solution -flow_target vivado -reset sol_2_directive 
+INFO: [HLS 200-1510] Running: open_solution -flow_target vivado -reset sol_2_directive 
+Execute       cleanup_all 
+Execute       cleanup_all 

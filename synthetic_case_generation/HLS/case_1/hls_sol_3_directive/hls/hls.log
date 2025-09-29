@@ -1,0 +1,262 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+Tool Version Limit: 2024.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: source sol_3_directive.tcl
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m20 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m21 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m22 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m29 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m30 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m33 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m34 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m35 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m37 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m38 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m39 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m41 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m42 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m45 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m46 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m49 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m50 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m51 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m55 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m56 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m58 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m59 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m64 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m65 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m67 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m68 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m69 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m73 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m74 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m75 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m76 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m77 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m78 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m79 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m80 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m81 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m82 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m84 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m85 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m86 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m88 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m90 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m95 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m96 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m97 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m98 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m101 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m104 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m105 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m106 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m107 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m108 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m109 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m110 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m117 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m118 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m120 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m122 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m124 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m125 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m126 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m129 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m131 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m133 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m134 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m135 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m136 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m137 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m140 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m141 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m142 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_1 m143 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.35 seconds. CPU system time: 0.11 seconds. Elapsed time: 2.84 seconds; current allocated memory: 439.910 MB.
+INFO: [HLS 200-10] Analyzing design file 'case_1.cc' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.11 seconds. CPU system time: 0.77 seconds. Elapsed time: 6.55 seconds; current allocated memory: 439.910 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 20,489 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 997 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 953 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 953 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 953 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 996 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 997 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_3_directive/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-248] Applying array_partition to 'in_data': Complete partitioning on dimension 1. (case_1.cc:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'out_data': Complete partitioning on dimension 1. (case_1.cc:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.39 seconds. CPU system time: 0.58 seconds. Elapsed time: 7.98 seconds; current allocated memory: 440.324 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 440.324 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 440.801 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 440.965 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 465.102 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 465.102 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'case_1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'case_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (9.275 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'case_1' consists of the following:
+	wire read operation ('in6', case_1.cc:28) on port 'in_data_5' (case_1.cc:28) [115]  (0.000 ns)
+	'mul' operation 19 bit ('mul_ln184', case_1.cc:184) [154]  (9.275 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 465.102 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 465.102 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'case_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_12' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_13' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_14' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_15' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_16' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/in_data_17' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_4' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_5' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_6' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_7' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_8' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_9' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_10' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_11' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_12' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_13' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_14' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_15' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_16' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_17' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'case_1/out_data_18' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'case_1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'case_1/in_data_0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'case_1/in_data_1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'case_1/in_data_3' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'case_1/in_data_8' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'case_1/in_data_11' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_10ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_10ns_20_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_13ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_5s_15_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_8ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_8ns_15_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_8ns_17_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_8s_17_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_8s_18_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_9ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_9s_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_10s_10_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_10s_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_4s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_6s_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_7s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_7s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_8s_18_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_9s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_9s_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13ns_6s_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_9ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_3ns_6_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_7s_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3s_3s_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_3s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_8ns_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4s_4s_4_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_4s_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_5s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_2s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_3s_5_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_3s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_5s_5_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_5s_6_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6s_6s_6_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_5s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_5s_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_7ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_4s_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_7s_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7s_7s_7_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_11ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_4s_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_5ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_5s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_7s_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8s_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_9ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_3s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_5s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_6s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_7s_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_7s_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_7s_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_8_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_10ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_10ns_19_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_4s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_5s_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_4s_13_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_8s_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_9s_9_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'case_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.29 seconds; current allocated memory: 465.102 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.54 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.67 seconds; current allocated memory: 470.820 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.57 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.64 seconds; current allocated memory: 477.840 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for case_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for case_1.
+INFO: [HLS 200-789] **** Estimated Fmax: 107.82 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:19; Allocated memory: 37.930 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file hls_sol_3_directive/hls/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:13; Allocated memory: 2.465 MB.
+INFO: [HLS 200-1510] Running: open_solution -flow_target vivado -reset sol_4_directive 

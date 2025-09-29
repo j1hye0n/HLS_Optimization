@@ -1,0 +1,9 @@
+{
+  "name": "hls_sol_5_directive",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["hls_config.cfg"],
+    "work_dir": "."
+  }
+}

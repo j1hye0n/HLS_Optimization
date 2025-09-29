@@ -1,0 +1,1025 @@
+
+
+================================================================
+== Vitis HLS Report for 'case_1'
+================================================================
+* Date:           Mon Sep 29 16:59:31 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        hls_sol_4_directive
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  9.275 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       28|       28|  0.280 us|  0.280 us|   29|   29|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 29
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.52>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%in_data_2_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_2" [case_1.cc:22]   --->   Operation 30 'read' 'in_data_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%in_data_7_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_7" [case_1.cc:32]   --->   Operation 31 'read' 'in_data_7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%in8 = trunc i16 %in_data_7_read" [case_1.cc:32]   --->   Operation 32 'trunc' 'in8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%trunc_ln181 = trunc i16 %in_data_2_read" [case_1.cc:181]   --->   Operation 33 'trunc' 'trunc_ln181' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%sext_ln181 = sext i4 %in8" [case_1.cc:181]   --->   Operation 34 'sext' 'sext_ln181' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (4.52ns)   --->   "%m19 = mul i10 %trunc_ln181, i10 %sext_ln181" [case_1.cc:181]   --->   Operation 35 'mul' 'm19' <Predicate = true> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 7.13>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%sext_ln183 = sext i10 %m19" [case_1.cc:183]   --->   Operation 36 'sext' 'sext_ln183' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (7.13ns)   --->   "%mul_ln183 = mul i20 %sext_ln183, i20 %sext_ln183" [case_1.cc:183]   --->   Operation 37 'mul' 'mul_ln183' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%specfucore_ln3 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln183, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:3]   --->   Operation 38 'specfucore' 'specfucore_ln3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%m21 = trunc i20 %mul_ln183" [case_1.cc:183]   --->   Operation 39 'trunc' 'm21' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln185_1 = trunc i20 %mul_ln183" [case_1.cc:185]   --->   Operation 40 'trunc' 'trunc_ln185_1' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 9.27>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%in6 = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_5" [case_1.cc:28]   --->   Operation 41 'read' 'in6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%in_data_6_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_6" [case_1.cc:30]   --->   Operation 42 'read' 'in_data_6_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%in7 = trunc i16 %in_data_6_read" [case_1.cc:30]   --->   Operation 43 'trunc' 'in7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%in_data_12_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_12" [case_1.cc:42]   --->   Operation 44 'read' 'in_data_12_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%in13 = trunc i16 %in_data_12_read" [case_1.cc:42]   --->   Operation 45 'trunc' 'in13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%in_data_13_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_13" [case_1.cc:44]   --->   Operation 46 'read' 'in_data_13_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%in14 = trunc i16 %in_data_13_read" [case_1.cc:44]   --->   Operation 47 'trunc' 'in14' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%in_data_14_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_14" [case_1.cc:46]   --->   Operation 48 'read' 'in_data_14_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%in15 = trunc i16 %in_data_14_read" [case_1.cc:46]   --->   Operation 49 'trunc' 'in15' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%zext_ln184 = zext i16 %in6" [case_1.cc:184]   --->   Operation 50 'zext' 'zext_ln184' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln184_1 = zext i9 %in7" [case_1.cc:184]   --->   Operation 51 'zext' 'zext_ln184_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (9.27ns)   --->   "%mul_ln184 = mul i19 %zext_ln184, i19 %zext_ln184_1" [case_1.cc:184]   --->   Operation 52 'mul' 'mul_ln184' <Predicate = true> <Delay = 9.27> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 9.27> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%m22 = trunc i19 %mul_ln184" [case_1.cc:184]   --->   Operation 53 'trunc' 'm22' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%specfucore_ln4 = specfucore void @_ssdm_op_SpecFUCore, i19 %mul_ln184, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:4]   --->   Operation 54 'specfucore' 'specfucore_ln4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%trunc_ln186 = trunc i16 %in_data_14_read" [case_1.cc:186]   --->   Operation 55 'trunc' 'trunc_ln186' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%trunc_ln186_1 = trunc i16 %in_data_6_read" [case_1.cc:186]   --->   Operation 56 'trunc' 'trunc_ln186_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (3.78ns)   --->   "%m24 = mul i6 %trunc_ln186, i6 %trunc_ln186_1" [case_1.cc:186]   --->   Operation 57 'mul' 'm24' <Predicate = true> <Delay = 3.78> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.78> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%sext_ln187 = sext i8 %in14" [case_1.cc:187]   --->   Operation 58 'sext' 'sext_ln187' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln187 = trunc i16 %in_data_13_read" [case_1.cc:187]   --->   Operation 59 'trunc' 'trunc_ln187' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (1.78ns)   --->   "%m25 = add i5 %trunc_ln187, i5 %in13" [case_1.cc:187]   --->   Operation 60 'add' 'm25' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln188 = zext i10 %in15" [case_1.cc:188]   --->   Operation 61 'zext' 'zext_ln188' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%zext_ln188_2 = zext i10 %m21" [case_1.cc:188]   --->   Operation 62 'zext' 'zext_ln188_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (7.13ns)   --->   "%mul_ln188 = mul i20 %zext_ln188_2, i20 %zext_ln188" [case_1.cc:188]   --->   Operation 63 'mul' 'mul_ln188' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%m26 = trunc i20 %mul_ln188" [case_1.cc:188]   --->   Operation 64 'trunc' 'm26' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%specfucore_ln8 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln188, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:8]   --->   Operation 65 'specfucore' 'specfucore_ln8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%sext_ln189 = sext i6 %m24" [case_1.cc:189]   --->   Operation 66 'sext' 'sext_ln189' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (1.91ns)   --->   "%add_ln189 = add i9 %sext_ln187, i9 %sext_ln189" [case_1.cc:189]   --->   Operation 67 'add' 'add_ln189' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%trunc_ln190_1 = trunc i16 %in_data_13_read" [case_1.cc:190]   --->   Operation 68 'trunc' 'trunc_ln190_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%trunc_ln192_1 = trunc i16 %in_data_14_read" [case_1.cc:192]   --->   Operation 69 'trunc' 'trunc_ln192_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%trunc_ln212 = trunc i20 %mul_ln188" [case_1.cc:212]   --->   Operation 70 'trunc' 'trunc_ln212' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%sext_ln308 = sext i9 %add_ln189" [case_1.cc:308]   --->   Operation 71 'sext' 'sext_ln308' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%write_ln308 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_0, i16 %sext_ln308" [case_1.cc:308]   --->   Operation 72 'write' 'write_ln308' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 7.13>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%in_data_4_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_4" [case_1.cc:26]   --->   Operation 73 'read' 'in_data_4_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%in_data_10_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_10" [case_1.cc:38]   --->   Operation 74 'read' 'in_data_10_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%in11 = trunc i16 %in_data_10_read" [case_1.cc:38]   --->   Operation 75 'trunc' 'in11' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%in_data_16_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_16" [case_1.cc:50]   --->   Operation 76 'read' 'in_data_16_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%in17 = trunc i16 %in_data_16_read" [case_1.cc:50]   --->   Operation 77 'trunc' 'in17' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%in_data_17_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_17" [case_1.cc:52]   --->   Operation 78 'read' 'in_data_17_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%in18 = trunc i16 %in_data_17_read" [case_1.cc:52]   --->   Operation 79 'trunc' 'in18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "%trunc_ln185 = trunc i16 %in_data_4_read" [case_1.cc:185]   --->   Operation 80 'trunc' 'trunc_ln185' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (4.35ns)   --->   "%m23 = mul i9 %trunc_ln185, i9 %trunc_ln185_1" [case_1.cc:185]   --->   Operation 81 'mul' 'm23' <Predicate = true> <Delay = 4.35> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "%trunc_ln190 = trunc i9 %m23" [case_1.cc:190]   --->   Operation 82 'trunc' 'trunc_ln190' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "%sext_ln191 = sext i9 %in18" [case_1.cc:191]   --->   Operation 83 'sext' 'sext_ln191' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "%sext_ln191_1 = sext i9 %in11" [case_1.cc:191]   --->   Operation 84 'sext' 'sext_ln191_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 85 [1/1] (1.82ns)   --->   "%m29 = add i10 %sext_ln191, i10 %sext_ln191_1" [case_1.cc:191]   --->   Operation 85 'add' 'm29' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 86 [1/1] (1.73ns)   --->   "%m31 = add i10 %in17, i10 %m29" [case_1.cc:193]   --->   Operation 86 'add' 'm31' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 87 [1/1] (1.73ns)   --->   "%m32 = add i10 %in17, i10 %sext_ln191" [case_1.cc:194]   --->   Operation 87 'add' 'm32' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln195 = zext i10 %in17" [case_1.cc:195]   --->   Operation 88 'zext' 'zext_ln195' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "%zext_ln195_1 = zext i10 %in17" [case_1.cc:195]   --->   Operation 89 'zext' 'zext_ln195_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln195_2 = zext i10 %m26" [case_1.cc:195]   --->   Operation 90 'zext' 'zext_ln195_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln195_3 = zext i10 %m26" [case_1.cc:195]   --->   Operation 91 'zext' 'zext_ln195_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 92 [1/1] (7.13ns)   --->   "%mul_ln195 = mul i20 %zext_ln195_1, i20 %zext_ln195_3" [case_1.cc:195]   --->   Operation 92 'mul' 'mul_ln195' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 93 [1/1] (0.00ns)   --->   "%m33 = trunc i20 %mul_ln195" [case_1.cc:227]   --->   Operation 93 'trunc' 'm33' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 94 [1/1] (0.00ns)   --->   "%specfucore_ln15 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln195, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:15]   --->   Operation 94 'specfucore' 'specfucore_ln15' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln197 = zext i9 %m22" [case_1.cc:197]   --->   Operation 95 'zext' 'zext_ln197' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 96 [1/1] (7.13ns)   --->   "%mul_ln197 = mul i19 %zext_ln197, i19 %zext_ln195" [case_1.cc:197]   --->   Operation 96 'mul' 'mul_ln197' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 97 [1/1] (0.00ns)   --->   "%m35 = trunc i19 %mul_ln197" [case_1.cc:197]   --->   Operation 97 'trunc' 'm35' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%specfucore_ln17 = specfucore void @_ssdm_op_SpecFUCore, i19 %mul_ln197, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:17]   --->   Operation 98 'specfucore' 'specfucore_ln17' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln198 = zext i5 %m25" [case_1.cc:198]   --->   Operation 99 'zext' 'zext_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 100 [1/1] (7.13ns)   --->   "%mul_ln198 = mul i11 %zext_ln195_2, i11 %zext_ln198" [case_1.cc:198]   --->   Operation 100 'mul' 'mul_ln198' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%trunc_ln215 = trunc i11 %mul_ln198" [case_1.cc:215]   --->   Operation 101 'trunc' 'trunc_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 102 [1/1] (0.00ns)   --->   "%specfucore_ln18 = specfucore void @_ssdm_op_SpecFUCore, i11 %mul_ln198, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:18]   --->   Operation 102 'specfucore' 'specfucore_ln18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 103 [1/1] (0.00ns)   --->   "%trunc_ln200 = trunc i10 %m29" [case_1.cc:200]   --->   Operation 103 'trunc' 'trunc_ln200' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "%trunc_ln204 = trunc i10 %m29" [case_1.cc:204]   --->   Operation 104 'trunc' 'trunc_ln204' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%sext_ln309 = sext i9 %m35" [case_1.cc:309]   --->   Operation 105 'sext' 'sext_ln309' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 106 [1/1] (0.00ns)   --->   "%write_ln309 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_1, i16 %sext_ln309" [case_1.cc:309]   --->   Operation 106 'write' 'write_ln309' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 7.13>
+ST_5 : Operation 107 [1/1] (0.00ns)   --->   "%in_data_9_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_9" [case_1.cc:36]   --->   Operation 107 'read' 'in_data_9_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 108 [1/1] (0.00ns)   --->   "%in10 = trunc i16 %in_data_9_read" [case_1.cc:36]   --->   Operation 108 'trunc' 'in10' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 109 [1/1] (0.00ns)   --->   "%in_data_15_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %in_data_15" [case_1.cc:48]   --->   Operation 109 'read' 'in_data_15_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 110 [1/1] (0.00ns)   --->   "%trunc_ln182 = trunc i16 %in_data_15_read" [case_1.cc:182]   --->   Operation 110 'trunc' 'trunc_ln182' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 111 [1/1] (0.00ns)   --->   "%zext_ln182 = zext i3 %trunc_ln182" [case_1.cc:182]   --->   Operation 111 'zext' 'zext_ln182' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 112 [1/1] (0.00ns)   --->   "%zext_ln182_1 = zext i3 %in10" [case_1.cc:182]   --->   Operation 112 'zext' 'zext_ln182_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 113 [1/1] (3.22ns)   --->   "%mul_ln182 = mul i6 %zext_ln182, i6 %zext_ln182_1" [case_1.cc:182]   --->   Operation 113 'mul' 'mul_ln182' <Predicate = true> <Delay = 3.22> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 3.22> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 114 [1/1] (0.00ns)   --->   "%trunc_ln192 = trunc i6 %mul_ln182" [case_1.cc:192]   --->   Operation 114 'trunc' 'trunc_ln192' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 115 [1/1] (0.00ns)   --->   "%specfucore_ln2 = specfucore void @_ssdm_op_SpecFUCore, i6 %mul_ln182, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:2]   --->   Operation 115 'specfucore' 'specfucore_ln2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln188_1 = zext i10 %m21" [case_1.cc:188]   --->   Operation 116 'zext' 'zext_ln188_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 117 [1/1] (3.74ns)   --->   "%m28 = mul i7 %trunc_ln190_1, i7 %trunc_ln190" [case_1.cc:190]   --->   Operation 117 'mul' 'm28' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 118 [1/1] (1.62ns)   --->   "%m30 = mul i3 %trunc_ln192, i3 %trunc_ln192_1" [case_1.cc:192]   --->   Operation 118 'mul' 'm30' <Predicate = true> <Delay = 1.62> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 1.62> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 119 [1/1] (0.00ns)   --->   "%sext_ln196 = sext i9 %in18" [case_1.cc:196]   --->   Operation 119 'sext' 'sext_ln196' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 120 [1/1] (0.00ns)   --->   "%zext_ln196 = zext i10 %m31" [case_1.cc:196]   --->   Operation 120 'zext' 'zext_ln196' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 121 [1/1] (7.13ns)   --->   "%mul_ln196 = mul i19 %zext_ln196, i19 %sext_ln196" [case_1.cc:196]   --->   Operation 121 'mul' 'mul_ln196' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 122 [1/1] (0.00ns)   --->   "%m34 = trunc i19 %mul_ln196" [case_1.cc:196]   --->   Operation 122 'trunc' 'm34' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%specfucore_ln16 = specfucore void @_ssdm_op_SpecFUCore, i19 %mul_ln196, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:16]   --->   Operation 123 'specfucore' 'specfucore_ln16' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 124 [1/1] (0.00ns)   --->   "%zext_ln199 = zext i9 %m23" [case_1.cc:199]   --->   Operation 124 'zext' 'zext_ln199' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 125 [1/1] (0.00ns)   --->   "%zext_ln199_1 = zext i10 %m32" [case_1.cc:199]   --->   Operation 125 'zext' 'zext_ln199_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 126 [1/1] (0.00ns)   --->   "%zext_ln199_2 = zext i10 %m32" [case_1.cc:199]   --->   Operation 126 'zext' 'zext_ln199_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 127 [1/1] (7.13ns)   --->   "%mul_ln199 = mul i19 %zext_ln199, i19 %zext_ln199_2" [case_1.cc:199]   --->   Operation 127 'mul' 'mul_ln199' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 128 [1/1] (0.00ns)   --->   "%trunc_ln214 = trunc i19 %mul_ln199" [case_1.cc:214]   --->   Operation 128 'trunc' 'trunc_ln214' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 129 [1/1] (0.00ns)   --->   "%specfucore_ln19 = specfucore void @_ssdm_op_SpecFUCore, i19 %mul_ln199, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:19]   --->   Operation 129 'specfucore' 'specfucore_ln19' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 130 [1/1] (0.00ns)   --->   "%zext_ln200_1 = zext i10 %m29" [case_1.cc:200]   --->   Operation 130 'zext' 'zext_ln200_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 131 [1/1] (7.13ns)   --->   "%mul_ln200 = mul i11 %zext_ln188_1, i11 %zext_ln200_1" [case_1.cc:200]   --->   Operation 131 'mul' 'mul_ln200' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 132 [1/1] (0.00ns)   --->   "%m38 = trunc i11 %mul_ln200" [case_1.cc:200]   --->   Operation 132 'trunc' 'm38' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 133 [1/1] (0.00ns)   --->   "%specfucore_ln20 = specfucore void @_ssdm_op_SpecFUCore, i11 %mul_ln200, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:20]   --->   Operation 133 'specfucore' 'specfucore_ln20' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 134 [1/1] (0.00ns)   --->   "%zext_ln205 = zext i10 %m33" [case_1.cc:205]   --->   Operation 134 'zext' 'zext_ln205' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 135 [1/1] (7.13ns)   --->   "%mul_ln205 = mul i20 %zext_ln205, i20 %zext_ln199_1" [case_1.cc:205]   --->   Operation 135 'mul' 'mul_ln205' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 136 [1/1] (0.00ns)   --->   "%m43 = trunc i20 %mul_ln205" [case_1.cc:205]   --->   Operation 136 'trunc' 'm43' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 137 [1/1] (0.00ns)   --->   "%specfucore_ln25 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln205, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:25]   --->   Operation 137 'specfucore' 'specfucore_ln25' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 138 [1/1] (0.00ns)   --->   "%trunc_ln207 = trunc i19 %mul_ln196" [case_1.cc:207]   --->   Operation 138 'trunc' 'trunc_ln207' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 139 [1/1] (0.00ns)   --->   "%trunc_ln208 = trunc i7 %m28" [case_1.cc:208]   --->   Operation 139 'trunc' 'trunc_ln208' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 140 [1/1] (0.00ns)   --->   "%trunc_ln211_1 = trunc i20 %mul_ln205" [case_1.cc:211]   --->   Operation 140 'trunc' 'trunc_ln211_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 141 [1/1] (0.00ns)   --->   "%trunc_ln214_1 = trunc i20 %mul_ln205" [case_1.cc:214]   --->   Operation 141 'trunc' 'trunc_ln214_1' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 7.13>
+ST_6 : Operation 142 [1/1] (0.00ns)   --->   "%zext_ln200 = zext i3 %trunc_ln200" [case_1.cc:200]   --->   Operation 142 'zext' 'zext_ln200' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 143 [1/1] (5.90ns)   --->   "%mul_ln201 = mul i7 %zext_ln200, i7 %m28" [case_1.cc:201]   --->   Operation 143 'mul' 'mul_ln201' <Predicate = true> <Delay = 5.90> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 5.90> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 144 [1/1] (0.00ns)   --->   "%m39 = trunc i7 %mul_ln201" [case_1.cc:201]   --->   Operation 144 'trunc' 'm39' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 145 [1/1] (0.00ns)   --->   "%specfucore_ln21 = specfucore void @_ssdm_op_SpecFUCore, i7 %mul_ln201, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:21]   --->   Operation 145 'specfucore' 'specfucore_ln21' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 146 [1/1] (0.00ns)   --->   "%sext_ln204 = sext i3 %m30" [case_1.cc:204]   --->   Operation 146 'sext' 'sext_ln204' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 147 [1/1] (1.91ns)   --->   "%add_ln207 = add i8 %sext_ln204, i8 %trunc_ln204" [case_1.cc:207]   --->   Operation 147 'add' 'add_ln207' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 148 [1/1] (0.00ns)   --->   "%zext_ln206_1 = zext i10 %m43" [case_1.cc:206]   --->   Operation 148 'zext' 'zext_ln206_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 149 [1/1] (0.00ns)   --->   "%zext_ln206_2 = zext i5 %m38" [case_1.cc:206]   --->   Operation 149 'zext' 'zext_ln206_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 150 [1/1] (7.13ns)   --->   "%mul_ln206 = mul i11 %zext_ln206_1, i11 %zext_ln206_2" [case_1.cc:206]   --->   Operation 150 'mul' 'mul_ln206' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 151 [1/1] (0.00ns)   --->   "%m44 = trunc i11 %mul_ln206" [case_1.cc:206]   --->   Operation 151 'trunc' 'm44' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 152 [1/1] (0.00ns)   --->   "%specfucore_ln26 = specfucore void @_ssdm_op_SpecFUCore, i11 %mul_ln206, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:26]   --->   Operation 152 'specfucore' 'specfucore_ln26' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 153 [1/1] (4.17ns)   --->   "%m45 = mul i8 %trunc_ln207, i8 %add_ln207" [case_1.cc:207]   --->   Operation 153 'mul' 'm45' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 154 [1/1] (0.00ns)   --->   "%trunc_ln211 = trunc i8 %add_ln207" [case_1.cc:211]   --->   Operation 154 'trunc' 'trunc_ln211' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 155 [1/1] (3.74ns)   --->   "%m49 = mul i7 %trunc_ln211, i7 %trunc_ln211_1" [case_1.cc:211]   --->   Operation 155 'mul' 'm49' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 156 [1/1] (4.35ns)   --->   "%m52 = mul i9 %trunc_ln214_1, i9 %trunc_ln214" [case_1.cc:214]   --->   Operation 156 'mul' 'm52' <Predicate = true> <Delay = 4.35> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 157 [1/1] (0.00ns)   --->   "%trunc_ln216 = trunc i7 %m49" [case_1.cc:216]   --->   Operation 157 'trunc' 'trunc_ln216' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 158 [1/1] (0.00ns)   --->   "%trunc_ln220 = trunc i11 %mul_ln206" [case_1.cc:220]   --->   Operation 158 'trunc' 'trunc_ln220' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 5.90>
+ST_7 : Operation 159 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i3 %m39" [case_1.cc:203]   --->   Operation 159 'zext' 'zext_ln203' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 160 [1/1] (5.90ns)   --->   "%mul_ln203 = mul i7 %zext_ln203, i7 %m28" [case_1.cc:203]   --->   Operation 160 'mul' 'mul_ln203' <Predicate = true> <Delay = 5.90> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 5.90> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 161 [1/1] (0.00ns)   --->   "%m41 = trunc i7 %mul_ln203" [case_1.cc:203]   --->   Operation 161 'trunc' 'm41' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 162 [1/1] (0.00ns)   --->   "%specfucore_ln23 = specfucore void @_ssdm_op_SpecFUCore, i7 %mul_ln203, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:23]   --->   Operation 162 'specfucore' 'specfucore_ln23' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 163 [1/1] (3.49ns)   --->   "%m46 = mul i5 %m44, i5 %trunc_ln208" [case_1.cc:208]   --->   Operation 163 'mul' 'm46' <Predicate = true> <Delay = 3.49> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 164 [1/1] (0.00ns)   --->   "%sext_ln209 = sext i5 %m44" [case_1.cc:209]   --->   Operation 164 'sext' 'sext_ln209' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 165 [1/1] (4.17ns)   --->   "%m47 = mul i8 %m45, i8 %sext_ln209" [case_1.cc:209]   --->   Operation 165 'mul' 'm47' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 166 [1/1] (0.00ns)   --->   "%sext_ln212 = sext i5 %m44" [case_1.cc:212]   --->   Operation 166 'sext' 'sext_ln212' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 167 [1/1] (3.74ns)   --->   "%mul_ln212 = mul i7 %m28, i7 %sext_ln212" [case_1.cc:212]   --->   Operation 167 'mul' 'mul_ln212' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 168 [1/1] (0.00ns)   --->   "%sext_ln310 = sext i5 %m46" [case_1.cc:310]   --->   Operation 168 'sext' 'sext_ln310' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 169 [1/1] (0.00ns)   --->   "%sext_ln311 = sext i8 %m47" [case_1.cc:311]   --->   Operation 169 'sext' 'sext_ln311' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 170 [1/1] (0.00ns)   --->   "%write_ln310 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_2, i16 %sext_ln310" [case_1.cc:310]   --->   Operation 170 'write' 'write_ln310' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 171 [1/1] (0.00ns)   --->   "%write_ln311 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_3, i16 %sext_ln311" [case_1.cc:311]   --->   Operation 171 'write' 'write_ln311' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 5.30>
+ST_8 : Operation 172 [1/1] (3.74ns)   --->   "%m50 = mul i7 %mul_ln212, i7 %trunc_ln212" [case_1.cc:212]   --->   Operation 172 'mul' 'm50' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 173 [1/1] (0.00ns)   --->   "%sext_ln216 = sext i3 %m41" [case_1.cc:216]   --->   Operation 173 'sext' 'sext_ln216' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 174 [1/1] (1.73ns)   --->   "%m54 = add i4 %trunc_ln216, i4 %sext_ln216" [case_1.cc:216]   --->   Operation 174 'add' 'm54' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 175 [1/1] (0.00ns)   --->   "%trunc_ln222 = trunc i7 %m50" [case_1.cc:222]   --->   Operation 175 'trunc' 'trunc_ln222' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 176 [1/1] (1.62ns)   --->   "%m58 = mul i3 %trunc_ln220, i3 %m41" [case_1.cc:220]   --->   Operation 176 'mul' 'm58' <Predicate = true> <Delay = 1.62> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 1.62> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 177 [1/1] (0.00ns)   --->   "%trunc_ln222_1 = trunc i4 %m54" [case_1.cc:222]   --->   Operation 177 'trunc' 'trunc_ln222_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 178 [1/1] (1.56ns)   --->   "%m60 = add i2 %trunc_ln222_1, i2 %trunc_ln222" [case_1.cc:222]   --->   Operation 178 'add' 'm60' <Predicate = true> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 5.90>
+ST_9 : Operation 179 [1/1] (1.87ns)   --->   "%m55 = add i7 %m50, i7 %m49" [case_1.cc:217]   --->   Operation 179 'add' 'm55' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 180 [1/1] (0.00ns)   --->   "%sext_ln221 = sext i3 %m58" [case_1.cc:221]   --->   Operation 180 'sext' 'sext_ln221' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 181 [1/1] (3.49ns)   --->   "%m59 = mul i5 %m44, i5 %sext_ln221" [case_1.cc:221]   --->   Operation 181 'mul' 'm59' <Predicate = true> <Delay = 3.49> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 182 [1/1] (0.00ns)   --->   "%zext_ln225 = zext i4 %m54" [case_1.cc:225]   --->   Operation 182 'zext' 'zext_ln225' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 183 [1/1] (5.90ns)   --->   "%mul_ln225 = mul i7 %m50, i7 %zext_ln225" [case_1.cc:225]   --->   Operation 183 'mul' 'mul_ln225' <Predicate = true> <Delay = 5.90> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 5.90> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 184 [1/1] (0.00ns)   --->   "%m63 = trunc i7 %mul_ln225" [case_1.cc:225]   --->   Operation 184 'trunc' 'm63' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 185 [1/1] (0.00ns)   --->   "%specfucore_ln45 = specfucore void @_ssdm_op_SpecFUCore, i7 %mul_ln225, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:45]   --->   Operation 185 'specfucore' 'specfucore_ln45' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 186 [1/1] (0.00ns)   --->   "%sext_ln226 = sext i7 %m55" [case_1.cc:226]   --->   Operation 186 'sext' 'sext_ln226' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 187 [1/1] (0.00ns)   --->   "%sext_ln226_1 = sext i9 %m52" [case_1.cc:226]   --->   Operation 187 'sext' 'sext_ln226_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 188 [1/1] (1.82ns)   --->   "%add_ln226 = add i10 %sext_ln226_1, i10 %sext_ln226" [case_1.cc:226]   --->   Operation 188 'add' 'add_ln226' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 189 [1/1] (0.00ns)   --->   "%sext_ln226_2 = sext i10 %add_ln226" [case_1.cc:226]   --->   Operation 189 'sext' 'sext_ln226_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 190 [1/1] (0.00ns)   --->   "%write_ln312 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_4, i16 %sext_ln226_2" [case_1.cc:312]   --->   Operation 190 'write' 'write_ln312' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 7.13>
+ST_10 : Operation 191 [1/1] (0.00ns)   --->   "%zext_ln206 = zext i10 %m43" [case_1.cc:206]   --->   Operation 191 'zext' 'zext_ln206' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 192 [1/1] (0.00ns)   --->   "%zext_ln213 = zext i10 %m34" [case_1.cc:213]   --->   Operation 192 'zext' 'zext_ln213' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 193 [1/1] (7.13ns)   --->   "%mul_ln213 = mul i20 %zext_ln213, i20 %zext_ln206" [case_1.cc:213]   --->   Operation 193 'mul' 'mul_ln213' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 194 [1/1] (0.00ns)   --->   "%trunc_ln227 = trunc i20 %mul_ln213" [case_1.cc:227]   --->   Operation 194 'trunc' 'trunc_ln227' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 195 [1/1] (0.00ns)   --->   "%specfucore_ln33 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln213, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:33]   --->   Operation 195 'specfucore' 'specfucore_ln33' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 196 [1/1] (0.00ns)   --->   "%m51 = trunc i20 %mul_ln213" [case_1.cc:213]   --->   Operation 196 'trunc' 'm51' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 197 [1/1] (0.00ns)   --->   "%sext_ln215 = sext i3 %m41" [case_1.cc:215]   --->   Operation 197 'sext' 'sext_ln215' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 198 [1/1] (3.49ns)   --->   "%m53 = mul i5 %trunc_ln215, i5 %sext_ln215" [case_1.cc:215]   --->   Operation 198 'mul' 'm53' <Predicate = true> <Delay = 3.49> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 199 [1/1] (0.00ns)   --->   "%trunc_ln218 = trunc i5 %m53" [case_1.cc:218]   --->   Operation 199 'trunc' 'trunc_ln218' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 200 [1/1] (0.00ns)   --->   "%sext_ln219 = sext i8 %m45" [case_1.cc:219]   --->   Operation 200 'sext' 'sext_ln219' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 201 [1/1] (1.73ns)   --->   "%add_ln233 = add i10 %m43, i10 %sext_ln219" [case_1.cc:233]   --->   Operation 201 'add' 'add_ln233' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 202 [1/1] (0.00ns)   --->   "%sext_ln223 = sext i7 %m50" [case_1.cc:223]   --->   Operation 202 'sext' 'sext_ln223' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 203 [1/1] (0.00ns)   --->   "%sext_ln223_1 = sext i5 %m59" [case_1.cc:223]   --->   Operation 203 'sext' 'sext_ln223_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 204 [1/1] (1.87ns)   --->   "%m61 = add i8 %sext_ln223, i8 %sext_ln223_1" [case_1.cc:223]   --->   Operation 204 'add' 'm61' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 205 [1/1] (0.00ns)   --->   "%sext_ln224 = sext i7 %m49" [case_1.cc:224]   --->   Operation 205 'sext' 'sext_ln224' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 206 [1/1] (0.00ns)   --->   "%sext_ln224_1 = sext i8 %m45" [case_1.cc:224]   --->   Operation 206 'sext' 'sext_ln224_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 207 [1/1] (6.42ns)   --->   "%mul_ln224 = mul i15 %sext_ln224_1, i15 %sext_ln224" [case_1.cc:224]   --->   Operation 207 'mul' 'mul_ln224' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 208 [1/1] (0.00ns)   --->   "%specfucore_ln44 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln224, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:44]   --->   Operation 208 'specfucore' 'specfucore_ln44' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 209 [1/1] (0.00ns)   --->   "%m62 = trunc i15 %mul_ln224" [case_1.cc:224]   --->   Operation 209 'trunc' 'm62' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 210 [1/1] (4.52ns)   --->   "%mul_ln227 = mul i10 %m33, i10 %m43" [case_1.cc:227]   --->   Operation 210 'mul' 'mul_ln227' <Predicate = true> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 211 [1/1] (0.00ns)   --->   "%sext_ln229 = sext i3 %m63" [case_1.cc:229]   --->   Operation 211 'sext' 'sext_ln229' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 212 [1/1] (4.17ns)   --->   "%m67 = mul i8 %m61, i8 %sext_ln229" [case_1.cc:229]   --->   Operation 212 'mul' 'm67' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 213 [1/1] (0.00ns)   --->   "%trunc_ln236 = trunc i10 %add_ln233" [case_1.cc:236]   --->   Operation 213 'trunc' 'trunc_ln236' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 7.13>
+ST_11 : Operation 214 [1/1] (2.34ns)   --->   "%m56 = mul i4 %trunc_ln218, i4 %m54" [case_1.cc:218]   --->   Operation 214 'mul' 'm56' <Predicate = true> <Delay = 2.34> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 215 [1/1] (0.00ns)   --->   "%sext_ln225 = sext i4 %m54" [case_1.cc:225]   --->   Operation 215 'sext' 'sext_ln225' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 216 [3/3] (1.05ns) (grouped into DSP with root node m82)   --->   "%m65 = mul i10 %mul_ln227, i10 %trunc_ln227" [case_1.cc:227]   --->   Operation 216 'mul' 'm65' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 217 [1/1] (0.00ns)   --->   "%sext_ln228_2 = sext i5 %m59" [case_1.cc:228]   --->   Operation 217 'sext' 'sext_ln228_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 218 [1/1] (0.00ns)   --->   "%zext_ln228 = zext i10 %add_ln233" [case_1.cc:228]   --->   Operation 218 'zext' 'zext_ln228' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 219 [1/1] (7.13ns)   --->   "%mul_ln228 = mul i13 %zext_ln228, i13 %sext_ln228_2" [case_1.cc:228]   --->   Operation 219 'mul' 'mul_ln228' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 220 [1/1] (0.00ns)   --->   "%m66 = trunc i13 %mul_ln228" [case_1.cc:228]   --->   Operation 220 'trunc' 'm66' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 221 [1/1] (0.00ns)   --->   "%specfucore_ln48 = specfucore void @_ssdm_op_SpecFUCore, i13 %mul_ln228, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:48]   --->   Operation 221 'specfucore' 'specfucore_ln48' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 222 [1/1] (0.00ns)   --->   "%sext_ln231 = sext i8 %m67" [case_1.cc:231]   --->   Operation 222 'sext' 'sext_ln231' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 223 [1/1] (0.00ns)   --->   "%zext_ln230 = zext i8 %m67" [case_1.cc:230]   --->   Operation 223 'zext' 'zext_ln230' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 224 [1/1] (6.42ns)   --->   "%mul_ln230 = mul i9 %zext_ln230, i9 %sext_ln225" [case_1.cc:230]   --->   Operation 224 'mul' 'mul_ln230' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 225 [1/1] (0.00ns)   --->   "%m68 = trunc i9 %mul_ln230" [case_1.cc:230]   --->   Operation 225 'trunc' 'm68' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 226 [1/1] (0.00ns)   --->   "%specfucore_ln50 = specfucore void @_ssdm_op_SpecFUCore, i9 %mul_ln230, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:50]   --->   Operation 226 'specfucore' 'specfucore_ln50' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 227 [1/1] (4.35ns)   --->   "%m69 = mul i9 %m51, i9 %sext_ln231" [case_1.cc:231]   --->   Operation 227 'mul' 'm69' <Predicate = true> <Delay = 4.35> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 228 [1/1] (0.00ns)   --->   "%sext_ln233 = sext i3 %m58" [case_1.cc:233]   --->   Operation 228 'sext' 'sext_ln233' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 229 [1/1] (1.73ns)   --->   "%m71 = add i10 %add_ln233, i10 %sext_ln233" [case_1.cc:233]   --->   Operation 229 'add' 'm71' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 230 [1/1] (0.00ns)   --->   "%sext_ln234 = sext i4 %m56" [case_1.cc:234]   --->   Operation 230 'sext' 'sext_ln234' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 231 [1/1] (0.00ns)   --->   "%sext_ln234_1 = sext i4 %m54" [case_1.cc:234]   --->   Operation 231 'sext' 'sext_ln234_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 232 [1/1] (4.34ns)   --->   "%mul_ln234 = mul i8 %sext_ln234, i8 %sext_ln234_1" [case_1.cc:234]   --->   Operation 232 'mul' 'mul_ln234' <Predicate = true> <Delay = 4.34> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 4.34> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 233 [1/1] (0.00ns)   --->   "%specfucore_ln54 = specfucore void @_ssdm_op_SpecFUCore, i8 %mul_ln234, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:54]   --->   Operation 233 'specfucore' 'specfucore_ln54' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 234 [1/1] (0.00ns)   --->   "%m72 = trunc i8 %mul_ln234" [case_1.cc:234]   --->   Operation 234 'trunc' 'm72' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 235 [1/1] (0.00ns)   --->   "%sext_ln236 = sext i3 %m58" [case_1.cc:236]   --->   Operation 235 'sext' 'sext_ln236' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 236 [1/1] (0.00ns)   --->   "%zext_ln236 = zext i4 %trunc_ln236" [case_1.cc:236]   --->   Operation 236 'zext' 'zext_ln236' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 237 [1/1] (4.34ns)   --->   "%mul_ln236 = mul i7 %zext_ln236, i7 %sext_ln236" [case_1.cc:236]   --->   Operation 237 'mul' 'mul_ln236' <Predicate = true> <Delay = 4.34> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 4.34> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 238 [1/1] (0.00ns)   --->   "%m74 = trunc i7 %mul_ln236" [case_1.cc:236]   --->   Operation 238 'trunc' 'm74' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 239 [1/1] (0.00ns)   --->   "%specfucore_ln56 = specfucore void @_ssdm_op_SpecFUCore, i7 %mul_ln236, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:56]   --->   Operation 239 'specfucore' 'specfucore_ln56' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 240 [1/1] (0.00ns)   --->   "%trunc_ln237 = trunc i9 %m69" [case_1.cc:237]   --->   Operation 240 'trunc' 'trunc_ln237' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 241 [1/1] (0.00ns)   --->   "%sext_ln313 = sext i4 %m68" [case_1.cc:313]   --->   Operation 241 'sext' 'sext_ln313' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 242 [1/1] (0.00ns)   --->   "%write_ln313 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_5, i16 %sext_ln313" [case_1.cc:313]   --->   Operation 242 'write' 'write_ln313' <Predicate = true> <Delay = 0.00>
+
+State 12 <SV = 11> <Delay = 7.13>
+ST_12 : Operation 243 [2/3] (1.05ns) (grouped into DSP with root node m82)   --->   "%m65 = mul i10 %mul_ln227, i10 %trunc_ln227" [case_1.cc:227]   --->   Operation 243 'mul' 'm65' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 244 [1/1] (0.00ns)   --->   "%sext_ln228 = sext i5 %m59" [case_1.cc:228]   --->   Operation 244 'sext' 'sext_ln228' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 245 [1/1] (0.00ns)   --->   "%sext_ln228_1 = sext i5 %m59" [case_1.cc:228]   --->   Operation 245 'sext' 'sext_ln228_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 246 [1/1] (0.00ns)   --->   "%zext_ln232 = zext i5 %m53" [case_1.cc:232]   --->   Operation 246 'zext' 'zext_ln232' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 247 [1/1] (4.86ns)   --->   "%mul_ln232 = mul i10 %zext_ln232, i10 %sext_ln228_1" [case_1.cc:232]   --->   Operation 247 'mul' 'mul_ln232' <Predicate = true> <Delay = 4.86> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 4.86> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 248 [1/1] (0.00ns)   --->   "%m70 = trunc i10 %mul_ln232" [case_1.cc:232]   --->   Operation 248 'trunc' 'm70' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 249 [1/1] (0.00ns)   --->   "%specfucore_ln52 = specfucore void @_ssdm_op_SpecFUCore, i10 %mul_ln232, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:52]   --->   Operation 249 'specfucore' 'specfucore_ln52' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 250 [1/1] (0.00ns)   --->   "%sext_ln235 = sext i9 %m69" [case_1.cc:235]   --->   Operation 250 'sext' 'sext_ln235' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 251 [1/1] (0.00ns)   --->   "%sext_ln235_1 = sext i6 %m66" [case_1.cc:235]   --->   Operation 251 'sext' 'sext_ln235_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 252 [1/1] (1.82ns)   --->   "%add_ln235 = add i10 %sext_ln235, i10 %sext_ln235_1" [case_1.cc:235]   --->   Operation 252 'add' 'add_ln235' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 253 [1/1] (4.17ns)   --->   "%m75 = mul i8 %trunc_ln237, i8 %sext_ln223_1" [case_1.cc:237]   --->   Operation 253 'mul' 'm75' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 254 [1/1] (0.00ns)   --->   "%sext_ln238 = sext i2 %m60" [case_1.cc:238]   --->   Operation 254 'sext' 'sext_ln238' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 255 [1/1] (4.86ns)   --->   "%m76 = mul i7 %sext_ln228, i7 %sext_ln238" [case_1.cc:238]   --->   Operation 255 'mul' 'm76' <Predicate = true> <Delay = 4.86> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 4.86> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 256 [1/1] (0.00ns)   --->   "%specfucore_ln58 = specfucore void @_ssdm_op_SpecFUCore, i7 %m76, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:58]   --->   Operation 256 'specfucore' 'specfucore_ln58' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 257 [1/1] (0.00ns)   --->   "%sext_ln239 = sext i9 %m69" [case_1.cc:239]   --->   Operation 257 'sext' 'sext_ln239' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 258 [1/1] (0.00ns)   --->   "%zext_ln239 = zext i9 %m69" [case_1.cc:239]   --->   Operation 258 'zext' 'zext_ln239' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 259 [1/1] (0.00ns)   --->   "%zext_ln239_2 = zext i10 %m71" [case_1.cc:239]   --->   Operation 259 'zext' 'zext_ln239_2' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 260 [1/1] (7.13ns)   --->   "%mul_ln239 = mul i11 %zext_ln239_2, i11 %zext_ln239" [case_1.cc:239]   --->   Operation 260 'mul' 'mul_ln239' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 261 [1/1] (0.00ns)   --->   "%m77 = trunc i11 %mul_ln239" [case_1.cc:239]   --->   Operation 261 'trunc' 'm77' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 262 [1/1] (0.00ns)   --->   "%specfucore_ln59 = specfucore void @_ssdm_op_SpecFUCore, i11 %mul_ln239, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:59]   --->   Operation 262 'specfucore' 'specfucore_ln59' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 263 [1/1] (0.00ns)   --->   "%sext_ln240 = sext i4 %m72" [case_1.cc:240]   --->   Operation 263 'sext' 'sext_ln240' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 264 [1/1] (6.78ns)   --->   "%mul_ln240 = mul i13 %sext_ln239, i13 %sext_ln240" [case_1.cc:240]   --->   Operation 264 'mul' 'mul_ln240' <Predicate = true> <Delay = 6.78> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 265 [1/1] (0.00ns)   --->   "%specfucore_ln60 = specfucore void @_ssdm_op_SpecFUCore, i13 %mul_ln240, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:60]   --->   Operation 265 'specfucore' 'specfucore_ln60' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 266 [1/1] (0.00ns)   --->   "%m78 = trunc i13 %mul_ln240" [case_1.cc:240]   --->   Operation 266 'trunc' 'm78' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 267 [1/1] (0.00ns)   --->   "%sext_ln241 = sext i4 %m74" [case_1.cc:241]   --->   Operation 267 'sext' 'sext_ln241' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 268 [1/1] (6.78ns)   --->   "%mul_ln241 = mul i13 %sext_ln239, i13 %sext_ln241" [case_1.cc:241]   --->   Operation 268 'mul' 'mul_ln241' <Predicate = true> <Delay = 6.78> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 269 [1/1] (0.00ns)   --->   "%specfucore_ln61 = specfucore void @_ssdm_op_SpecFUCore, i13 %mul_ln241, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:61]   --->   Operation 269 'specfucore' 'specfucore_ln61' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 270 [1/1] (0.00ns)   --->   "%m79 = trunc i13 %mul_ln241" [case_1.cc:241]   --->   Operation 270 'trunc' 'm79' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 271 [1/1] (0.00ns)   --->   "%trunc_ln252_1 = trunc i13 %mul_ln241" [case_1.cc:252]   --->   Operation 271 'trunc' 'trunc_ln252_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 272 [1/1] (0.00ns)   --->   "%sext_ln314 = sext i8 %m75" [case_1.cc:314]   --->   Operation 272 'sext' 'sext_ln314' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 273 [1/1] (0.00ns)   --->   "%write_ln314 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_6, i16 %sext_ln314" [case_1.cc:314]   --->   Operation 273 'write' 'write_ln314' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 7.13>
+ST_13 : Operation 274 [1/3] (0.00ns) (grouped into DSP with root node m82)   --->   "%m65 = mul i10 %mul_ln227, i10 %trunc_ln227" [case_1.cc:227]   --->   Operation 274 'mul' 'm65' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 275 [1/1] (0.00ns)   --->   "%sext_ln230 = sext i8 %m67" [case_1.cc:230]   --->   Operation 275 'sext' 'sext_ln230' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 276 [1/1] (0.00ns)   --->   "%sext_ln239_1 = sext i10 %m71" [case_1.cc:239]   --->   Operation 276 'sext' 'sext_ln239_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 277 [1/1] (0.00ns)   --->   "%zext_ln242 = zext i8 %m78" [case_1.cc:242]   --->   Operation 277 'zext' 'zext_ln242' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 278 [1/1] (4.17ns)   --->   "%m80 = mul i8 %m78, i8 %m62" [case_1.cc:242]   --->   Operation 278 'mul' 'm80' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 279 [1/1] (0.00ns)   --->   "%sext_ln243 = sext i9 %m79" [case_1.cc:243]   --->   Operation 279 'sext' 'sext_ln243' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 280 [1/1] (0.00ns)   --->   "%sext_ln243_1 = sext i10 %add_ln235" [case_1.cc:243]   --->   Operation 280 'sext' 'sext_ln243_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 281 [1/1] (7.13ns)   --->   "%mul_ln243 = mul i19 %sext_ln243_1, i19 %sext_ln243" [case_1.cc:243]   --->   Operation 281 'mul' 'mul_ln243' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 282 [1/1] (0.00ns)   --->   "%specfucore_ln63 = specfucore void @_ssdm_op_SpecFUCore, i19 %mul_ln243, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:63]   --->   Operation 282 'specfucore' 'specfucore_ln63' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 283 [1/1] (0.00ns)   --->   "%m81 = trunc i19 %mul_ln243" [case_1.cc:243]   --->   Operation 283 'trunc' 'm81' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 284 [1/1] (0.00ns)   --->   "%sext_ln244 = sext i5 %m77" [case_1.cc:244]   --->   Operation 284 'sext' 'sext_ln244' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 285 [2/2] (2.10ns) (root node of the DSP)   --->   "%m82 = add i10 %sext_ln244, i10 %m65" [case_1.cc:261]   --->   Operation 285 'add' 'm82' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 286 [1/1] (0.00ns)   --->   "%sext_ln246 = sext i7 %m76" [case_1.cc:246]   --->   Operation 286 'sext' 'sext_ln246' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 287 [1/1] (6.42ns)   --->   "%mul_ln246 = mul i15 %zext_ln242, i15 %sext_ln246" [case_1.cc:246]   --->   Operation 287 'mul' 'mul_ln246' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 288 [1/1] (0.00ns)   --->   "%m84 = trunc i15 %mul_ln246" [case_1.cc:246]   --->   Operation 288 'trunc' 'm84' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 289 [1/1] (0.00ns)   --->   "%specfucore_ln66 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln246, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:66]   --->   Operation 289 'specfucore' 'specfucore_ln66' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 290 [1/1] (7.13ns)   --->   "%mul_ln247 = mul i18 %sext_ln239_1, i18 %sext_ln230" [case_1.cc:247]   --->   Operation 290 'mul' 'mul_ln247' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 291 [1/1] (0.00ns)   --->   "%specfucore_ln67 = specfucore void @_ssdm_op_SpecFUCore, i18 %mul_ln247, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:67]   --->   Operation 291 'specfucore' 'specfucore_ln67' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 292 [1/1] (0.00ns)   --->   "%m85 = trunc i18 %mul_ln247" [case_1.cc:247]   --->   Operation 292 'trunc' 'm85' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 293 [1/1] (0.00ns)   --->   "%zext_ln248 = zext i5 %m70" [case_1.cc:248]   --->   Operation 293 'zext' 'zext_ln248' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 294 [1/1] (4.86ns)   --->   "%mul_ln248 = mul i10 %zext_ln248, i10 %sext_ln244" [case_1.cc:248]   --->   Operation 294 'mul' 'mul_ln248' <Predicate = true> <Delay = 4.86> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 4.86> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 295 [1/1] (0.00ns)   --->   "%m86 = trunc i10 %mul_ln248" [case_1.cc:248]   --->   Operation 295 'trunc' 'm86' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 296 [1/1] (0.00ns)   --->   "%specfucore_ln68 = specfucore void @_ssdm_op_SpecFUCore, i10 %mul_ln248, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:68]   --->   Operation 296 'specfucore' 'specfucore_ln68' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 297 [1/1] (0.00ns)   --->   "%sext_ln249 = sext i10 %add_ln235" [case_1.cc:249]   --->   Operation 297 'sext' 'sext_ln249' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 298 [1/1] (0.00ns)   --->   "%sext_ln249_1 = sext i7 %m76" [case_1.cc:249]   --->   Operation 298 'sext' 'sext_ln249_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 299 [1/1] (4.52ns)   --->   "%m87 = mul i13 %sext_ln249, i13 %sext_ln249_1" [case_1.cc:249]   --->   Operation 299 'mul' 'm87' <Predicate = true> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 300 [1/1] (0.00ns)   --->   "%specfucore_ln71 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln246, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:71]   --->   Operation 300 'specfucore' 'specfucore_ln71' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 301 [1/1] (0.00ns)   --->   "%m89 = trunc i15 %mul_ln246" [case_1.cc:251]   --->   Operation 301 'trunc' 'm89' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 302 [1/1] (0.00ns)   --->   "%trunc_ln252 = trunc i19 %mul_ln243" [case_1.cc:252]   --->   Operation 302 'trunc' 'trunc_ln252' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 303 [1/1] (0.00ns)   --->   "%trunc_ln253 = trunc i13 %m87" [case_1.cc:253]   --->   Operation 303 'trunc' 'trunc_ln253' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 304 [1/1] (0.00ns)   --->   "%trunc_ln255 = trunc i13 %m87" [case_1.cc:255]   --->   Operation 304 'trunc' 'trunc_ln255' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 305 [1/1] (0.00ns)   --->   "%trunc_ln256_1 = trunc i18 %mul_ln247" [case_1.cc:256]   --->   Operation 305 'trunc' 'trunc_ln256_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 306 [1/1] (0.00ns)   --->   "%trunc_ln257_1 = trunc i8 %m80" [case_1.cc:257]   --->   Operation 306 'trunc' 'trunc_ln257_1' <Predicate = true> <Delay = 0.00>
+
+State 14 <SV = 13> <Delay = 7.13>
+ST_14 : Operation 307 [1/1] (0.00ns)   --->   "%zext_ln239_1 = zext i10 %m71" [case_1.cc:239]   --->   Operation 307 'zext' 'zext_ln239_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 308 [1/2] (2.10ns) (root node of the DSP)   --->   "%m82 = add i10 %sext_ln244, i10 %m65" [case_1.cc:261]   --->   Operation 308 'add' 'm82' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 309 [1/1] (0.00ns)   --->   "%zext_ln245 = zext i8 %m80" [case_1.cc:245]   --->   Operation 309 'zext' 'zext_ln245' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 310 [1/1] (0.00ns)   --->   "%zext_ln245_1 = zext i8 %m80" [case_1.cc:245]   --->   Operation 310 'zext' 'zext_ln245_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 311 [1/1] (7.13ns)   --->   "%mul_ln245 = mul i17 %zext_ln239_1, i17 %zext_ln245_1" [case_1.cc:245]   --->   Operation 311 'mul' 'mul_ln245' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 312 [1/1] (0.00ns)   --->   "%m83 = trunc i17 %mul_ln245" [case_1.cc:245]   --->   Operation 312 'trunc' 'm83' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 313 [1/1] (0.00ns)   --->   "%specfucore_ln65 = specfucore void @_ssdm_op_SpecFUCore, i17 %mul_ln245, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:65]   --->   Operation 313 'specfucore' 'specfucore_ln65' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 314 [1/1] (0.00ns)   --->   "%sext_ln248 = sext i5 %m77" [case_1.cc:248]   --->   Operation 314 'sext' 'sext_ln248' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 315 [1/1] (6.42ns)   --->   "%mul_ln250 = mul i13 %zext_ln245, i13 %sext_ln248" [case_1.cc:250]   --->   Operation 315 'mul' 'mul_ln250' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 316 [1/1] (0.00ns)   --->   "%trunc_ln256 = trunc i13 %mul_ln250" [case_1.cc:256]   --->   Operation 316 'trunc' 'trunc_ln256' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 317 [1/1] (0.00ns)   --->   "%specfucore_ln70 = specfucore void @_ssdm_op_SpecFUCore, i13 %mul_ln250, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:70]   --->   Operation 317 'specfucore' 'specfucore_ln70' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 318 [1/1] (1.91ns)   --->   "%m90 = add i8 %trunc_ln252, i8 %trunc_ln252_1" [case_1.cc:252]   --->   Operation 318 'add' 'm90' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 319 [1/1] (0.00ns)   --->   "%zext_ln253 = zext i6 %m89" [case_1.cc:253]   --->   Operation 319 'zext' 'zext_ln253' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 320 [1/1] (0.00ns)   --->   "%zext_ln253_1 = zext i4 %trunc_ln253" [case_1.cc:253]   --->   Operation 320 'zext' 'zext_ln253_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 321 [1/1] (5.38ns)   --->   "%mul_ln253 = mul i9 %zext_ln253_1, i9 %zext_ln253" [case_1.cc:253]   --->   Operation 321 'mul' 'mul_ln253' <Predicate = true> <Delay = 5.38> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 5.38> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 322 [1/1] (0.00ns)   --->   "%m91 = trunc i9 %mul_ln253" [case_1.cc:253]   --->   Operation 322 'trunc' 'm91' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 323 [1/1] (0.00ns)   --->   "%specfucore_ln73 = specfucore void @_ssdm_op_SpecFUCore, i9 %mul_ln253, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:73]   --->   Operation 323 'specfucore' 'specfucore_ln73' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 324 [1/1] (1.73ns)   --->   "%add_ln255 = add i10 %trunc_ln255, i10 %m81" [case_1.cc:255]   --->   Operation 324 'add' 'add_ln255' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 325 [1/1] (0.00ns)   --->   "%trunc_ln257 = trunc i10 %m82" [case_1.cc:257]   --->   Operation 325 'trunc' 'trunc_ln257' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 326 [1/1] (0.00ns)   --->   "%sext_ln259 = sext i8 %m90" [case_1.cc:259]   --->   Operation 326 'sext' 'sext_ln259' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 327 [1/1] (0.00ns)   --->   "%sext_ln259_1 = sext i10 %m85" [case_1.cc:259]   --->   Operation 327 'sext' 'sext_ln259_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 328 [1/1] (4.52ns)   --->   "%mul_ln259 = mul i16 %sext_ln259_1, i16 %sext_ln259" [case_1.cc:259]   --->   Operation 328 'mul' 'mul_ln259' <Predicate = true> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 329 [1/1] (0.00ns)   --->   "%trunc_ln268 = trunc i13 %mul_ln250" [case_1.cc:268]   --->   Operation 329 'trunc' 'trunc_ln268' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 330 [1/1] (0.00ns)   --->   "%sext_ln315 = sext i8 %m83" [case_1.cc:315]   --->   Operation 330 'sext' 'sext_ln315' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 331 [1/1] (0.00ns)   --->   "%sext_ln316 = sext i4 %m91" [case_1.cc:316]   --->   Operation 331 'sext' 'sext_ln316' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 332 [1/1] (0.00ns)   --->   "%write_ln315 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_7, i16 %sext_ln315" [case_1.cc:315]   --->   Operation 332 'write' 'write_ln315' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 333 [1/1] (0.00ns)   --->   "%write_ln316 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_8, i16 %sext_ln316" [case_1.cc:316]   --->   Operation 333 'write' 'write_ln316' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 334 [1/1] (0.00ns)   --->   "%write_ln317 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_9, i16 %mul_ln259" [case_1.cc:317]   --->   Operation 334 'write' 'write_ln317' <Predicate = true> <Delay = 0.00>
+
+State 15 <SV = 14> <Delay = 7.13>
+ST_15 : Operation 335 [1/1] (0.00ns)   --->   "%sext_ln253 = sext i6 %m89" [case_1.cc:253]   --->   Operation 335 'sext' 'sext_ln253' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 336 [1/1] (0.00ns)   --->   "%sext_ln254 = sext i8 %m90" [case_1.cc:254]   --->   Operation 336 'sext' 'sext_ln254' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 337 [1/1] (6.42ns)   --->   "%mul_ln254 = mul i14 %sext_ln254, i14 %sext_ln253" [case_1.cc:254]   --->   Operation 337 'mul' 'mul_ln254' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 338 [1/1] (0.00ns)   --->   "%specfucore_ln74 = specfucore void @_ssdm_op_SpecFUCore, i14 %mul_ln254, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:74]   --->   Operation 338 'specfucore' 'specfucore_ln74' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 339 [1/1] (0.00ns)   --->   "%m92 = trunc i14 %mul_ln254" [case_1.cc:254]   --->   Operation 339 'trunc' 'm92' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 340 [1/1] (4.17ns)   --->   "%m94 = mul i8 %trunc_ln256, i8 %trunc_ln256_1" [case_1.cc:256]   --->   Operation 340 'mul' 'm94' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 341 [1/1] (0.00ns)   --->   "%zext_ln260 = zext i10 %m82" [case_1.cc:260]   --->   Operation 341 'zext' 'zext_ln260' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 342 [1/1] (0.00ns)   --->   "%zext_ln260_1 = zext i10 %add_ln255" [case_1.cc:260]   --->   Operation 342 'zext' 'zext_ln260_1' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 343 [1/1] (0.00ns)   --->   "%zext_ln260_2 = zext i10 %add_ln255" [case_1.cc:260]   --->   Operation 343 'zext' 'zext_ln260_2' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 344 [1/1] (7.13ns)   --->   "%mul_ln260 = mul i20 %zext_ln260_2, i20 %zext_ln260" [case_1.cc:260]   --->   Operation 344 'mul' 'mul_ln260' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 345 [1/1] (0.00ns)   --->   "%m98 = trunc i20 %mul_ln260" [case_1.cc:260]   --->   Operation 345 'trunc' 'm98' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 346 [1/1] (0.00ns)   --->   "%specfucore_ln80 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln260, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:80]   --->   Operation 346 'specfucore' 'specfucore_ln80' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 347 [1/1] (0.00ns)   --->   "%trunc_ln275 = trunc i14 %mul_ln254" [case_1.cc:275]   --->   Operation 347 'trunc' 'trunc_ln275' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 348 [1/1] (0.00ns)   --->   "%zext_ln265 = zext i5 %m86" [case_1.cc:265]   --->   Operation 348 'zext' 'zext_ln265' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 349 [1/1] (7.13ns)   --->   "%mul_ln265 = mul i11 %zext_ln260_1, i11 %zext_ln265" [case_1.cc:265]   --->   Operation 349 'mul' 'mul_ln265' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 350 [1/1] (0.00ns)   --->   "%m103 = trunc i11 %mul_ln265" [case_1.cc:265]   --->   Operation 350 'trunc' 'm103' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 351 [1/1] (0.00ns)   --->   "%specfucore_ln85 = specfucore void @_ssdm_op_SpecFUCore, i11 %mul_ln265, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:85]   --->   Operation 351 'specfucore' 'specfucore_ln85' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 352 [1/1] (3.74ns)   --->   "%mul_ln268 = mul i7 %trunc_ln257_1, i7 %trunc_ln268" [case_1.cc:268]   --->   Operation 352 'mul' 'mul_ln268' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 353 [1/1] (0.00ns)   --->   "%trunc_ln269 = trunc i20 %mul_ln260" [case_1.cc:269]   --->   Operation 353 'trunc' 'trunc_ln269' <Predicate = true> <Delay = 0.00>
+
+State 16 <SV = 15> <Delay = 7.13>
+ST_16 : Operation 354 [1/1] (0.00ns)   --->   "%sext_ln258 = sext i6 %m89" [case_1.cc:258]   --->   Operation 354 'sext' 'sext_ln258' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 355 [1/1] (0.00ns)   --->   "%sext_ln258_1 = sext i8 %m84" [case_1.cc:258]   --->   Operation 355 'sext' 'sext_ln258_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 356 [1/1] (1.91ns)   --->   "%add_ln258 = add i9 %sext_ln258_1, i9 %sext_ln258" [case_1.cc:258]   --->   Operation 356 'add' 'add_ln258' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 357 [1/1] (0.00ns)   --->   "%zext_ln262 = zext i10 %m98" [case_1.cc:262]   --->   Operation 357 'zext' 'zext_ln262' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 358 [1/1] (0.00ns)   --->   "%zext_ln262_1 = zext i10 %m98" [case_1.cc:262]   --->   Operation 358 'zext' 'zext_ln262_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 359 [1/1] (7.13ns)   --->   "%mul_ln262 = mul i20 %zext_ln262_1, i20 %zext_ln260" [case_1.cc:262]   --->   Operation 359 'mul' 'mul_ln262' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 360 [1/1] (0.00ns)   --->   "%m100 = trunc i20 %mul_ln262" [case_1.cc:262]   --->   Operation 360 'trunc' 'm100' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 361 [1/1] (0.00ns)   --->   "%specfucore_ln82 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln262, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:82]   --->   Operation 361 'specfucore' 'specfucore_ln82' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 362 [1/1] (0.00ns)   --->   "%zext_ln267 = zext i7 %m92" [case_1.cc:267]   --->   Operation 362 'zext' 'zext_ln267' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 363 [1/1] (7.13ns)   --->   "%mul_ln267 = mul i15 %zext_ln262, i15 %zext_ln267" [case_1.cc:267]   --->   Operation 363 'mul' 'mul_ln267' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 364 [1/1] (0.00ns)   --->   "%m105 = trunc i15 %mul_ln267" [case_1.cc:267]   --->   Operation 364 'trunc' 'm105' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 365 [1/1] (0.00ns)   --->   "%specfucore_ln87 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln267, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:87]   --->   Operation 365 'specfucore' 'specfucore_ln87' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 366 [1/1] (3.74ns)   --->   "%m106 = mul i7 %mul_ln268, i7 %trunc_ln257" [case_1.cc:283]   --->   Operation 366 'mul' 'm106' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 367 [1/1] (4.35ns)   --->   "%mul_ln275 = mul i9 %trunc_ln275, i9 %sext_ln258" [case_1.cc:275]   --->   Operation 367 'mul' 'mul_ln275' <Predicate = true> <Delay = 4.35> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 7.13>
+ST_17 : Operation 368 [1/1] (0.00ns)   --->   "%zext_ln264_1 = zext i8 %m94" [case_1.cc:264]   --->   Operation 368 'zext' 'zext_ln264_1' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 369 [1/1] (0.00ns)   --->   "%zext_ln264_2 = zext i10 %m100" [case_1.cc:264]   --->   Operation 369 'zext' 'zext_ln264_2' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 370 [1/1] (0.00ns)   --->   "%zext_ln264_3 = zext i10 %m100" [case_1.cc:264]   --->   Operation 370 'zext' 'zext_ln264_3' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 371 [1/1] (0.00ns)   --->   "%zext_ln264_4 = zext i10 %m100" [case_1.cc:264]   --->   Operation 371 'zext' 'zext_ln264_4' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 372 [1/1] (7.13ns)   --->   "%mul_ln264 = mul i17 %zext_ln264_4, i17 %zext_ln264_1" [case_1.cc:264]   --->   Operation 372 'mul' 'mul_ln264' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 373 [1/1] (0.00ns)   --->   "%m102 = trunc i17 %mul_ln264" [case_1.cc:264]   --->   Operation 373 'trunc' 'm102' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 374 [1/1] (0.00ns)   --->   "%specfucore_ln84 = specfucore void @_ssdm_op_SpecFUCore, i17 %mul_ln264, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:84]   --->   Operation 374 'specfucore' 'specfucore_ln84' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 375 [1/1] (7.13ns)   --->   "%mul_ln266 = mul i20 %zext_ln262_1, i20 %zext_ln264_3" [case_1.cc:266]   --->   Operation 375 'mul' 'mul_ln266' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 376 [1/1] (0.00ns)   --->   "%m104 = trunc i20 %mul_ln266" [case_1.cc:266]   --->   Operation 376 'trunc' 'm104' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 377 [1/1] (0.00ns)   --->   "%specfucore_ln86 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln266, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:86]   --->   Operation 377 'specfucore' 'specfucore_ln86' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 378 [1/1] (0.00ns)   --->   "%trunc_ln269_1 = trunc i20 %mul_ln266" [case_1.cc:269]   --->   Operation 378 'trunc' 'trunc_ln269_1' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 379 [1/1] (4.35ns)   --->   "%m113 = mul i9 %mul_ln275, i9 %add_ln258" [case_1.cc:275]   --->   Operation 379 'mul' 'm113' <Predicate = true> <Delay = 4.35> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 380 [1/1] (0.00ns)   --->   "%zext_ln276 = zext i7 %m106" [case_1.cc:276]   --->   Operation 380 'zext' 'zext_ln276' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 381 [1/1] (7.13ns)   --->   "%mul_ln276 = mul i15 %zext_ln264_2, i15 %zext_ln276" [case_1.cc:276]   --->   Operation 381 'mul' 'mul_ln276' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 382 [1/1] (0.00ns)   --->   "%m114 = trunc i15 %mul_ln276" [case_1.cc:276]   --->   Operation 382 'trunc' 'm114' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 383 [1/1] (0.00ns)   --->   "%specfucore_ln96 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln276, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:96]   --->   Operation 383 'specfucore' 'specfucore_ln96' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 384 [1/1] (0.00ns)   --->   "%specfucore_ln98 = specfucore void @_ssdm_op_SpecFUCore, i20 %mul_ln266, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:98]   --->   Operation 384 'specfucore' 'specfucore_ln98' <Predicate = true> <Delay = 0.00>
+
+State 18 <SV = 17> <Delay = 7.13>
+ST_18 : Operation 385 [1/1] (0.00ns)   --->   "%sext_ln261 = sext i9 %add_ln258" [case_1.cc:261]   --->   Operation 385 'sext' 'sext_ln261' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 386 [1/1] (4.52ns)   --->   "%m99 = mul i10 %m82, i10 %sext_ln261" [case_1.cc:261]   --->   Operation 386 'mul' 'm99' <Predicate = true> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 387 [1/1] (1.91ns)   --->   "%m107 = add i8 %trunc_ln269, i8 %trunc_ln269_1" [case_1.cc:269]   --->   Operation 387 'add' 'm107' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 388 [1/1] (0.00ns)   --->   "%zext_ln271 = zext i9 %add_ln258" [case_1.cc:271]   --->   Operation 388 'zext' 'zext_ln271' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 389 [1/1] (0.00ns)   --->   "%zext_ln271_1 = zext i8 %m102" [case_1.cc:271]   --->   Operation 389 'zext' 'zext_ln271_1' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 390 [1/1] (6.78ns)   --->   "%mul_ln271 = mul i15 %zext_ln271_1, i15 %zext_ln271" [case_1.cc:271]   --->   Operation 390 'mul' 'mul_ln271' <Predicate = true> <Delay = 6.78> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 391 [1/1] (0.00ns)   --->   "%m109 = trunc i15 %mul_ln271" [case_1.cc:271]   --->   Operation 391 'trunc' 'm109' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 392 [1/1] (0.00ns)   --->   "%specfucore_ln91 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln271, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:91]   --->   Operation 392 'specfucore' 'specfucore_ln91' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 393 [1/1] (0.00ns)   --->   "%zext_ln281 = zext i10 %m104" [case_1.cc:281]   --->   Operation 393 'zext' 'zext_ln281' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 394 [1/1] (7.13ns)   --->   "%mul_ln281 = mul i15 %zext_ln281, i15 %zext_ln281" [case_1.cc:281]   --->   Operation 394 'mul' 'mul_ln281' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 395 [1/1] (0.00ns)   --->   "%m119 = trunc i15 %mul_ln281" [case_1.cc:281]   --->   Operation 395 'trunc' 'm119' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 396 [1/1] (0.00ns)   --->   "%specfucore_ln101 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln281, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:101]   --->   Operation 396 'specfucore' 'specfucore_ln101' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 397 [1/1] (0.00ns)   --->   "%sext_ln319 = sext i7 %m119" [case_1.cc:319]   --->   Operation 397 'sext' 'sext_ln319' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 398 [1/1] (0.00ns)   --->   "%write_ln319 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_11, i16 %sext_ln319" [case_1.cc:319]   --->   Operation 398 'write' 'write_ln319' <Predicate = true> <Delay = 0.00>
+
+State 19 <SV = 18> <Delay = 6.42>
+ST_19 : Operation 399 [1/1] (0.00ns)   --->   "%zext_ln264 = zext i8 %m94" [case_1.cc:264]   --->   Operation 399 'zext' 'zext_ln264' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 400 [1/1] (0.00ns)   --->   "%zext_ln272 = zext i5 %m103" [case_1.cc:272]   --->   Operation 400 'zext' 'zext_ln272' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 401 [1/1] (0.00ns)   --->   "%zext_ln272_2 = zext i8 %m107" [case_1.cc:272]   --->   Operation 401 'zext' 'zext_ln272_2' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 402 [1/1] (6.42ns)   --->   "%mul_ln272 = mul i11 %zext_ln272_2, i11 %zext_ln272" [case_1.cc:272]   --->   Operation 402 'mul' 'mul_ln272' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 403 [1/1] (0.00ns)   --->   "%m110 = trunc i11 %mul_ln272" [case_1.cc:272]   --->   Operation 403 'trunc' 'm110' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 404 [1/1] (0.00ns)   --->   "%specfucore_ln92 = specfucore void @_ssdm_op_SpecFUCore, i11 %mul_ln272, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:92]   --->   Operation 404 'specfucore' 'specfucore_ln92' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 405 [1/1] (0.00ns)   --->   "%zext_ln274 = zext i7 %m109" [case_1.cc:274]   --->   Operation 405 'zext' 'zext_ln274' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 406 [1/1] (6.42ns)   --->   "%mul_ln274 = mul i15 %zext_ln274, i15 %zext_ln264" [case_1.cc:274]   --->   Operation 406 'mul' 'mul_ln274' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 407 [1/1] (0.00ns)   --->   "%m112 = trunc i15 %mul_ln274" [case_1.cc:274]   --->   Operation 407 'trunc' 'm112' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 408 [1/1] (0.00ns)   --->   "%specfucore_ln94 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln274, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:94]   --->   Operation 408 'specfucore' 'specfucore_ln94' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 409 [1/1] (0.00ns)   --->   "%sext_ln318 = sext i7 %m112" [case_1.cc:318]   --->   Operation 409 'sext' 'sext_ln318' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 410 [1/1] (0.00ns)   --->   "%write_ln318 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_10, i16 %sext_ln318" [case_1.cc:318]   --->   Operation 410 'write' 'write_ln318' <Predicate = true> <Delay = 0.00>
+
+State 20 <SV = 19> <Delay = 4.86>
+ST_20 : Operation 411 [1/1] (0.00ns)   --->   "%zext_ln273 = zext i5 %m110" [case_1.cc:273]   --->   Operation 411 'zext' 'zext_ln273' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 412 [1/1] (4.86ns)   --->   "%mul_ln273 = mul i10 %zext_ln273, i10 %zext_ln273" [case_1.cc:273]   --->   Operation 412 'mul' 'mul_ln273' <Predicate = true> <Delay = 4.86> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 4.86> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 413 [1/1] (0.00ns)   --->   "%m111 = trunc i10 %mul_ln273" [case_1.cc:273]   --->   Operation 413 'trunc' 'm111' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 414 [1/1] (0.00ns)   --->   "%specfucore_ln93 = specfucore void @_ssdm_op_SpecFUCore, i10 %mul_ln273, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:93]   --->   Operation 414 'specfucore' 'specfucore_ln93' <Predicate = true> <Delay = 0.00>
+
+State 21 <SV = 20> <Delay = 7.13>
+ST_21 : Operation 415 [1/1] (0.00ns)   --->   "%sext_ln270 = sext i7 %m105" [case_1.cc:270]   --->   Operation 415 'sext' 'sext_ln270' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 416 [1/1] (5.90ns)   --->   "%mul_ln270 = mul i14 %sext_ln270, i14 %sext_ln270" [case_1.cc:270]   --->   Operation 416 'mul' 'mul_ln270' <Predicate = true> <Delay = 5.90> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 5.90> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 417 [1/1] (0.00ns)   --->   "%specfucore_ln90 = specfucore void @_ssdm_op_SpecFUCore, i14 %mul_ln270, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:90]   --->   Operation 417 'specfucore' 'specfucore_ln90' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 418 [1/1] (0.00ns)   --->   "%m108 = trunc i14 %mul_ln270" [case_1.cc:270]   --->   Operation 418 'trunc' 'm108' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 419 [1/1] (0.00ns)   --->   "%sext_ln277 = sext i7 %m105" [case_1.cc:277]   --->   Operation 419 'sext' 'sext_ln277' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 420 [1/1] (4.17ns)   --->   "%m115 = mul i8 %m102, i8 %sext_ln277" [case_1.cc:277]   --->   Operation 420 'mul' 'm115' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 421 [1/1] (0.00ns)   --->   "%sext_ln279 = sext i5 %m111" [case_1.cc:279]   --->   Operation 421 'sext' 'sext_ln279' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 422 [1/1] (0.00ns)   --->   "%zext_ln279 = zext i10 %m99" [case_1.cc:279]   --->   Operation 422 'zext' 'zext_ln279' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 423 [1/1] (7.13ns)   --->   "%mul_ln279 = mul i15 %zext_ln279, i15 %sext_ln279" [case_1.cc:279]   --->   Operation 423 'mul' 'mul_ln279' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 424 [1/1] (0.00ns)   --->   "%m117 = trunc i15 %mul_ln279" [case_1.cc:279]   --->   Operation 424 'trunc' 'm117' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 425 [1/1] (0.00ns)   --->   "%specfucore_ln99 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln279, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:99]   --->   Operation 425 'specfucore' 'specfucore_ln99' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 426 [1/1] (0.00ns)   --->   "%trunc_ln283 = trunc i15 %mul_ln279" [case_1.cc:283]   --->   Operation 426 'trunc' 'trunc_ln283' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 427 [1/1] (0.00ns)   --->   "%trunc_ln300_1 = trunc i15 %mul_ln279" [case_1.cc:300]   --->   Operation 427 'trunc' 'trunc_ln300_1' <Predicate = true> <Delay = 0.00>
+
+State 22 <SV = 21> <Delay = 7.13>
+ST_22 : Operation 428 [1/1] (0.00ns)   --->   "%zext_ln280 = zext i10 %m117" [case_1.cc:280]   --->   Operation 428 'zext' 'zext_ln280' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 429 [1/1] (0.00ns)   --->   "%sext_ln280_1 = sext i8 %m108" [case_1.cc:280]   --->   Operation 429 'sext' 'sext_ln280_1' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 430 [1/1] (7.13ns)   --->   "%mul_ln280 = mul i18 %zext_ln280, i18 %sext_ln280_1" [case_1.cc:280]   --->   Operation 430 'mul' 'mul_ln280' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 431 [1/1] (0.00ns)   --->   "%m118 = trunc i18 %mul_ln280" [case_1.cc:280]   --->   Operation 431 'trunc' 'm118' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 432 [1/1] (0.00ns)   --->   "%specfucore_ln100 = specfucore void @_ssdm_op_SpecFUCore, i18 %mul_ln280, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:100]   --->   Operation 432 'specfucore' 'specfucore_ln100' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 433 [1/1] (3.74ns)   --->   "%m121 = mul i7 %trunc_ln283, i7 %m106" [case_1.cc:283]   --->   Operation 433 'mul' 'm121' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 7.13>
+ST_23 : Operation 434 [1/1] (0.00ns)   --->   "%zext_ln272_1 = zext i8 %m107" [case_1.cc:272]   --->   Operation 434 'zext' 'zext_ln272_1' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 435 [1/1] (0.00ns)   --->   "%sext_ln280 = sext i8 %m108" [case_1.cc:280]   --->   Operation 435 'sext' 'sext_ln280' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 436 [1/1] (6.42ns)   --->   "%mul_ln282 = mul i16 %zext_ln272_1, i16 %sext_ln280" [case_1.cc:282]   --->   Operation 436 'mul' 'mul_ln282' <Predicate = true> <Delay = 6.42> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 437 [1/1] (0.00ns)   --->   "%m120 = trunc i16 %mul_ln282" [case_1.cc:282]   --->   Operation 437 'trunc' 'm120' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 438 [1/1] (0.00ns)   --->   "%specfucore_ln102 = specfucore void @_ssdm_op_SpecFUCore, i16 %mul_ln282, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:102]   --->   Operation 438 'specfucore' 'specfucore_ln102' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 439 [1/1] (0.00ns)   --->   "%zext_ln284_1 = zext i10 %m118" [case_1.cc:284]   --->   Operation 439 'zext' 'zext_ln284_1' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 440 [1/1] (7.13ns)   --->   "%mul_ln284 = mul i15 %zext_ln284_1, i15 %sext_ln279" [case_1.cc:284]   --->   Operation 440 'mul' 'mul_ln284' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 441 [1/1] (0.00ns)   --->   "%m122 = trunc i15 %mul_ln284" [case_1.cc:284]   --->   Operation 441 'trunc' 'm122' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 442 [1/1] (0.00ns)   --->   "%specfucore_ln104 = specfucore void @_ssdm_op_SpecFUCore, i15 %mul_ln284, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:104]   --->   Operation 442 'specfucore' 'specfucore_ln104' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 443 [1/1] (0.00ns)   --->   "%sext_ln287 = sext i9 %m113" [case_1.cc:287]   --->   Operation 443 'sext' 'sext_ln287' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 444 [1/1] (1.73ns)   --->   "%m125 = add i10 %sext_ln287, i10 %m118" [case_1.cc:287]   --->   Operation 444 'add' 'm125' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 445 [1/1] (0.00ns)   --->   "%trunc_ln291 = trunc i15 %mul_ln284" [case_1.cc:291]   --->   Operation 445 'trunc' 'trunc_ln291' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 446 [1/1] (0.00ns)   --->   "%trunc_ln291_1 = trunc i16 %mul_ln282" [case_1.cc:291]   --->   Operation 446 'trunc' 'trunc_ln291_1' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 447 [1/1] (0.00ns)   --->   "%trunc_ln300 = trunc i15 %mul_ln284" [case_1.cc:300]   --->   Operation 447 'trunc' 'trunc_ln300' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 448 [1/1] (0.00ns)   --->   "%trunc_ln294_2 = trunc i10 %m125" [case_1.cc:294]   --->   Operation 448 'trunc' 'trunc_ln294_2' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 449 [1/1] (0.00ns)   --->   "%trunc_ln299 = trunc i16 %mul_ln282" [case_1.cc:299]   --->   Operation 449 'trunc' 'trunc_ln299' <Predicate = true> <Delay = 0.00>
+
+State 24 <SV = 23> <Delay = 7.13>
+ST_24 : Operation 450 [1/1] (0.00ns)   --->   "%zext_ln285 = zext i10 %m122" [case_1.cc:285]   --->   Operation 450 'zext' 'zext_ln285' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 451 [1/1] (0.00ns)   --->   "%zext_ln285_1 = zext i8 %m115" [case_1.cc:285]   --->   Operation 451 'zext' 'zext_ln285_1' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 452 [1/1] (7.13ns)   --->   "%mul_ln285 = mul i17 %zext_ln285, i17 %zext_ln285_1" [case_1.cc:285]   --->   Operation 452 'mul' 'mul_ln285' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 453 [1/1] (0.00ns)   --->   "%m123 = trunc i17 %mul_ln285" [case_1.cc:285]   --->   Operation 453 'trunc' 'm123' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 454 [1/1] (0.00ns)   --->   "%specfucore_ln105 = specfucore void @_ssdm_op_SpecFUCore, i17 %mul_ln285, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:105]   --->   Operation 454 'specfucore' 'specfucore_ln105' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 455 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i5.i1, i5 %m111, i1 0" [case_1.cc:288]   --->   Operation 455 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 456 [1/1] (0.00ns)   --->   "%sext_ln289 = sext i7 %m114" [case_1.cc:289]   --->   Operation 456 'sext' 'sext_ln289' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 457 [1/1] (7.13ns)   --->   "%mul_ln289 = mul i17 %zext_ln285, i17 %sext_ln289" [case_1.cc:289]   --->   Operation 457 'mul' 'mul_ln289' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 458 [1/1] (0.00ns)   --->   "%m127 = trunc i17 %mul_ln289" [case_1.cc:289]   --->   Operation 458 'trunc' 'm127' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 459 [1/1] (0.00ns)   --->   "%specfucore_ln109 = specfucore void @_ssdm_op_SpecFUCore, i17 %mul_ln289, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:109]   --->   Operation 459 'specfucore' 'specfucore_ln109' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 460 [1/1] (3.78ns)   --->   "%m129 = mul i6 %trunc_ln291, i6 %trunc_ln291_1" [case_1.cc:291]   --->   Operation 460 'mul' 'm129' <Predicate = true> <Delay = 3.78> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.78> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 461 [3/3] (1.05ns) (grouped into DSP with root node m138)   --->   "%mul_ln300 = mul i9 %trunc_ln300, i9 %trunc_ln300_1" [case_1.cc:300]   --->   Operation 461 'mul' 'mul_ln300' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_24 : Operation 462 [1/1] (0.00ns)   --->   "%trunc_ln294 = trunc i17 %mul_ln289" [case_1.cc:294]   --->   Operation 462 'trunc' 'trunc_ln294' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 463 [1/1] (0.00ns)   --->   "%trunc_ln294_1 = trunc i17 %mul_ln289" [case_1.cc:294]   --->   Operation 463 'trunc' 'trunc_ln294_1' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 464 [1/1] (0.00ns)   --->   "%sext_ln295 = sext i8 %m120" [case_1.cc:295]   --->   Operation 464 'sext' 'sext_ln295' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 465 [1/1] (0.00ns)   --->   "%sext_ln295_1 = sext i10 %m125" [case_1.cc:295]   --->   Operation 465 'sext' 'sext_ln295_1' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 466 [1/1] (0.00ns)   --->   "%zext_ln295 = zext i10 %m125" [case_1.cc:295]   --->   Operation 466 'zext' 'zext_ln295' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 467 [1/1] (7.13ns)   --->   "%mul_ln295 = mul i17 %zext_ln295, i17 %sext_ln295" [case_1.cc:295]   --->   Operation 467 'mul' 'mul_ln295' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 468 [1/1] (0.00ns)   --->   "%m133 = trunc i17 %mul_ln295" [case_1.cc:295]   --->   Operation 468 'trunc' 'm133' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 469 [1/1] (0.00ns)   --->   "%specfucore_ln115 = specfucore void @_ssdm_op_SpecFUCore, i17 %mul_ln295, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:115]   --->   Operation 469 'specfucore' 'specfucore_ln115' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 470 [1/1] (0.00ns)   --->   "%sext_ln298 = sext i6 %shl_ln" [case_1.cc:298]   --->   Operation 470 'sext' 'sext_ln298' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 471 [1/1] (7.13ns)   --->   "%mul_ln298 = mul i16 %sext_ln295_1, i16 %sext_ln298" [case_1.cc:298]   --->   Operation 471 'mul' 'mul_ln298' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 472 [1/1] (0.00ns)   --->   "%specfucore_ln118 = specfucore void @_ssdm_op_SpecFUCore, i16 %mul_ln298, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:118]   --->   Operation 472 'specfucore' 'specfucore_ln118' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 473 [1/1] (0.00ns)   --->   "%m136 = trunc i16 %mul_ln298" [case_1.cc:298]   --->   Operation 473 'trunc' 'm136' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 474 [1/1] (0.00ns)   --->   "%trunc_ln306 = trunc i17 %mul_ln295" [case_1.cc:306]   --->   Operation 474 'trunc' 'trunc_ln306' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 475 [1/1] (0.00ns)   --->   "%sext_ln320 = sext i6 %m129" [case_1.cc:320]   --->   Operation 475 'sext' 'sext_ln320' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 476 [1/1] (0.00ns)   --->   "%sext_ln321 = sext i11 %m136" [case_1.cc:321]   --->   Operation 476 'sext' 'sext_ln321' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 477 [1/1] (0.00ns)   --->   "%write_ln320 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_12, i16 %sext_ln320" [case_1.cc:320]   --->   Operation 477 'write' 'write_ln320' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 478 [1/1] (0.00ns)   --->   "%write_ln321 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_13, i16 %sext_ln321" [case_1.cc:321]   --->   Operation 478 'write' 'write_ln321' <Predicate = true> <Delay = 0.00>
+
+State 25 <SV = 24> <Delay = 7.13>
+ST_25 : Operation 479 [1/1] (0.00ns)   --->   "%zext_ln286 = zext i8 %m123" [case_1.cc:286]   --->   Operation 479 'zext' 'zext_ln286' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 480 [1/1] (7.13ns)   --->   "%mul_ln286 = mul i17 %zext_ln285, i17 %zext_ln286" [case_1.cc:286]   --->   Operation 480 'mul' 'mul_ln286' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 481 [1/1] (0.00ns)   --->   "%m124 = trunc i17 %mul_ln286" [case_1.cc:286]   --->   Operation 481 'trunc' 'm124' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 482 [1/1] (0.00ns)   --->   "%specfucore_ln106 = specfucore void @_ssdm_op_SpecFUCore, i17 %mul_ln286, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:106]   --->   Operation 482 'specfucore' 'specfucore_ln106' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 483 [1/1] (4.52ns)   --->   "%m130 = mul i10 %m127, i10 %m104" [case_1.cc:302]   --->   Operation 483 'mul' 'm130' <Predicate = true> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 484 [2/3] (1.05ns) (grouped into DSP with root node m138)   --->   "%mul_ln300 = mul i9 %trunc_ln300, i9 %trunc_ln300_1" [case_1.cc:300]   --->   Operation 484 'mul' 'mul_ln300' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_25 : Operation 485 [1/1] (0.00ns)   --->   "%sext_ln302 = sext i8 %m133" [case_1.cc:302]   --->   Operation 485 'sext' 'sext_ln302' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 486 [1/1] (0.00ns)   --->   "%sext_ln302_1 = sext i7 %m121" [case_1.cc:302]   --->   Operation 486 'sext' 'sext_ln302_1' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 487 [1/1] (2.34ns)   --->   "%mul_ln299 = mul i4 %trunc_ln299, i4 %trunc_ln294_1" [case_1.cc:299]   --->   Operation 487 'mul' 'mul_ln299' <Predicate = true> <Delay = 2.34> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 488 [1/1] (2.34ns)   --->   "%m137 = mul i4 %mul_ln299, i4 %trunc_ln294_2" [case_1.cc:299]   --->   Operation 488 'mul' 'm137' <Predicate = true> <Delay = 2.34> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 489 [1/1] (0.00ns)   --->   "%trunc_ln300_2 = trunc i10 %m130" [case_1.cc:300]   --->   Operation 489 'trunc' 'trunc_ln300_2' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 490 [1/1] (4.17ns)   --->   "%mul_ln302 = mul i10 %sext_ln302, i10 %sext_ln302_1" [case_1.cc:302]   --->   Operation 490 'mul' 'mul_ln302' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 7.13>
+ST_26 : Operation 491 [1/1] (0.00ns)   --->   "%zext_ln284 = zext i10 %m118" [case_1.cc:284]   --->   Operation 491 'zext' 'zext_ln284' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 492 [1/1] (0.00ns)   --->   "%sext_ln290 = sext i8 %m124" [case_1.cc:290]   --->   Operation 492 'sext' 'sext_ln290' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 493 [1/1] (7.13ns)   --->   "%mul_ln290 = mul i18 %zext_ln284, i18 %sext_ln290" [case_1.cc:290]   --->   Operation 493 'mul' 'mul_ln290' <Predicate = true> <Delay = 7.13> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 7.13> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 494 [1/1] (0.00ns)   --->   "%m128 = trunc i18 %mul_ln290" [case_1.cc:290]   --->   Operation 494 'trunc' 'm128' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 495 [1/1] (0.00ns)   --->   "%specfucore_ln110 = specfucore void @_ssdm_op_SpecFUCore, i18 %mul_ln290, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:110]   --->   Operation 495 'specfucore' 'specfucore_ln110' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 496 [1/3] (0.00ns) (grouped into DSP with root node m138)   --->   "%mul_ln300 = mul i9 %trunc_ln300, i9 %trunc_ln300_1" [case_1.cc:300]   --->   Operation 496 'mul' 'mul_ln300' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_26 : Operation 497 [3/3] (1.05ns) (grouped into DSP with root node add_ln304)   --->   "%mul_ln297 = mul i8 %m124, i8 %trunc_ln294" [case_1.cc:297]   --->   Operation 497 'mul' 'mul_ln297' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_26 : Operation 498 [2/2] (2.10ns) (root node of the DSP)   --->   "%m138 = add i9 %trunc_ln300_2, i9 %mul_ln300" [case_1.cc:300]   --->   Operation 498 'add' 'm138' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_26 : Operation 499 [1/1] (4.52ns)   --->   "%m140 = mul i10 %mul_ln302, i10 %m130" [case_1.cc:302]   --->   Operation 499 'mul' 'm140' <Predicate = true> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 500 [1/1] (0.00ns)   --->   "%sext_ln306 = sext i4 %m137" [case_1.cc:306]   --->   Operation 500 'sext' 'sext_ln306' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 501 [1/1] (3.74ns)   --->   "%mul_ln306 = mul i7 %trunc_ln306, i7 %sext_ln306" [case_1.cc:306]   --->   Operation 501 'mul' 'mul_ln306' <Predicate = true> <Delay = 3.74> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 502 [1/1] (0.00ns)   --->   "%m144 = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i7.i1, i7 %mul_ln306, i1 0" [case_1.cc:306]   --->   Operation 502 'bitconcatenate' 'm144' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 503 [1/1] (0.00ns)   --->   "%sext_ln323 = sext i10 %m140" [case_1.cc:323]   --->   Operation 503 'sext' 'sext_ln323' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 504 [1/1] (0.00ns)   --->   "%sext_ln326 = sext i8 %m144" [case_1.cc:326]   --->   Operation 504 'sext' 'sext_ln326' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 505 [1/1] (0.00ns)   --->   "%write_ln323 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_15, i16 %sext_ln323" [case_1.cc:323]   --->   Operation 505 'write' 'write_ln323' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 506 [1/1] (0.00ns)   --->   "%write_ln326 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_18, i16 %sext_ln326" [case_1.cc:326]   --->   Operation 506 'write' 'write_ln326' <Predicate = true> <Delay = 0.00>
+
+State 27 <SV = 26> <Delay = 6.78>
+ST_27 : Operation 507 [2/3] (1.05ns) (grouped into DSP with root node add_ln304)   --->   "%mul_ln297 = mul i8 %m124, i8 %trunc_ln294" [case_1.cc:297]   --->   Operation 507 'mul' 'mul_ln297' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 508 [1/2] (2.10ns) (root node of the DSP)   --->   "%m138 = add i9 %trunc_ln300_2, i9 %mul_ln300" [case_1.cc:300]   --->   Operation 508 'add' 'm138' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 509 [1/1] (0.00ns)   --->   "%zext_ln303 = zext i9 %m128" [case_1.cc:303]   --->   Operation 509 'zext' 'zext_ln303' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 510 [1/1] (0.00ns)   --->   "%sext_ln303 = sext i4 %m137" [case_1.cc:303]   --->   Operation 510 'sext' 'sext_ln303' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 511 [1/1] (6.78ns)   --->   "%mul_ln303 = mul i13 %zext_ln303, i13 %sext_ln303" [case_1.cc:303]   --->   Operation 511 'mul' 'mul_ln303' <Predicate = true> <Delay = 6.78> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 512 [1/1] (0.00ns)   --->   "%m141 = trunc i13 %mul_ln303" [case_1.cc:303]   --->   Operation 512 'trunc' 'm141' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 513 [1/1] (0.00ns)   --->   "%specfucore_ln123 = specfucore void @_ssdm_op_SpecFUCore, i13 %mul_ln303, i64 12, i64 4, i64 18446744073709551615" [/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_4_directive.tcl:123]   --->   Operation 513 'specfucore' 'specfucore_ln123' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 514 [1/1] (0.00ns)   --->   "%sext_ln322 = sext i9 %m138" [case_1.cc:322]   --->   Operation 514 'sext' 'sext_ln322' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 515 [1/1] (0.00ns)   --->   "%sext_ln324 = sext i9 %m141" [case_1.cc:324]   --->   Operation 515 'sext' 'sext_ln324' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 516 [1/1] (0.00ns)   --->   "%write_ln322 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_14, i16 %sext_ln322" [case_1.cc:322]   --->   Operation 516 'write' 'write_ln322' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 517 [1/1] (0.00ns)   --->   "%write_ln324 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_16, i16 %sext_ln324" [case_1.cc:324]   --->   Operation 517 'write' 'write_ln324' <Predicate = true> <Delay = 0.00>
+
+State 28 <SV = 27> <Delay = 2.10>
+ST_28 : Operation 518 [1/3] (0.00ns) (grouped into DSP with root node add_ln304)   --->   "%mul_ln297 = mul i8 %m124, i8 %trunc_ln294" [case_1.cc:297]   --->   Operation 518 'mul' 'mul_ln297' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 519 [1/1] (0.00ns)   --->   "%sext_ln301 = sext i7 %m121" [case_1.cc:301]   --->   Operation 519 'sext' 'sext_ln301' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 520 [2/2] (2.10ns) (root node of the DSP)   --->   "%add_ln304 = add i8 %mul_ln297, i8 %sext_ln301" [case_1.cc:304]   --->   Operation 520 'add' 'add_ln304' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 29 <SV = 28> <Delay = 4.01>
+ST_29 : Operation 521 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_48" [case_1.cc:6]   --->   Operation 521 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 522 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_0"   --->   Operation 522 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 523 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_0, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 523 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 524 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_1"   --->   Operation 524 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 525 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_1, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 525 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 526 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_2"   --->   Operation 526 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 527 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_2, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 527 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 528 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_3"   --->   Operation 528 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 529 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_3, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 529 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 530 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_4"   --->   Operation 530 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 531 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_4, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 531 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 532 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_5"   --->   Operation 532 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 533 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_5, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 533 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 534 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_6"   --->   Operation 534 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 535 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_6, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 535 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 536 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_7"   --->   Operation 536 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 537 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_7, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 537 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 538 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_8"   --->   Operation 538 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 539 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_8, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 539 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 540 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_9"   --->   Operation 540 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 541 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_9, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 541 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 542 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_10"   --->   Operation 542 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 543 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_10, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 543 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 544 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_11"   --->   Operation 544 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 545 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_11, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 545 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 546 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_12"   --->   Operation 546 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 547 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_12, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 547 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 548 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_13"   --->   Operation 548 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 549 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_13, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 549 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 550 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_14"   --->   Operation 550 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 551 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_14, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 551 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 552 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_15"   --->   Operation 552 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 553 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_15, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 553 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 554 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_16"   --->   Operation 554 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 555 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_16, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 555 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 556 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_data_17"   --->   Operation 556 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 557 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_data_17, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 557 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 558 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_0"   --->   Operation 558 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 559 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_0, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 559 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 560 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_1"   --->   Operation 560 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 561 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_1, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 561 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 562 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_2"   --->   Operation 562 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 563 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_2, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 563 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 564 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_3"   --->   Operation 564 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 565 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_3, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 565 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 566 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_4"   --->   Operation 566 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 567 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_4, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 567 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 568 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_5"   --->   Operation 568 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 569 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_5, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 569 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 570 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_6"   --->   Operation 570 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 571 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_6, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 571 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 572 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_7"   --->   Operation 572 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 573 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_7, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 573 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 574 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_8"   --->   Operation 574 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 575 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_8, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 575 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 576 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_9"   --->   Operation 576 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 577 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_9, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 577 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 578 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_10"   --->   Operation 578 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 579 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_10, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 579 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 580 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_11"   --->   Operation 580 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 581 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_11, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 581 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 582 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_12"   --->   Operation 582 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 583 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_12, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 583 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 584 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_13"   --->   Operation 584 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 585 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_13, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 585 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 586 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_14"   --->   Operation 586 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 587 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_14, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 587 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 588 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_15"   --->   Operation 588 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 589 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_15, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 589 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 590 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_16"   --->   Operation 590 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 591 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_16, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 591 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 592 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_17"   --->   Operation 592 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 593 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_17, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 593 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 594 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_data_18"   --->   Operation 594 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 595 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_data_18, void @empty_50, i32 0, i32 0, void @empty_49, i32 0, i32 0, void @empty_49, void @empty_49, void @empty_49, i32 0, i32 0, i32 0, i32 0, void @empty_49, void @empty_49, i32 4294967295, i32 0, i32 0"   --->   Operation 595 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 596 [1/1] (0.00ns)   --->   "%rbegin1 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_51" [case_1.cc:181]   --->   Operation 596 'specregionbegin' 'rbegin1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 597 [1/1] (0.00ns)   --->   "%rend139 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_51, i32 %rbegin1" [case_1.cc:182]   --->   Operation 597 'specregionend' 'rend139' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 598 [1/1] (0.00ns)   --->   "%rbegin3 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_45" [case_1.cc:182]   --->   Operation 598 'specregionbegin' 'rbegin3' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 599 [1/1] (0.00ns)   --->   "%rend137 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_45, i32 %rbegin3" [case_1.cc:183]   --->   Operation 599 'specregionend' 'rend137' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 600 [1/1] (0.00ns)   --->   "%rbegin5 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_53" [case_1.cc:183]   --->   Operation 600 'specregionbegin' 'rbegin5' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 601 [1/1] (0.00ns)   --->   "%rend133 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_53, i32 %rbegin5" [case_1.cc:184]   --->   Operation 601 'specregionend' 'rend133' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 602 [1/1] (0.00ns)   --->   "%rbegin7 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_52" [case_1.cc:187]   --->   Operation 602 'specregionbegin' 'rbegin7' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 603 [1/1] (0.00ns)   --->   "%rend131 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_52, i32 %rbegin7" [case_1.cc:188]   --->   Operation 603 'specregionend' 'rend131' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 604 [1/1] (0.00ns)   --->   "%rbegin = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_30" [case_1.cc:194]   --->   Operation 604 'specregionbegin' 'rbegin' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 605 [1/1] (0.00ns)   --->   "%rend127 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_30, i32 %rbegin" [case_1.cc:195]   --->   Operation 605 'specregionend' 'rend127' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 606 [1/1] (0.00ns)   --->   "%rbegin9 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_47" [case_1.cc:195]   --->   Operation 606 'specregionbegin' 'rbegin9' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 607 [1/1] (0.00ns)   --->   "%rend125 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_47, i32 %rbegin9" [case_1.cc:196]   --->   Operation 607 'specregionend' 'rend125' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 608 [1/1] (0.00ns)   --->   "%rbegin11 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_58" [case_1.cc:196]   --->   Operation 608 'specregionbegin' 'rbegin11' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 609 [1/1] (0.00ns)   --->   "%rend123 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_58, i32 %rbegin11" [case_1.cc:197]   --->   Operation 609 'specregionend' 'rend123' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 610 [1/1] (0.00ns)   --->   "%rbegin13 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_59" [case_1.cc:197]   --->   Operation 610 'specregionbegin' 'rbegin13' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 611 [1/1] (0.00ns)   --->   "%rend121 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_59, i32 %rbegin13" [case_1.cc:198]   --->   Operation 611 'specregionend' 'rend121' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 612 [1/1] (0.00ns)   --->   "%rbegin15 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_14" [case_1.cc:198]   --->   Operation 612 'specregionbegin' 'rbegin15' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 613 [1/1] (0.00ns)   --->   "%rend119 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_14, i32 %rbegin15" [case_1.cc:199]   --->   Operation 613 'specregionend' 'rend119' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 614 [1/1] (0.00ns)   --->   "%rbegin17 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_61" [case_1.cc:199]   --->   Operation 614 'specregionbegin' 'rbegin17' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 615 [1/1] (0.00ns)   --->   "%rend117 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_61, i32 %rbegin17" [case_1.cc:200]   --->   Operation 615 'specregionend' 'rend117' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 616 [1/1] (0.00ns)   --->   "%rbegin19 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_43" [case_1.cc:200]   --->   Operation 616 'specregionbegin' 'rbegin19' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 617 [1/1] (0.00ns)   --->   "%rend115 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_43, i32 %rbegin19" [case_1.cc:201]   --->   Operation 617 'specregionend' 'rend115' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 618 [1/1] (0.00ns)   --->   "%rbegin21 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_36" [case_1.cc:202]   --->   Operation 618 'specregionbegin' 'rbegin21' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 619 [1/1] (0.00ns)   --->   "%rend111 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_36, i32 %rbegin21" [case_1.cc:203]   --->   Operation 619 'specregionend' 'rend111' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 620 [1/1] (0.00ns)   --->   "%rbegin23 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_35" [case_1.cc:204]   --->   Operation 620 'specregionbegin' 'rbegin23' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 621 [1/1] (0.00ns)   --->   "%rend109 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_35, i32 %rbegin23" [case_1.cc:205]   --->   Operation 621 'specregionend' 'rend109' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 622 [1/1] (0.00ns)   --->   "%rbegin24 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_34" [case_1.cc:205]   --->   Operation 622 'specregionbegin' 'rbegin24' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 623 [1/1] (0.00ns)   --->   "%rend107 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_34, i32 %rbegin24" [case_1.cc:206]   --->   Operation 623 'specregionend' 'rend107' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 624 [1/1] (0.00ns)   --->   "%rbegin25 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_33" [case_1.cc:212]   --->   Operation 624 'specregionbegin' 'rbegin25' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 625 [1/1] (0.00ns)   --->   "%rend105 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_33, i32 %rbegin25" [case_1.cc:213]   --->   Operation 625 'specregionend' 'rend105' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 626 [1/1] (0.00ns)   --->   "%rbegin27 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_39" [case_1.cc:223]   --->   Operation 626 'specregionbegin' 'rbegin27' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 627 [1/1] (0.00ns)   --->   "%rend97 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_39, i32 %rbegin27" [case_1.cc:224]   --->   Operation 627 'specregionend' 'rend97' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 628 [1/1] (0.00ns)   --->   "%rbegin29 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_38" [case_1.cc:224]   --->   Operation 628 'specregionbegin' 'rbegin29' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 629 [1/1] (0.00ns)   --->   "%rend95 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_38, i32 %rbegin29" [case_1.cc:225]   --->   Operation 629 'specregionend' 'rend95' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 630 [1/1] (0.00ns)   --->   "%rbegin31 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_37" [case_1.cc:227]   --->   Operation 630 'specregionbegin' 'rbegin31' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 631 [1/1] (0.00ns)   --->   "%rend93 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_37, i32 %rbegin31" [case_1.cc:228]   --->   Operation 631 'specregionend' 'rend93' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 632 [1/1] (0.00ns)   --->   "%rbegin33 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_42" [case_1.cc:229]   --->   Operation 632 'specregionbegin' 'rbegin33' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 633 [1/1] (0.00ns)   --->   "%rend89 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_42, i32 %rbegin33" [case_1.cc:230]   --->   Operation 633 'specregionend' 'rend89' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 634 [1/1] (0.00ns)   --->   "%rbegin35 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_41" [case_1.cc:231]   --->   Operation 634 'specregionbegin' 'rbegin35' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 635 [1/1] (0.00ns)   --->   "%rend87 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_41, i32 %rbegin35" [case_1.cc:232]   --->   Operation 635 'specregionend' 'rend87' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 636 [1/1] (0.00ns)   --->   "%rbegin37 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_40" [case_1.cc:233]   --->   Operation 636 'specregionbegin' 'rbegin37' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 637 [1/1] (0.00ns)   --->   "%rend83 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_40, i32 %rbegin37" [case_1.cc:234]   --->   Operation 637 'specregionend' 'rend83' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 638 [1/1] (0.00ns)   --->   "%rbegin39 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_32" [case_1.cc:235]   --->   Operation 638 'specregionbegin' 'rbegin39' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 639 [1/1] (0.00ns)   --->   "%rend79 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_32, i32 %rbegin39" [case_1.cc:236]   --->   Operation 639 'specregionend' 'rend79' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 640 [1/1] (0.00ns)   --->   "%rbegin41 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_31" [case_1.cc:237]   --->   Operation 640 'specregionbegin' 'rbegin41' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 641 [1/1] (0.00ns)   --->   "%rend77 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_31, i32 %rbegin41" [case_1.cc:238]   --->   Operation 641 'specregionend' 'rend77' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 642 [1/1] (0.00ns)   --->   "%rbegin42 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_46" [case_1.cc:238]   --->   Operation 642 'specregionbegin' 'rbegin42' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 643 [1/1] (0.00ns)   --->   "%rend75 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_46, i32 %rbegin42" [case_1.cc:239]   --->   Operation 643 'specregionend' 'rend75' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 644 [1/1] (0.00ns)   --->   "%rbegin43 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_13" [case_1.cc:239]   --->   Operation 644 'specregionbegin' 'rbegin43' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 645 [1/1] (0.00ns)   --->   "%rend73 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_13, i32 %rbegin43" [case_1.cc:240]   --->   Operation 645 'specregionend' 'rend73' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 646 [1/1] (0.00ns)   --->   "%rbegin44 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_54" [case_1.cc:240]   --->   Operation 646 'specregionbegin' 'rbegin44' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 647 [1/1] (0.00ns)   --->   "%rend71 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_54, i32 %rbegin44" [case_1.cc:241]   --->   Operation 647 'specregionend' 'rend71' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 648 [1/1] (0.00ns)   --->   "%rbegin45 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_55" [case_1.cc:242]   --->   Operation 648 'specregionbegin' 'rbegin45' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 649 [1/1] (0.00ns)   --->   "%rend67 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_55, i32 %rbegin45" [case_1.cc:243]   --->   Operation 649 'specregionend' 'rend67' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 650 [1/1] (0.00ns)   --->   "%rbegin46 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_56" [case_1.cc:244]   --->   Operation 650 'specregionbegin' 'rbegin46' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 651 [1/1] (0.00ns)   --->   "%rend65 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_56, i32 %rbegin46" [case_1.cc:245]   --->   Operation 651 'specregionend' 'rend65' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 652 [1/1] (0.00ns)   --->   "%rbegin47 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_57" [case_1.cc:245]   --->   Operation 652 'specregionbegin' 'rbegin47' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 653 [1/1] (0.00ns)   --->   "%rend63 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_57, i32 %rbegin47" [case_1.cc:246]   --->   Operation 653 'specregionend' 'rend63' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 654 [1/1] (0.00ns)   --->   "%rbegin49 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_17" [case_1.cc:246]   --->   Operation 654 'specregionbegin' 'rbegin49' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 655 [1/1] (0.00ns)   --->   "%rend61 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_17, i32 %rbegin49" [case_1.cc:247]   --->   Operation 655 'specregionend' 'rend61' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 656 [1/1] (0.00ns)   --->   "%rbegin51 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_18" [case_1.cc:247]   --->   Operation 656 'specregionbegin' 'rbegin51' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 657 [1/1] (0.00ns)   --->   "%rend59 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_18, i32 %rbegin51" [case_1.cc:248]   --->   Operation 657 'specregionend' 'rend59' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 658 [1/1] (0.00ns)   --->   "%rbegin52 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_19" [case_1.cc:249]   --->   Operation 658 'specregionbegin' 'rbegin52' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 659 [1/1] (0.00ns)   --->   "%rend57 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_19, i32 %rbegin52" [case_1.cc:250]   --->   Operation 659 'specregionend' 'rend57' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 660 [1/1] (0.00ns)   --->   "%rbegin53 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_20" [case_1.cc:250]   --->   Operation 660 'specregionbegin' 'rbegin53' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 661 [1/1] (0.00ns)   --->   "%rend55 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_20, i32 %rbegin53" [case_1.cc:251]   --->   Operation 661 'specregionend' 'rend55' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 662 [1/1] (0.00ns)   --->   "%rbegin50 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty" [case_1.cc:252]   --->   Operation 662 'specregionbegin' 'rbegin50' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 663 [1/1] (0.00ns)   --->   "%rend51 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty, i32 %rbegin50" [case_1.cc:253]   --->   Operation 663 'specregionend' 'rend51' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 664 [1/1] (0.00ns)   --->   "%rbegin48 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_22" [case_1.cc:253]   --->   Operation 664 'specregionbegin' 'rbegin48' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 665 [1/1] (0.00ns)   --->   "%rend49 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_22, i32 %rbegin48" [case_1.cc:254]   --->   Operation 665 'specregionend' 'rend49' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 666 [1/1] (0.00ns)   --->   "%rbegin40 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_23" [case_1.cc:259]   --->   Operation 666 'specregionbegin' 'rbegin40' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 667 [1/1] (0.00ns)   --->   "%rend41 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_23, i32 %rbegin40" [case_1.cc:260]   --->   Operation 667 'specregionend' 'rend41' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 668 [1/1] (0.00ns)   --->   "%rbegin38 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_24" [case_1.cc:261]   --->   Operation 668 'specregionbegin' 'rbegin38' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 669 [1/1] (0.00ns)   --->   "%rend39 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_24, i32 %rbegin38" [case_1.cc:262]   --->   Operation 669 'specregionend' 'rend39' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 670 [1/1] (0.00ns)   --->   "%rbegin36 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_25" [case_1.cc:263]   --->   Operation 670 'specregionbegin' 'rbegin36' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 671 [1/1] (0.00ns)   --->   "%rend37 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_25, i32 %rbegin36" [case_1.cc:264]   --->   Operation 671 'specregionend' 'rend37' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 672 [1/1] (0.00ns)   --->   "%rbegin34 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_26" [case_1.cc:264]   --->   Operation 672 'specregionbegin' 'rbegin34' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 673 [1/1] (0.00ns)   --->   "%rend35 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_26, i32 %rbegin34" [case_1.cc:265]   --->   Operation 673 'specregionend' 'rend35' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 674 [1/1] (0.00ns)   --->   "%rbegin32 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_5" [case_1.cc:265]   --->   Operation 674 'specregionbegin' 'rbegin32' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 675 [1/1] (0.00ns)   --->   "%rend33 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_5, i32 %rbegin32" [case_1.cc:266]   --->   Operation 675 'specregionend' 'rend33' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 676 [1/1] (0.00ns)   --->   "%rbegin30 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_3" [case_1.cc:266]   --->   Operation 676 'specregionbegin' 'rbegin30' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 677 [1/1] (0.00ns)   --->   "%rend31 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_3, i32 %rbegin30" [case_1.cc:267]   --->   Operation 677 'specregionend' 'rend31' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 678 [1/1] (0.00ns)   --->   "%rbegin28 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_12" [case_1.cc:269]   --->   Operation 678 'specregionbegin' 'rbegin28' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 679 [1/1] (0.00ns)   --->   "%rend29 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_12, i32 %rbegin28" [case_1.cc:270]   --->   Operation 679 'specregionend' 'rend29' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 680 [1/1] (0.00ns)   --->   "%rbegin26 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_2" [case_1.cc:270]   --->   Operation 680 'specregionbegin' 'rbegin26' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 681 [1/1] (0.00ns)   --->   "%rend27 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_2, i32 %rbegin26" [case_1.cc:271]   --->   Operation 681 'specregionend' 'rend27' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 682 [1/1] (0.00ns)   --->   "%rbegin22 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_0" [case_1.cc:271]   --->   Operation 682 'specregionbegin' 'rbegin22' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 683 [1/1] (0.00ns)   --->   "%rend23 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_0, i32 %rbegin22" [case_1.cc:272]   --->   Operation 683 'specregionend' 'rend23' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 684 [1/1] (0.00ns)   --->   "%rbegin20 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_9" [case_1.cc:272]   --->   Operation 684 'specregionbegin' 'rbegin20' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 685 [1/1] (0.00ns)   --->   "%rend21 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_9, i32 %rbegin20" [case_1.cc:273]   --->   Operation 685 'specregionend' 'rend21' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 686 [1/1] (0.00ns)   --->   "%rbegin18 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_8" [case_1.cc:273]   --->   Operation 686 'specregionbegin' 'rbegin18' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 687 [1/1] (0.00ns)   --->   "%rend19 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_8, i32 %rbegin18" [case_1.cc:274]   --->   Operation 687 'specregionend' 'rend19' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 688 [1/1] (0.00ns)   --->   "%rbegin16 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_7" [case_1.cc:275]   --->   Operation 688 'specregionbegin' 'rbegin16' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 689 [1/1] (0.00ns)   --->   "%rend17 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_7, i32 %rbegin16" [case_1.cc:276]   --->   Operation 689 'specregionend' 'rend17' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 690 [1/1] (0.00ns)   --->   "%rbegin14 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_6" [case_1.cc:277]   --->   Operation 690 'specregionbegin' 'rbegin14' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 691 [1/1] (0.00ns)   --->   "%rend15 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_6, i32 %rbegin14" [case_1.cc:278]   --->   Operation 691 'specregionend' 'rend15' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 692 [1/1] (0.00ns)   --->   "%rbegin12 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_29" [case_1.cc:278]   --->   Operation 692 'specregionbegin' 'rbegin12' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 693 [1/1] (0.00ns)   --->   "%rend13 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_29, i32 %rbegin12" [case_1.cc:279]   --->   Operation 693 'specregionend' 'rend13' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 694 [1/1] (0.00ns)   --->   "%rbegin10 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_4" [case_1.cc:279]   --->   Operation 694 'specregionbegin' 'rbegin10' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 695 [1/1] (0.00ns)   --->   "%rend11 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_4, i32 %rbegin10" [case_1.cc:280]   --->   Operation 695 'specregionend' 'rend11' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 696 [1/1] (0.00ns)   --->   "%rbegin8 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_28" [case_1.cc:280]   --->   Operation 696 'specregionbegin' 'rbegin8' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 697 [1/1] (0.00ns)   --->   "%rend9 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_28, i32 %rbegin8" [case_1.cc:281]   --->   Operation 697 'specregionend' 'rend9' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 698 [1/1] (0.00ns)   --->   "%rbegin6 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_44" [case_1.cc:281]   --->   Operation 698 'specregionbegin' 'rbegin6' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 699 [1/1] (0.00ns)   --->   "%rend7 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_44, i32 %rbegin6" [case_1.cc:282]   --->   Operation 699 'specregionend' 'rend7' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 700 [1/1] (0.00ns)   --->   "%rbegin4 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_1" [case_1.cc:283]   --->   Operation 700 'specregionbegin' 'rbegin4' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 701 [1/1] (0.00ns)   --->   "%rend5 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_1, i32 %rbegin4" [case_1.cc:284]   --->   Operation 701 'specregionend' 'rend5' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 702 [1/1] (0.00ns)   --->   "%rbegin54 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_10" [case_1.cc:284]   --->   Operation 702 'specregionbegin' 'rbegin54' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 703 [1/1] (0.00ns)   --->   "%rend143 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_10, i32 %rbegin54" [case_1.cc:285]   --->   Operation 703 'specregionend' 'rend143' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 704 [1/1] (0.00ns)   --->   "%rbegin55 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_15" [case_1.cc:285]   --->   Operation 704 'specregionbegin' 'rbegin55' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 705 [1/1] (0.00ns)   --->   "%rend141 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_15, i32 %rbegin55" [case_1.cc:286]   --->   Operation 705 'specregionend' 'rend141' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 706 [1/1] (0.00ns)   --->   "%rbegin56 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_60" [case_1.cc:288]   --->   Operation 706 'specregionbegin' 'rbegin56' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 707 [1/1] (0.00ns)   --->   "%rend135 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_60, i32 %rbegin56" [case_1.cc:289]   --->   Operation 707 'specregionend' 'rend135' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 708 [1/1] (0.00ns)   --->   "%rbegin57 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_27" [case_1.cc:289]   --->   Operation 708 'specregionbegin' 'rbegin57' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 709 [1/1] (0.00ns)   --->   "%rend113 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_27, i32 %rbegin57" [case_1.cc:290]   --->   Operation 709 'specregionend' 'rend113' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 710 [1/1] (0.00ns)   --->   "%rbegin58 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_21" [case_1.cc:294]   --->   Operation 710 'specregionbegin' 'rbegin58' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 711 [1/1] (0.00ns)   --->   "%rend91 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_21, i32 %rbegin58" [case_1.cc:295]   --->   Operation 711 'specregionend' 'rend91' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 712 [1/1] (0.00ns)   --->   "%rbegin59 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_11" [case_1.cc:297]   --->   Operation 712 'specregionbegin' 'rbegin59' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 713 [1/1] (0.00ns)   --->   "%rend69 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_11, i32 %rbegin59" [case_1.cc:298]   --->   Operation 713 'specregionend' 'rend69' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 714 [1/1] (0.00ns)   --->   "%rbegin2 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_16" [case_1.cc:302]   --->   Operation 714 'specregionbegin' 'rbegin2' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 715 [1/1] (0.00ns)   --->   "%rend3 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_16, i32 %rbegin2" [case_1.cc:303]   --->   Operation 715 'specregionend' 'rend3' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 716 [1/2] (2.10ns) (root node of the DSP)   --->   "%add_ln304 = add i8 %mul_ln297, i8 %sext_ln301" [case_1.cc:304]   --->   Operation 716 'add' 'add_ln304' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_29 : Operation 717 [1/1] (1.91ns)   --->   "%m142 = add i8 %add_ln304, i8 %m133" [case_1.cc:304]   --->   Operation 717 'add' 'm142' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 718 [1/1] (0.00ns)   --->   "%sext_ln325 = sext i8 %m142" [case_1.cc:325]   --->   Operation 718 'sext' 'sext_ln325' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 719 [1/1] (0.00ns)   --->   "%write_ln325 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_data_17, i16 %sext_ln325" [case_1.cc:325]   --->   Operation 719 'write' 'write_ln325' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 720 [1/1] (0.00ns)   --->   "%ret_ln329 = ret" [case_1.cc:329]   --->   Operation 720 'ret' 'ret_ln329' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.520ns
+The critical path consists of the following:
+	wire read operation ('in_data_2_read', case_1.cc:22) on port 'in_data_2' (case_1.cc:22) [113]  (0.000 ns)
+	'mul' operation 10 bit ('m19', case_1.cc:181) [137]  (4.520 ns)
+
+ <State 2>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 20 bit ('mul_ln183', case_1.cc:183) [148]  (7.138 ns)
+
+ <State 3>: 9.275ns
+The critical path consists of the following:
+	wire read operation ('in6', case_1.cc:28) on port 'in_data_5' (case_1.cc:28) [115]  (0.000 ns)
+	'mul' operation 19 bit ('mul_ln184', case_1.cc:184) [155]  (9.275 ns)
+
+ <State 4>: 7.138ns
+The critical path consists of the following:
+	wire read operation ('in_data_16_read', case_1.cc:50) on port 'in_data_16' (case_1.cc:50) [131]  (0.000 ns)
+	'mul' operation 20 bit ('mul_ln195', case_1.cc:195) [193]  (7.138 ns)
+
+ <State 5>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 19 bit ('mul_ln196', case_1.cc:196) [200]  (7.138 ns)
+
+ <State 6>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 11 bit ('mul_ln206', case_1.cc:206) [257]  (7.138 ns)
+
+ <State 7>: 5.905ns
+The critical path consists of the following:
+	'mul' operation 7 bit ('mul_ln203', case_1.cc:203) [240]  (5.905 ns)
+
+ <State 8>: 5.305ns
+The critical path consists of the following:
+	'mul' operation 7 bit ('m50', case_1.cc:212) [272]  (3.740 ns)
+	'add' operation 2 bit ('m60', case_1.cc:222) [298]  (1.565 ns)
+
+ <State 9>: 5.905ns
+The critical path consists of the following:
+	'mul' operation 7 bit ('mul_ln225', case_1.cc:225) [312]  (5.905 ns)
+
+ <State 10>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 20 bit ('mul_ln213', case_1.cc:213) [275]  (7.138 ns)
+
+ <State 11>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 13 bit ('mul_ln228', case_1.cc:228) [327]  (7.138 ns)
+
+ <State 12>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 11 bit ('mul_ln239', case_1.cc:239) [381]  (7.138 ns)
+
+ <State 13>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 19 bit ('mul_ln243', case_1.cc:243) [402]  (7.138 ns)
+
+ <State 14>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 17 bit ('mul_ln245', case_1.cc:245) [411]  (7.138 ns)
+
+ <State 15>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 20 bit ('mul_ln260', case_1.cc:260) [479]  (7.138 ns)
+
+ <State 16>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 20 bit ('mul_ln262', case_1.cc:262) [488]  (7.138 ns)
+
+ <State 17>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 17 bit ('mul_ln264', case_1.cc:264) [499]  (7.138 ns)
+
+ <State 18>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 15 bit ('mul_ln281', case_1.cc:281) [589]  (7.138 ns)
+
+ <State 19>: 6.426ns
+The critical path consists of the following:
+	'mul' operation 11 bit ('mul_ln272', case_1.cc:272) [543]  (6.426 ns)
+
+ <State 20>: 4.865ns
+The critical path consists of the following:
+	'mul' operation 10 bit ('mul_ln273', case_1.cc:273) [549]  (4.865 ns)
+
+ <State 21>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 15 bit ('mul_ln279', case_1.cc:279) [575]  (7.138 ns)
+
+ <State 22>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 18 bit ('mul_ln280', case_1.cc:280) [583]  (7.138 ns)
+
+ <State 23>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 15 bit ('mul_ln284', case_1.cc:284) [603]  (7.138 ns)
+
+ <State 24>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 17 bit ('mul_ln285', case_1.cc:285) [610]  (7.138 ns)
+
+ <State 25>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 17 bit ('mul_ln286', case_1.cc:286) [616]  (7.138 ns)
+
+ <State 26>: 7.138ns
+The critical path consists of the following:
+	'mul' operation 18 bit ('mul_ln290', case_1.cc:290) [631]  (7.138 ns)
+
+ <State 27>: 6.782ns
+The critical path consists of the following:
+	'mul' operation 13 bit ('mul_ln303', case_1.cc:303) [673]  (6.782 ns)
+
+ <State 28>: 2.100ns
+The critical path consists of the following:
+	'mul' operation 8 bit of DSP[677] ('mul_ln297', case_1.cc:297) [655]  (0.000 ns)
+	'add' operation 8 bit of DSP[677] ('add_ln304', case_1.cc:304) [677]  (2.100 ns)
+
+ <State 29>: 4.015ns
+The critical path consists of the following:
+	'add' operation 8 bit of DSP[677] ('add_ln304', case_1.cc:304) [677]  (2.100 ns)
+	'add' operation 8 bit ('m142', case_1.cc:304) [678]  (1.915 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

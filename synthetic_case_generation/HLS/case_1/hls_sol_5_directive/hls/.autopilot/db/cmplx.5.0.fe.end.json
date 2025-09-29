@@ -1,0 +1,11 @@
+{
+    "0": {
+        "name": "case_1",
+        "file": "case_1.cc",
+        "fileloc": "6",
+        "instructions": "719",
+        "total_instructions": "719",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

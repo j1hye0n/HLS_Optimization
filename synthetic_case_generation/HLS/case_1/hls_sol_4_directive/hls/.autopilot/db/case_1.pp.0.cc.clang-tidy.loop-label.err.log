@@ -1,0 +1,3 @@
+72 errors generated.
+Error while processing /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_4_directive/hls/.autopilot/db/case_1.pp.0.cc.
+clang-tidy applied 4 of 4 suggested fixes.

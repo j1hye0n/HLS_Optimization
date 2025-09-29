@@ -1,0 +1,376 @@
+
+
+================================================================
+== Synthesis Summary Report of 'case_1'
+================================================================
++ General Information: 
+    * Date:           Mon Sep 29 16:59:31 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        hls_sol_4_directive
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------+--------+-------+---------+---------+----------+---------+------+----------+------+--------+------------+------------+-----+
+    |  Modules |  Issue |       | Latency | Latency | Iteration|         | Trip |          |      |        |            |            |     |
+    |  & Loops |  Type  | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF     |     LUT    | URAM|
+    +----------+--------+-------+---------+---------+----------+---------+------+----------+------+--------+------------+------------+-----+
+    |+ case_1  |  Timing|  -1.98|       28|  280.000|         -|       29|     -|        no|     -|  3 (1%)|  1058 (~0%)|  7176 (13%)|    -|
+    +----------+--------+-------+---------+---------+----------+---------+------+----------+------+--------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-------------+---------+-----------+----------+
+| Port        | Mode    | Direction | Bitwidth |
++-------------+---------+-----------+----------+
+| in_data_0   | ap_none | in        | 16       |
+| in_data_1   | ap_none | in        | 16       |
+| in_data_10  | ap_none | in        | 16       |
+| in_data_11  | ap_none | in        | 16       |
+| in_data_12  | ap_none | in        | 16       |
+| in_data_13  | ap_none | in        | 16       |
+| in_data_14  | ap_none | in        | 16       |
+| in_data_15  | ap_none | in        | 16       |
+| in_data_16  | ap_none | in        | 16       |
+| in_data_17  | ap_none | in        | 16       |
+| in_data_2   | ap_none | in        | 16       |
+| in_data_3   | ap_none | in        | 16       |
+| in_data_4   | ap_none | in        | 16       |
+| in_data_5   | ap_none | in        | 16       |
+| in_data_6   | ap_none | in        | 16       |
+| in_data_7   | ap_none | in        | 16       |
+| in_data_8   | ap_none | in        | 16       |
+| in_data_9   | ap_none | in        | 16       |
+| out_data_0  | ap_vld  | out       | 16       |
+| out_data_1  | ap_vld  | out       | 16       |
+| out_data_10 | ap_vld  | out       | 16       |
+| out_data_11 | ap_vld  | out       | 16       |
+| out_data_12 | ap_vld  | out       | 16       |
+| out_data_13 | ap_vld  | out       | 16       |
+| out_data_14 | ap_vld  | out       | 16       |
+| out_data_15 | ap_vld  | out       | 16       |
+| out_data_16 | ap_vld  | out       | 16       |
+| out_data_17 | ap_vld  | out       | 16       |
+| out_data_18 | ap_vld  | out       | 16       |
+| out_data_2  | ap_vld  | out       | 16       |
+| out_data_3  | ap_vld  | out       | 16       |
+| out_data_4  | ap_vld  | out       | 16       |
+| out_data_5  | ap_vld  | out       | 16       |
+| out_data_6  | ap_vld  | out       | 16       |
+| out_data_7  | ap_vld  | out       | 16       |
+| out_data_8  | ap_vld  | out       | 16       |
+| out_data_9  | ap_vld  | out       | 16       |
++-------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------+
+| Argument | Direction | Datatype    |
++----------+-----------+-------------+
+| in_data  | in        | ap_int<16>* |
+| out_data | out       | ap_int<16>* |
++----------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------+--------------------+---------+
+| Argument | HW Interface       | HW Type |
++----------+--------------------+---------+
+| in_data  | in_data_0          | port    |
+| in_data  | in_data_1          | port    |
+| in_data  | in_data_2          | port    |
+| in_data  | in_data_3          | port    |
+| in_data  | in_data_4          | port    |
+| in_data  | in_data_5          | port    |
+| in_data  | in_data_6          | port    |
+| in_data  | in_data_7          | port    |
+| in_data  | in_data_8          | port    |
+| in_data  | in_data_9          | port    |
+| in_data  | in_data_10         | port    |
+| in_data  | in_data_11         | port    |
+| in_data  | in_data_12         | port    |
+| in_data  | in_data_13         | port    |
+| in_data  | in_data_14         | port    |
+| in_data  | in_data_15         | port    |
+| in_data  | in_data_16         | port    |
+| in_data  | in_data_17         | port    |
+| out_data | out_data_0         | port    |
+| out_data | out_data_0_ap_vld  | port    |
+| out_data | out_data_1         | port    |
+| out_data | out_data_1_ap_vld  | port    |
+| out_data | out_data_2         | port    |
+| out_data | out_data_2_ap_vld  | port    |
+| out_data | out_data_3         | port    |
+| out_data | out_data_3_ap_vld  | port    |
+| out_data | out_data_4         | port    |
+| out_data | out_data_4_ap_vld  | port    |
+| out_data | out_data_5         | port    |
+| out_data | out_data_5_ap_vld  | port    |
+| out_data | out_data_6         | port    |
+| out_data | out_data_6_ap_vld  | port    |
+| out_data | out_data_7         | port    |
+| out_data | out_data_7_ap_vld  | port    |
+| out_data | out_data_8         | port    |
+| out_data | out_data_8_ap_vld  | port    |
+| out_data | out_data_9         | port    |
+| out_data | out_data_9_ap_vld  | port    |
+| out_data | out_data_10        | port    |
+| out_data | out_data_10_ap_vld | port    |
+| out_data | out_data_11        | port    |
+| out_data | out_data_11_ap_vld | port    |
+| out_data | out_data_12        | port    |
+| out_data | out_data_12_ap_vld | port    |
+| out_data | out_data_13        | port    |
+| out_data | out_data_13_ap_vld | port    |
+| out_data | out_data_14        | port    |
+| out_data | out_data_14_ap_vld | port    |
+| out_data | out_data_15        | port    |
+| out_data | out_data_15_ap_vld | port    |
+| out_data | out_data_16        | port    |
+| out_data | out_data_16_ap_vld | port    |
+| out_data | out_data_17        | port    |
+| out_data | out_data_17_ap_vld | port    |
+| out_data | out_data_18        | port    |
+| out_data | out_data_18_ap_vld | port    |
++----------+--------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------+-----+--------+-----------+-----+-----------+---------+
+| Name                               | DSP | Pragma | Variable  | Op  | Impl      | Latency |
++------------------------------------+-----+--------+-----------+-----+-----------+---------+
+| + case_1                           | 3   |        |           |     |           |         |
+|   mul_10s_4s_10_1_1_U1             |     |        | m19       | mul | auto      | 0       |
+|   mul_3ns_3ns_6_1_1_U10            |     | yes    | mul_ln182 | mul | fabric    | 0       |
+|   mul_10s_10s_20_1_1_U2            |     | yes    | mul_ln183 | mul | fabric    | 0       |
+|   mul_16ns_9ns_19_1_1_U3           |     | yes    | mul_ln184 | mul | fabric    | 0       |
+|   mul_9s_9s_9_1_1_U6               |     |        | m23       | mul | auto      | 0       |
+|   mul_6s_6s_6_1_1_U4               |     |        | m24       | mul | auto      | 0       |
+|   m25_fu_534_p2                    |     |        | m25       | add | fabric    | 0       |
+|   mul_10ns_10ns_20_1_1_U5          |     | yes    | mul_ln188 | mul | fabric    | 0       |
+|   add_ln189_fu_561_p2              |     |        | add_ln189 | add | fabric    | 0       |
+|   mul_7s_7s_7_1_1_U11              |     |        | m28       | mul | auto      | 0       |
+|   m29_fu_617_p2                    |     |        | m29       | add | fabric    | 0       |
+|   mul_3s_3s_3_1_1_U12              |     |        | m30       | mul | auto      | 0       |
+|   m31_fu_623_p2                    |     |        | m31       | add | fabric    | 0       |
+|   m32_fu_629_p2                    |     |        | m32       | add | fabric    | 0       |
+|   mul_10ns_10ns_20_1_1_U7          |     | yes    | mul_ln195 | mul | fabric    | 0       |
+|   mul_10ns_9s_19_1_1_U13           |     | yes    | mul_ln196 | mul | fabric    | 0       |
+|   mul_9ns_10ns_19_1_1_U8           |     | yes    | mul_ln197 | mul | fabric    | 0       |
+|   mul_10ns_5ns_11_1_1_U9           |     | yes    | mul_ln198 | mul | fabric    | 0       |
+|   mul_9ns_10ns_19_1_1_U14          |     | yes    | mul_ln199 | mul | fabric    | 0       |
+|   mul_10ns_10ns_11_1_1_U15         |     | yes    | mul_ln200 | mul | fabric    | 0       |
+|   mul_3ns_7s_7_1_1_U17             |     | yes    | mul_ln201 | mul | fabric    | 0       |
+|   mul_3ns_7s_7_1_1_U22             |     | yes    | mul_ln203 | mul | fabric    | 0       |
+|   add_ln207_fu_828_p2              |     |        | add_ln207 | add | fabric    | 0       |
+|   mul_10ns_10ns_20_1_1_U16         |     | yes    | mul_ln205 | mul | fabric    | 0       |
+|   mul_10ns_5ns_11_1_1_U18          |     | yes    | mul_ln206 | mul | fabric    | 0       |
+|   mul_8s_8s_8_1_1_U19              |     |        | m45       | mul | auto      | 0       |
+|   mul_5s_5s_5_1_1_U23              |     |        | m46       | mul | auto      | 0       |
+|   mul_8s_5s_8_1_1_U24              |     |        | m47       | mul | auto      | 0       |
+|   mul_7s_7s_7_1_1_U20              |     |        | m49       | mul | auto      | 0       |
+|   mul_7s_5s_7_1_1_U25              |     |        | mul_ln212 | mul | auto      | 0       |
+|   mul_7s_7s_7_1_1_U26              |     |        | m50       | mul | auto      | 0       |
+|   mul_10ns_10ns_20_1_1_U30         |     | yes    | mul_ln213 | mul | fabric    | 0       |
+|   mul_9s_9s_9_1_1_U21              |     |        | m52       | mul | auto      | 0       |
+|   mul_5s_3s_5_1_1_U31              |     |        | m53       | mul | auto      | 0       |
+|   m54_fu_924_p2                    |     |        | m54       | add | fabric    | 0       |
+|   m55_fu_947_p2                    |     |        | m55       | add | fabric    | 0       |
+|   mul_4s_4s_4_1_1_U35              |     |        | m56       | mul | auto      | 0       |
+|   add_ln233_fu_1024_p2             |     |        | add_ln233 | add | fabric    | 0       |
+|   mul_3s_3s_3_1_1_U27              |     |        | m58       | mul | auto      | 0       |
+|   mul_5s_3s_5_1_1_U28              |     |        | m59       | mul | auto      | 0       |
+|   m60_fu_941_p2                    |     |        | m60       | add | fabric    | 0       |
+|   m67_fu_1064_p0                   |     |        | m61       | add | fabric    | 0       |
+|   mul_8s_7s_15_1_1_U32             |     | yes    | mul_ln224 | mul | fabric    | 0       |
+|   mul_7s_4ns_7_1_1_U29             |     | yes    | mul_ln225 | mul | fabric    | 0       |
+|   add_ln226_fu_978_p2              |     |        | add_ln226 | add | fabric    | 0       |
+|   mul_10s_10s_10_1_1_U33           |     |        | mul_ln227 | mul | auto      | 0       |
+|   mac_muladd_10s_10s_5s_10_4_1_U97 | 1   |        | m65       | mul | dsp_slice | 3       |
+|   mul_10ns_5s_13_1_1_U36           |     | yes    | mul_ln228 | mul | fabric    | 0       |
+|   mul_8s_3s_8_1_1_U34              |     |        | m67       | mul | auto      | 0       |
+|   mul_8ns_4s_9_1_1_U37             |     | yes    | mul_ln230 | mul | fabric    | 0       |
+|   mul_9s_8s_9_1_1_U38              |     |        | m69       | mul | auto      | 0       |
+|   mul_5ns_5s_10_1_1_U41            |     | yes    | mul_ln232 | mul | fabric    | 0       |
+|   m71_fu_1121_p2                   |     |        | m71       | add | fabric    | 0       |
+|   mul_4s_4s_8_1_1_U39              |     | yes    | mul_ln234 | mul | fabric    | 0       |
+|   add_ln235_fu_1193_p2             |     |        | add_ln235 | add | fabric    | 0       |
+|   mul_4ns_3s_7_1_1_U40             |     | yes    | mul_ln236 | mul | fabric    | 0       |
+|   mul_8s_5s_8_1_1_U42              |     |        | m75       | mul | auto      | 0       |
+|   mul_5s_2s_7_1_1_U43              |     | yes    | m76       | mul | fabric    | 0       |
+|   mul_10ns_9ns_11_1_1_U44          |     | yes    | mul_ln239 | mul | fabric    | 0       |
+|   mul_9s_4s_13_1_1_U45             |     | yes    | mul_ln240 | mul | fabric    | 0       |
+|   mul_9s_4s_13_1_1_U46             |     | yes    | mul_ln241 | mul | fabric    | 0       |
+|   mul_8s_8s_8_1_1_U47              |     |        | m80       | mul | auto      | 0       |
+|   mul_10s_9s_19_1_1_U48            |     | yes    | mul_ln243 | mul | fabric    | 0       |
+|   mac_muladd_10s_10s_5s_10_4_1_U97 | 1   |        | m82       | add | dsp_slice | 3       |
+|   mul_10ns_8ns_17_1_1_U53          |     | yes    | mul_ln245 | mul | fabric    | 0       |
+|   mul_8ns_7s_15_1_1_U49            |     | yes    | mul_ln246 | mul | fabric    | 0       |
+|   mul_10s_8s_18_1_1_U50            |     | yes    | mul_ln247 | mul | fabric    | 0       |
+|   mul_5ns_5s_10_1_1_U51            |     | yes    | mul_ln248 | mul | fabric    | 0       |
+|   mul_10s_7s_13_1_1_U52            |     |        | m87       | mul | auto      | 0       |
+|   mul_8ns_5s_13_1_1_U54            |     | yes    | mul_ln250 | mul | fabric    | 0       |
+|   m90_fu_1402_p2                   |     |        | m90       | add | fabric    | 0       |
+|   mul_4ns_6ns_9_1_1_U55            |     | yes    | mul_ln253 | mul | fabric    | 0       |
+|   mul_8s_6s_14_1_1_U57             |     | yes    | mul_ln254 | mul | fabric    | 0       |
+|   add_ln255_fu_1422_p2             |     |        | add_ln255 | add | fabric    | 0       |
+|   mul_8s_8s_8_1_1_U58              |     |        | m94       | mul | auto      | 0       |
+|   add_ln258_fu_1527_p2             |     |        | add_ln258 | add | fabric    | 0       |
+|   mul_10s_8s_16_1_1_U56            |     |        | mul_ln259 | mul | auto      | 0       |
+|   mul_10ns_10ns_20_1_1_U59         |     | yes    | mul_ln260 | mul | fabric    | 0       |
+|   mul_10s_9s_10_1_1_U70            |     |        | m99       | mul | auto      | 0       |
+|   mul_10ns_10ns_20_1_1_U62         |     | yes    | mul_ln262 | mul | fabric    | 0       |
+|   mul_10ns_8ns_17_1_1_U66          |     | yes    | mul_ln264 | mul | fabric    | 0       |
+|   mul_10ns_5ns_11_1_1_U60          |     | yes    | mul_ln265 | mul | fabric    | 0       |
+|   mul_10ns_10ns_20_1_1_U67         |     | yes    | mul_ln266 | mul | fabric    | 0       |
+|   mul_10ns_7ns_15_1_1_U63          |     | yes    | mul_ln267 | mul | fabric    | 0       |
+|   mul_7s_7s_7_1_1_U61              |     |        | mul_ln268 | mul | auto      | 0       |
+|   mul_7s_7s_7_1_1_U64              |     |        | m106      | mul | auto      | 0       |
+|   m107_fu_1630_p2                  |     |        | m107      | add | fabric    | 0       |
+|   mul_7s_7s_14_1_1_U76             |     | yes    | mul_ln270 | mul | fabric    | 0       |
+|   mul_8ns_9ns_15_1_1_U71           |     | yes    | mul_ln271 | mul | fabric    | 0       |
+|   mul_8ns_5ns_11_1_1_U73           |     | yes    | mul_ln272 | mul | fabric    | 0       |
+|   mul_5ns_5ns_10_1_1_U75           |     | yes    | mul_ln273 | mul | fabric    | 0       |
+|   mul_7ns_8ns_15_1_1_U74           |     | yes    | mul_ln274 | mul | fabric    | 0       |
+|   mul_9s_6s_9_1_1_U65              |     |        | mul_ln275 | mul | auto      | 0       |
+|   mul_9s_9s_9_1_1_U68              |     |        | m113      | mul | auto      | 0       |
+|   mul_10ns_7ns_15_1_1_U69          |     | yes    | mul_ln276 | mul | fabric    | 0       |
+|   mul_8s_7s_8_1_1_U77              |     |        | m115      | mul | auto      | 0       |
+|   mul_10ns_5s_15_1_1_U78           |     | yes    | mul_ln279 | mul | fabric    | 0       |
+|   mul_10ns_8s_18_1_1_U79           |     | yes    | mul_ln280 | mul | fabric    | 0       |
+|   mul_10ns_10ns_15_1_1_U72         |     | yes    | mul_ln281 | mul | fabric    | 0       |
+|   mul_8ns_8s_16_1_1_U81            |     | yes    | mul_ln282 | mul | fabric    | 0       |
+|   mul_7s_7s_7_1_1_U80              |     |        | m121      | mul | auto      | 0       |
+|   mul_10ns_5s_15_1_1_U82           |     | yes    | mul_ln284 | mul | fabric    | 0       |
+|   mul_10ns_8ns_17_1_1_U83          |     | yes    | mul_ln285 | mul | fabric    | 0       |
+|   mul_10ns_8ns_17_1_1_U88          |     | yes    | mul_ln286 | mul | fabric    | 0       |
+|   m125_fu_1814_p2                  |     |        | m125      | add | fabric    | 0       |
+|   mul_10ns_7s_17_1_1_U84           |     | yes    | mul_ln289 | mul | fabric    | 0       |
+|   mul_10ns_8s_18_1_1_U93           |     | yes    | mul_ln290 | mul | fabric    | 0       |
+|   mul_6s_6s_6_1_1_U85              |     |        | m129      | mul | auto      | 0       |
+|   mul_10s_10s_10_1_1_U89           |     |        | m130      | mul | auto      | 0       |
+|   mac_muladd_9s_9s_9ns_9_4_1_U98   | 1   |        | mul_ln300 | mul | dsp_slice | 3       |
+|   mul_10ns_8s_17_1_1_U86           |     | yes    | mul_ln295 | mul | fabric    | 0       |
+|   mac_muladd_8s_8s_7s_8_4_1_U99    | 1   |        | mul_ln297 | mul | dsp_slice | 3       |
+|   mul_10s_6s_16_1_1_U87            |     | yes    | mul_ln298 | mul | fabric    | 0       |
+|   mul_4s_4s_4_1_1_U90              |     |        | mul_ln299 | mul | auto      | 0       |
+|   mul_4s_4s_4_1_1_U91              |     |        | m137      | mul | auto      | 0       |
+|   mac_muladd_9s_9s_9ns_9_4_1_U98   | 1   |        | m138      | add | dsp_slice | 3       |
+|   mul_8s_7s_10_1_1_U92             |     |        | mul_ln302 | mul | auto      | 0       |
+|   mul_10s_10s_10_1_1_U94           |     |        | m140      | mul | auto      | 0       |
+|   mul_9ns_4s_13_1_1_U96            |     | yes    | mul_ln303 | mul | fabric    | 0       |
+|   mac_muladd_8s_8s_7s_8_4_1_U99    | 1   |        | add_ln304 | add | dsp_slice | 3       |
+|   m142_fu_2049_p2                  |     |        | m142      | add | fabric    | 0       |
+|   mul_7s_4s_7_1_1_U95              |     |        | mul_ln306 | mul | auto      | 0       |
++------------------------------------+-----+--------+-----------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+----------------------------------+-----------------------------------------+
+| Type            | Options                          | Location                                |
++-----------------+----------------------------------+-----------------------------------------+
+| array_partition | variable=in_data complete        | case_1.cc:12 in case_1, in_data         |
+| array_partition | variable=out_data complete       | case_1.cc:13 in case_1, out_data        |
+| bind_op         | impl=fabric op=mul variable=m20  | sol_4_directive.tcl:2 in case_1, m20    |
+| bind_op         | impl=fabric op=mul variable=m21  | sol_4_directive.tcl:3 in case_1, m21    |
+| bind_op         | impl=fabric op=mul variable=m22  | sol_4_directive.tcl:4 in case_1, m22    |
+| bind_op         | impl=fabric op=mul variable=m26  | sol_4_directive.tcl:8 in case_1, m26    |
+| bind_op         | impl=fabric op=mul variable=m31  | sol_4_directive.tcl:13 in case_1, m31   |
+| bind_op         | impl=fabric op=mul variable=m33  | sol_4_directive.tcl:15 in case_1, m33   |
+| bind_op         | impl=fabric op=mul variable=m34  | sol_4_directive.tcl:16 in case_1, m34   |
+| bind_op         | impl=fabric op=mul variable=m35  | sol_4_directive.tcl:17 in case_1, m35   |
+| bind_op         | impl=fabric op=mul variable=m36  | sol_4_directive.tcl:18 in case_1, m36   |
+| bind_op         | impl=fabric op=mul variable=m37  | sol_4_directive.tcl:19 in case_1, m37   |
+| bind_op         | impl=fabric op=mul variable=m38  | sol_4_directive.tcl:20 in case_1, m38   |
+| bind_op         | impl=fabric op=mul variable=m39  | sol_4_directive.tcl:21 in case_1, m39   |
+| bind_op         | impl=fabric op=mul variable=m41  | sol_4_directive.tcl:23 in case_1, m41   |
+| bind_op         | impl=fabric op=mul variable=m43  | sol_4_directive.tcl:25 in case_1, m43   |
+| bind_op         | impl=fabric op=mul variable=m44  | sol_4_directive.tcl:26 in case_1, m44   |
+| bind_op         | impl=fabric op=mul variable=m51  | sol_4_directive.tcl:33 in case_1, m51   |
+| bind_op         | impl=fabric op=mul variable=m55  | sol_4_directive.tcl:37 in case_1, m55   |
+| bind_op         | impl=fabric op=mul variable=m57  | sol_4_directive.tcl:39 in case_1, m57   |
+| bind_op         | impl=fabric op=mul variable=m61  | sol_4_directive.tcl:43 in case_1, m61   |
+| bind_op         | impl=fabric op=mul variable=m62  | sol_4_directive.tcl:44 in case_1, m62   |
+| bind_op         | impl=fabric op=mul variable=m63  | sol_4_directive.tcl:45 in case_1, m63   |
+| bind_op         | impl=fabric op=mul variable=m66  | sol_4_directive.tcl:48 in case_1, m66   |
+| bind_op         | impl=fabric op=mul variable=m68  | sol_4_directive.tcl:50 in case_1, m68   |
+| bind_op         | impl=fabric op=mul variable=m70  | sol_4_directive.tcl:52 in case_1, m70   |
+| bind_op         | impl=fabric op=mul variable=m71  | sol_4_directive.tcl:53 in case_1, m71   |
+| bind_op         | impl=fabric op=mul variable=m72  | sol_4_directive.tcl:54 in case_1, m72   |
+| bind_op         | impl=fabric op=mul variable=m73  | sol_4_directive.tcl:55 in case_1, m73   |
+| bind_op         | impl=fabric op=mul variable=m74  | sol_4_directive.tcl:56 in case_1, m74   |
+| bind_op         | impl=fabric op=mul variable=m76  | sol_4_directive.tcl:58 in case_1, m76   |
+| bind_op         | impl=fabric op=mul variable=m77  | sol_4_directive.tcl:59 in case_1, m77   |
+| bind_op         | impl=fabric op=mul variable=m78  | sol_4_directive.tcl:60 in case_1, m78   |
+| bind_op         | impl=fabric op=mul variable=m79  | sol_4_directive.tcl:61 in case_1, m79   |
+| bind_op         | impl=fabric op=mul variable=m81  | sol_4_directive.tcl:63 in case_1, m81   |
+| bind_op         | impl=fabric op=mul variable=m83  | sol_4_directive.tcl:65 in case_1, m83   |
+| bind_op         | impl=fabric op=mul variable=m84  | sol_4_directive.tcl:66 in case_1, m84   |
+| bind_op         | impl=fabric op=mul variable=m85  | sol_4_directive.tcl:67 in case_1, m85   |
+| bind_op         | impl=fabric op=mul variable=m86  | sol_4_directive.tcl:68 in case_1, m86   |
+| bind_op         | impl=fabric op=mul variable=m88  | sol_4_directive.tcl:70 in case_1, m88   |
+| bind_op         | impl=fabric op=mul variable=m89  | sol_4_directive.tcl:71 in case_1, m89   |
+| bind_op         | impl=fabric op=mul variable=m90  | sol_4_directive.tcl:72 in case_1, m90   |
+| bind_op         | impl=fabric op=mul variable=m91  | sol_4_directive.tcl:73 in case_1, m91   |
+| bind_op         | impl=fabric op=mul variable=m92  | sol_4_directive.tcl:74 in case_1, m92   |
+| bind_op         | impl=fabric op=mul variable=m93  | sol_4_directive.tcl:75 in case_1, m93   |
+| bind_op         | impl=fabric op=mul variable=m96  | sol_4_directive.tcl:78 in case_1, m96   |
+| bind_op         | impl=fabric op=mul variable=m98  | sol_4_directive.tcl:80 in case_1, m98   |
+| bind_op         | impl=fabric op=mul variable=m100 | sol_4_directive.tcl:82 in case_1, m100  |
+| bind_op         | impl=fabric op=mul variable=m102 | sol_4_directive.tcl:84 in case_1, m102  |
+| bind_op         | impl=fabric op=mul variable=m103 | sol_4_directive.tcl:85 in case_1, m103  |
+| bind_op         | impl=fabric op=mul variable=m104 | sol_4_directive.tcl:86 in case_1, m104  |
+| bind_op         | impl=fabric op=mul variable=m105 | sol_4_directive.tcl:87 in case_1, m105  |
+| bind_op         | impl=fabric op=mul variable=m108 | sol_4_directive.tcl:90 in case_1, m108  |
+| bind_op         | impl=fabric op=mul variable=m109 | sol_4_directive.tcl:91 in case_1, m109  |
+| bind_op         | impl=fabric op=mul variable=m110 | sol_4_directive.tcl:92 in case_1, m110  |
+| bind_op         | impl=fabric op=mul variable=m111 | sol_4_directive.tcl:93 in case_1, m111  |
+| bind_op         | impl=fabric op=mul variable=m112 | sol_4_directive.tcl:94 in case_1, m112  |
+| bind_op         | impl=fabric op=mul variable=m114 | sol_4_directive.tcl:96 in case_1, m114  |
+| bind_op         | impl=fabric op=mul variable=m116 | sol_4_directive.tcl:98 in case_1, m116  |
+| bind_op         | impl=fabric op=mul variable=m117 | sol_4_directive.tcl:99 in case_1, m117  |
+| bind_op         | impl=fabric op=mul variable=m118 | sol_4_directive.tcl:100 in case_1, m118 |
+| bind_op         | impl=fabric op=mul variable=m119 | sol_4_directive.tcl:101 in case_1, m119 |
+| bind_op         | impl=fabric op=mul variable=m120 | sol_4_directive.tcl:102 in case_1, m120 |
+| bind_op         | impl=fabric op=mul variable=m122 | sol_4_directive.tcl:104 in case_1, m122 |
+| bind_op         | impl=fabric op=mul variable=m123 | sol_4_directive.tcl:105 in case_1, m123 |
+| bind_op         | impl=fabric op=mul variable=m124 | sol_4_directive.tcl:106 in case_1, m124 |
+| bind_op         | impl=fabric op=mul variable=m127 | sol_4_directive.tcl:109 in case_1, m127 |
+| bind_op         | impl=fabric op=mul variable=m128 | sol_4_directive.tcl:110 in case_1, m128 |
+| bind_op         | impl=fabric op=mul variable=m133 | sol_4_directive.tcl:115 in case_1, m133 |
+| bind_op         | impl=fabric op=mul variable=m136 | sol_4_directive.tcl:118 in case_1, m136 |
+| bind_op         | impl=fabric op=mul variable=m138 | sol_4_directive.tcl:120 in case_1, m138 |
+| bind_op         | impl=fabric op=mul variable=m139 | sol_4_directive.tcl:121 in case_1, m139 |
+| bind_op         | impl=fabric op=mul variable=m141 | sol_4_directive.tcl:123 in case_1, m141 |
+| bind_op         | impl=fabric op=mul variable=m143 | sol_4_directive.tcl:125 in case_1, m143 |
++-----------------+----------------------------------+-----------------------------------------+
+
+

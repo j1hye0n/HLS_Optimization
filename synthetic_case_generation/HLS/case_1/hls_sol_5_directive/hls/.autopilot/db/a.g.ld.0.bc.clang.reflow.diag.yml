@@ -1,0 +1,47 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_case_1_ir
+Args:            
+  - Callee:          'case_1(ap_int<16>*, ap_int<16>*)'
+    DebugLoc:        { File: case_1.cc, Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_case_1_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: case_1.cc, Line: 10, Column: 0 }
+Function:        _Z6case_1P6ap_intILi16EES1_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          in_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: case_1.cc, Line: 10, Column: 0 }
+Function:        _Z6case_1P6ap_intILi16EES1_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          out_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

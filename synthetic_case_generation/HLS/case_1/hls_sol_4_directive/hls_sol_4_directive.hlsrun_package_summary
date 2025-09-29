@@ -1,0 +1,120 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_4_directive/hls_sol_4_directive.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Sep 29 16:59:35 2025",
+ "timestampMillis": "1759132775698",
+ "buildStep": {
+  "cmdId": "9dea910b-c668-4c28-b2ea-0ab0e1199b20",
+  "name": "vitis-run",
+  "logFile": "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/run_hls.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 29 16:59:35 2025",
+ "timestampMillis": "1759132775698",
+ "status": {
+  "cmdId": "9dea910b-c668-4c28-b2ea-0ab0e1199b20",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Sep 29 16:59:35 2025",
+ "timestampMillis": "1759132775699",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "case_1",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/case_1.cc"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Sep 29 16:59:35 2025",
+ "timestampMillis": "1759132775699",
+ "buildStep": {
+  "cmdId": "6ae95283-c582-4d06-b0a7-9bac6ac7fca5",
+  "name": "export_design",
+  "logFile": "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/hls_sol_4_directive/hls/hls.log",
+  "commandLine": "export_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 29 16:59:35 2025",
+ "timestampMillis": "1759132775699",
+ "status": {
+  "cmdId": "6ae95283-c582-4d06-b0a7-9bac6ac7fca5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 29 16:59:47 2025",
+ "timestampMillis": "1759132787278",
+ "status": {
+  "cmdId": "6ae95283-c582-4d06-b0a7-9bac6ac7fca5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 29 16:59:47 2025",
+ "timestampMillis": "1759132787936",
+ "status": {
+  "cmdId": "9dea910b-c668-4c28-b2ea-0ab0e1199b20",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

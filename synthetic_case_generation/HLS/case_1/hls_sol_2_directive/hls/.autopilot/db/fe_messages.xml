@@ -1,0 +1,168 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/run_hls.tcl:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=case_1" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="case_1.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="case_1.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m19" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:3:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m21" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m22" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m25" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m26" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m27" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m33" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m35" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m36" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m40" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m41" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m42" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m45" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m50" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m51" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m52" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m55" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m56" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m58" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m60" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m63" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m64" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m65" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m66" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m67" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m68" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m71" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m73" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m87" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m88" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m89" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m90" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m92" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m95" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m101" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m103" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m105" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:88:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m106" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m107" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m108" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m115" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m118" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m120" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m125" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:108:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m126" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:111:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m129" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m135" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m137" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m138" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/ironman/IronMan/test/synthetic_case_generation/HLS/case_1/sol_2_directive.tcl:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m140" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="case_1.cc:10:0" msg_body="Applying array_partition to 'in_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="in_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="case_1.cc:10:0" msg_body="Applying array_partition to 'out_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="out_data"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
