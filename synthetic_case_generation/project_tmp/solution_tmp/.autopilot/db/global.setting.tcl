@@ -1,5 +1,5 @@
 
-set TopModule "case_9"
+set TopModule "case_1"
 set ClockPeriod 10
 set ClockList ap_clk
 set AxiliteClockList {}
@@ -24,7 +24,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix case_9_
+set RtlSubPrefix case_1_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}

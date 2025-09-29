@@ -17,6 +17,9 @@ port (
     din1: in std_logic_vector(din1_WIDTH - 1 downto 0);
     dout: out std_logic_vector(dout_WIDTH - 1 downto 0));
 
+ 
+    attribute use_dsp : string;
+    attribute use_dsp of case_1_mul_4s_3s_7_1_1 : entity is "no";
 
 end entity;
 

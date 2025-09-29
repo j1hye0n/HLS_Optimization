@@ -56,24 +56,6 @@ using namespace std;
 #define AUTOTB_TVOUT_in_data_16 "../tv/cdatafile/c.case_1.autotvout_in_data_16.dat"
 #define AUTOTB_TVIN_in_data_17 "../tv/cdatafile/c.case_1.autotvin_in_data_17.dat"
 #define AUTOTB_TVOUT_in_data_17 "../tv/cdatafile/c.case_1.autotvout_in_data_17.dat"
-#define AUTOTB_TVIN_in_data_18 "../tv/cdatafile/c.case_1.autotvin_in_data_18.dat"
-#define AUTOTB_TVOUT_in_data_18 "../tv/cdatafile/c.case_1.autotvout_in_data_18.dat"
-#define AUTOTB_TVIN_in_data_19 "../tv/cdatafile/c.case_1.autotvin_in_data_19.dat"
-#define AUTOTB_TVOUT_in_data_19 "../tv/cdatafile/c.case_1.autotvout_in_data_19.dat"
-#define AUTOTB_TVIN_in_data_20 "../tv/cdatafile/c.case_1.autotvin_in_data_20.dat"
-#define AUTOTB_TVOUT_in_data_20 "../tv/cdatafile/c.case_1.autotvout_in_data_20.dat"
-#define AUTOTB_TVIN_in_data_21 "../tv/cdatafile/c.case_1.autotvin_in_data_21.dat"
-#define AUTOTB_TVOUT_in_data_21 "../tv/cdatafile/c.case_1.autotvout_in_data_21.dat"
-#define AUTOTB_TVIN_in_data_22 "../tv/cdatafile/c.case_1.autotvin_in_data_22.dat"
-#define AUTOTB_TVOUT_in_data_22 "../tv/cdatafile/c.case_1.autotvout_in_data_22.dat"
-#define AUTOTB_TVIN_in_data_23 "../tv/cdatafile/c.case_1.autotvin_in_data_23.dat"
-#define AUTOTB_TVOUT_in_data_23 "../tv/cdatafile/c.case_1.autotvout_in_data_23.dat"
-#define AUTOTB_TVIN_in_data_24 "../tv/cdatafile/c.case_1.autotvin_in_data_24.dat"
-#define AUTOTB_TVOUT_in_data_24 "../tv/cdatafile/c.case_1.autotvout_in_data_24.dat"
-#define AUTOTB_TVIN_in_data_25 "../tv/cdatafile/c.case_1.autotvin_in_data_25.dat"
-#define AUTOTB_TVOUT_in_data_25 "../tv/cdatafile/c.case_1.autotvout_in_data_25.dat"
-#define AUTOTB_TVIN_in_data_26 "../tv/cdatafile/c.case_1.autotvin_in_data_26.dat"
-#define AUTOTB_TVOUT_in_data_26 "../tv/cdatafile/c.case_1.autotvout_in_data_26.dat"
 #define AUTOTB_TVIN_out_data_0 "../tv/cdatafile/c.case_1.autotvin_out_data_0.dat"
 #define AUTOTB_TVOUT_out_data_0 "../tv/cdatafile/c.case_1.autotvout_out_data_0.dat"
 #define AUTOTB_TVIN_out_data_1 "../tv/cdatafile/c.case_1.autotvin_out_data_1.dat"
@@ -112,30 +94,6 @@ using namespace std;
 #define AUTOTB_TVOUT_out_data_17 "../tv/cdatafile/c.case_1.autotvout_out_data_17.dat"
 #define AUTOTB_TVIN_out_data_18 "../tv/cdatafile/c.case_1.autotvin_out_data_18.dat"
 #define AUTOTB_TVOUT_out_data_18 "../tv/cdatafile/c.case_1.autotvout_out_data_18.dat"
-#define AUTOTB_TVIN_out_data_19 "../tv/cdatafile/c.case_1.autotvin_out_data_19.dat"
-#define AUTOTB_TVOUT_out_data_19 "../tv/cdatafile/c.case_1.autotvout_out_data_19.dat"
-#define AUTOTB_TVIN_out_data_20 "../tv/cdatafile/c.case_1.autotvin_out_data_20.dat"
-#define AUTOTB_TVOUT_out_data_20 "../tv/cdatafile/c.case_1.autotvout_out_data_20.dat"
-#define AUTOTB_TVIN_out_data_21 "../tv/cdatafile/c.case_1.autotvin_out_data_21.dat"
-#define AUTOTB_TVOUT_out_data_21 "../tv/cdatafile/c.case_1.autotvout_out_data_21.dat"
-#define AUTOTB_TVIN_out_data_22 "../tv/cdatafile/c.case_1.autotvin_out_data_22.dat"
-#define AUTOTB_TVOUT_out_data_22 "../tv/cdatafile/c.case_1.autotvout_out_data_22.dat"
-#define AUTOTB_TVIN_out_data_23 "../tv/cdatafile/c.case_1.autotvin_out_data_23.dat"
-#define AUTOTB_TVOUT_out_data_23 "../tv/cdatafile/c.case_1.autotvout_out_data_23.dat"
-#define AUTOTB_TVIN_out_data_24 "../tv/cdatafile/c.case_1.autotvin_out_data_24.dat"
-#define AUTOTB_TVOUT_out_data_24 "../tv/cdatafile/c.case_1.autotvout_out_data_24.dat"
-#define AUTOTB_TVIN_out_data_25 "../tv/cdatafile/c.case_1.autotvin_out_data_25.dat"
-#define AUTOTB_TVOUT_out_data_25 "../tv/cdatafile/c.case_1.autotvout_out_data_25.dat"
-#define AUTOTB_TVIN_out_data_26 "../tv/cdatafile/c.case_1.autotvin_out_data_26.dat"
-#define AUTOTB_TVOUT_out_data_26 "../tv/cdatafile/c.case_1.autotvout_out_data_26.dat"
-#define AUTOTB_TVIN_out_data_27 "../tv/cdatafile/c.case_1.autotvin_out_data_27.dat"
-#define AUTOTB_TVOUT_out_data_27 "../tv/cdatafile/c.case_1.autotvout_out_data_27.dat"
-#define AUTOTB_TVIN_out_data_28 "../tv/cdatafile/c.case_1.autotvin_out_data_28.dat"
-#define AUTOTB_TVOUT_out_data_28 "../tv/cdatafile/c.case_1.autotvout_out_data_28.dat"
-#define AUTOTB_TVIN_out_data_29 "../tv/cdatafile/c.case_1.autotvin_out_data_29.dat"
-#define AUTOTB_TVOUT_out_data_29 "../tv/cdatafile/c.case_1.autotvout_out_data_29.dat"
-#define AUTOTB_TVIN_out_data_30 "../tv/cdatafile/c.case_1.autotvin_out_data_30.dat"
-#define AUTOTB_TVOUT_out_data_30 "../tv/cdatafile/c.case_1.autotvout_out_data_30.dat"
 
 
 // tvout file define:
@@ -158,18 +116,6 @@ using namespace std;
 #define AUTOTB_TVOUT_PC_out_data_16 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_16.dat"
 #define AUTOTB_TVOUT_PC_out_data_17 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_17.dat"
 #define AUTOTB_TVOUT_PC_out_data_18 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_18.dat"
-#define AUTOTB_TVOUT_PC_out_data_19 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_19.dat"
-#define AUTOTB_TVOUT_PC_out_data_20 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_20.dat"
-#define AUTOTB_TVOUT_PC_out_data_21 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_21.dat"
-#define AUTOTB_TVOUT_PC_out_data_22 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_22.dat"
-#define AUTOTB_TVOUT_PC_out_data_23 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_23.dat"
-#define AUTOTB_TVOUT_PC_out_data_24 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_24.dat"
-#define AUTOTB_TVOUT_PC_out_data_25 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_25.dat"
-#define AUTOTB_TVOUT_PC_out_data_26 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_26.dat"
-#define AUTOTB_TVOUT_PC_out_data_27 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_27.dat"
-#define AUTOTB_TVOUT_PC_out_data_28 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_28.dat"
-#define AUTOTB_TVOUT_PC_out_data_29 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_29.dat"
-#define AUTOTB_TVOUT_PC_out_data_30 "../tv/rtldatafile/rtl.case_1.autotvout_out_data_30.dat"
 
 
 namespace hls::sim
@@ -1363,10 +1309,10 @@ namespace hls::sim
 
 
 extern "C"
-void case_1_hw_stub_wrapper(void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*);
+void case_1_hw_stub_wrapper(void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*);
 
 extern "C"
-void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_in_data_1, void* __xlx_apatb_param_in_data_2, void* __xlx_apatb_param_in_data_3, void* __xlx_apatb_param_in_data_4, void* __xlx_apatb_param_in_data_5, void* __xlx_apatb_param_in_data_6, void* __xlx_apatb_param_in_data_7, void* __xlx_apatb_param_in_data_8, void* __xlx_apatb_param_in_data_9, void* __xlx_apatb_param_in_data_10, void* __xlx_apatb_param_in_data_11, void* __xlx_apatb_param_in_data_12, void* __xlx_apatb_param_in_data_13, void* __xlx_apatb_param_in_data_14, void* __xlx_apatb_param_in_data_15, void* __xlx_apatb_param_in_data_16, void* __xlx_apatb_param_in_data_17, void* __xlx_apatb_param_in_data_18, void* __xlx_apatb_param_in_data_19, void* __xlx_apatb_param_in_data_20, void* __xlx_apatb_param_in_data_21, void* __xlx_apatb_param_in_data_22, void* __xlx_apatb_param_in_data_23, void* __xlx_apatb_param_in_data_24, void* __xlx_apatb_param_in_data_25, void* __xlx_apatb_param_in_data_26, void* __xlx_apatb_param_out_data_0, void* __xlx_apatb_param_out_data_1, void* __xlx_apatb_param_out_data_2, void* __xlx_apatb_param_out_data_3, void* __xlx_apatb_param_out_data_4, void* __xlx_apatb_param_out_data_5, void* __xlx_apatb_param_out_data_6, void* __xlx_apatb_param_out_data_7, void* __xlx_apatb_param_out_data_8, void* __xlx_apatb_param_out_data_9, void* __xlx_apatb_param_out_data_10, void* __xlx_apatb_param_out_data_11, void* __xlx_apatb_param_out_data_12, void* __xlx_apatb_param_out_data_13, void* __xlx_apatb_param_out_data_14, void* __xlx_apatb_param_out_data_15, void* __xlx_apatb_param_out_data_16, void* __xlx_apatb_param_out_data_17, void* __xlx_apatb_param_out_data_18, void* __xlx_apatb_param_out_data_19, void* __xlx_apatb_param_out_data_20, void* __xlx_apatb_param_out_data_21, void* __xlx_apatb_param_out_data_22, void* __xlx_apatb_param_out_data_23, void* __xlx_apatb_param_out_data_24, void* __xlx_apatb_param_out_data_25, void* __xlx_apatb_param_out_data_26, void* __xlx_apatb_param_out_data_27, void* __xlx_apatb_param_out_data_28, void* __xlx_apatb_param_out_data_29, void* __xlx_apatb_param_out_data_30)
+void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_in_data_1, void* __xlx_apatb_param_in_data_2, void* __xlx_apatb_param_in_data_3, void* __xlx_apatb_param_in_data_4, void* __xlx_apatb_param_in_data_5, void* __xlx_apatb_param_in_data_6, void* __xlx_apatb_param_in_data_7, void* __xlx_apatb_param_in_data_8, void* __xlx_apatb_param_in_data_9, void* __xlx_apatb_param_in_data_10, void* __xlx_apatb_param_in_data_11, void* __xlx_apatb_param_in_data_12, void* __xlx_apatb_param_in_data_13, void* __xlx_apatb_param_in_data_14, void* __xlx_apatb_param_in_data_15, void* __xlx_apatb_param_in_data_16, void* __xlx_apatb_param_in_data_17, void* __xlx_apatb_param_out_data_0, void* __xlx_apatb_param_out_data_1, void* __xlx_apatb_param_out_data_2, void* __xlx_apatb_param_out_data_3, void* __xlx_apatb_param_out_data_4, void* __xlx_apatb_param_out_data_5, void* __xlx_apatb_param_out_data_6, void* __xlx_apatb_param_out_data_7, void* __xlx_apatb_param_out_data_8, void* __xlx_apatb_param_out_data_9, void* __xlx_apatb_param_out_data_10, void* __xlx_apatb_param_out_data_11, void* __xlx_apatb_param_out_data_12, void* __xlx_apatb_param_out_data_13, void* __xlx_apatb_param_out_data_14, void* __xlx_apatb_param_out_data_15, void* __xlx_apatb_param_out_data_16, void* __xlx_apatb_param_out_data_17, void* __xlx_apatb_param_out_data_18)
 {
   static hls::sim::Register port0 {
     .name = "in_data_0",
@@ -1567,105 +1513,6 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
   port17.param = __xlx_apatb_param_in_data_17;
 
   static hls::sim::Register port18 {
-    .name = "in_data_18",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_18),
-#endif
-  };
-  port18.param = __xlx_apatb_param_in_data_18;
-
-  static hls::sim::Register port19 {
-    .name = "in_data_19",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_19),
-#endif
-  };
-  port19.param = __xlx_apatb_param_in_data_19;
-
-  static hls::sim::Register port20 {
-    .name = "in_data_20",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_20),
-#endif
-  };
-  port20.param = __xlx_apatb_param_in_data_20;
-
-  static hls::sim::Register port21 {
-    .name = "in_data_21",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_21),
-#endif
-  };
-  port21.param = __xlx_apatb_param_in_data_21;
-
-  static hls::sim::Register port22 {
-    .name = "in_data_22",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_22),
-#endif
-  };
-  port22.param = __xlx_apatb_param_in_data_22;
-
-  static hls::sim::Register port23 {
-    .name = "in_data_23",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_23),
-#endif
-  };
-  port23.param = __xlx_apatb_param_in_data_23;
-
-  static hls::sim::Register port24 {
-    .name = "in_data_24",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_24),
-#endif
-  };
-  port24.param = __xlx_apatb_param_in_data_24;
-
-  static hls::sim::Register port25 {
-    .name = "in_data_25",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_25),
-#endif
-  };
-  port25.param = __xlx_apatb_param_in_data_25;
-
-  static hls::sim::Register port26 {
-    .name = "in_data_26",
-    .width = 16,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_in_data_26),
-#endif
-  };
-  port26.param = __xlx_apatb_param_in_data_26;
-
-  static hls::sim::Register port27 {
     .name = "out_data_0",
     .width = 16,
 #ifdef POST_CHECK
@@ -1675,9 +1522,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_0),
 #endif
   };
-  port27.param = __xlx_apatb_param_out_data_0;
+  port18.param = __xlx_apatb_param_out_data_0;
 
-  static hls::sim::Register port28 {
+  static hls::sim::Register port19 {
     .name = "out_data_1",
     .width = 16,
 #ifdef POST_CHECK
@@ -1687,9 +1534,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_1),
 #endif
   };
-  port28.param = __xlx_apatb_param_out_data_1;
+  port19.param = __xlx_apatb_param_out_data_1;
 
-  static hls::sim::Register port29 {
+  static hls::sim::Register port20 {
     .name = "out_data_2",
     .width = 16,
 #ifdef POST_CHECK
@@ -1699,9 +1546,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_2),
 #endif
   };
-  port29.param = __xlx_apatb_param_out_data_2;
+  port20.param = __xlx_apatb_param_out_data_2;
 
-  static hls::sim::Register port30 {
+  static hls::sim::Register port21 {
     .name = "out_data_3",
     .width = 16,
 #ifdef POST_CHECK
@@ -1711,9 +1558,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_3),
 #endif
   };
-  port30.param = __xlx_apatb_param_out_data_3;
+  port21.param = __xlx_apatb_param_out_data_3;
 
-  static hls::sim::Register port31 {
+  static hls::sim::Register port22 {
     .name = "out_data_4",
     .width = 16,
 #ifdef POST_CHECK
@@ -1723,9 +1570,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_4),
 #endif
   };
-  port31.param = __xlx_apatb_param_out_data_4;
+  port22.param = __xlx_apatb_param_out_data_4;
 
-  static hls::sim::Register port32 {
+  static hls::sim::Register port23 {
     .name = "out_data_5",
     .width = 16,
 #ifdef POST_CHECK
@@ -1735,9 +1582,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_5),
 #endif
   };
-  port32.param = __xlx_apatb_param_out_data_5;
+  port23.param = __xlx_apatb_param_out_data_5;
 
-  static hls::sim::Register port33 {
+  static hls::sim::Register port24 {
     .name = "out_data_6",
     .width = 16,
 #ifdef POST_CHECK
@@ -1747,9 +1594,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_6),
 #endif
   };
-  port33.param = __xlx_apatb_param_out_data_6;
+  port24.param = __xlx_apatb_param_out_data_6;
 
-  static hls::sim::Register port34 {
+  static hls::sim::Register port25 {
     .name = "out_data_7",
     .width = 16,
 #ifdef POST_CHECK
@@ -1759,9 +1606,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_7),
 #endif
   };
-  port34.param = __xlx_apatb_param_out_data_7;
+  port25.param = __xlx_apatb_param_out_data_7;
 
-  static hls::sim::Register port35 {
+  static hls::sim::Register port26 {
     .name = "out_data_8",
     .width = 16,
 #ifdef POST_CHECK
@@ -1771,9 +1618,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_8),
 #endif
   };
-  port35.param = __xlx_apatb_param_out_data_8;
+  port26.param = __xlx_apatb_param_out_data_8;
 
-  static hls::sim::Register port36 {
+  static hls::sim::Register port27 {
     .name = "out_data_9",
     .width = 16,
 #ifdef POST_CHECK
@@ -1783,9 +1630,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_9),
 #endif
   };
-  port36.param = __xlx_apatb_param_out_data_9;
+  port27.param = __xlx_apatb_param_out_data_9;
 
-  static hls::sim::Register port37 {
+  static hls::sim::Register port28 {
     .name = "out_data_10",
     .width = 16,
 #ifdef POST_CHECK
@@ -1795,9 +1642,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_10),
 #endif
   };
-  port37.param = __xlx_apatb_param_out_data_10;
+  port28.param = __xlx_apatb_param_out_data_10;
 
-  static hls::sim::Register port38 {
+  static hls::sim::Register port29 {
     .name = "out_data_11",
     .width = 16,
 #ifdef POST_CHECK
@@ -1807,9 +1654,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_11),
 #endif
   };
-  port38.param = __xlx_apatb_param_out_data_11;
+  port29.param = __xlx_apatb_param_out_data_11;
 
-  static hls::sim::Register port39 {
+  static hls::sim::Register port30 {
     .name = "out_data_12",
     .width = 16,
 #ifdef POST_CHECK
@@ -1819,9 +1666,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_12),
 #endif
   };
-  port39.param = __xlx_apatb_param_out_data_12;
+  port30.param = __xlx_apatb_param_out_data_12;
 
-  static hls::sim::Register port40 {
+  static hls::sim::Register port31 {
     .name = "out_data_13",
     .width = 16,
 #ifdef POST_CHECK
@@ -1831,9 +1678,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_13),
 #endif
   };
-  port40.param = __xlx_apatb_param_out_data_13;
+  port31.param = __xlx_apatb_param_out_data_13;
 
-  static hls::sim::Register port41 {
+  static hls::sim::Register port32 {
     .name = "out_data_14",
     .width = 16,
 #ifdef POST_CHECK
@@ -1843,9 +1690,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_14),
 #endif
   };
-  port41.param = __xlx_apatb_param_out_data_14;
+  port32.param = __xlx_apatb_param_out_data_14;
 
-  static hls::sim::Register port42 {
+  static hls::sim::Register port33 {
     .name = "out_data_15",
     .width = 16,
 #ifdef POST_CHECK
@@ -1855,9 +1702,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_15),
 #endif
   };
-  port42.param = __xlx_apatb_param_out_data_15;
+  port33.param = __xlx_apatb_param_out_data_15;
 
-  static hls::sim::Register port43 {
+  static hls::sim::Register port34 {
     .name = "out_data_16",
     .width = 16,
 #ifdef POST_CHECK
@@ -1867,9 +1714,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_16),
 #endif
   };
-  port43.param = __xlx_apatb_param_out_data_16;
+  port34.param = __xlx_apatb_param_out_data_16;
 
-  static hls::sim::Register port44 {
+  static hls::sim::Register port35 {
     .name = "out_data_17",
     .width = 16,
 #ifdef POST_CHECK
@@ -1879,9 +1726,9 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_17),
 #endif
   };
-  port44.param = __xlx_apatb_param_out_data_17;
+  port35.param = __xlx_apatb_param_out_data_17;
 
-  static hls::sim::Register port45 {
+  static hls::sim::Register port36 {
     .name = "out_data_18",
     .width = 16,
 #ifdef POST_CHECK
@@ -1891,155 +1738,20 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_18),
 #endif
   };
-  port45.param = __xlx_apatb_param_out_data_18;
-
-  static hls::sim::Register port46 {
-    .name = "out_data_19",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_19),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_19),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_19),
-#endif
-  };
-  port46.param = __xlx_apatb_param_out_data_19;
-
-  static hls::sim::Register port47 {
-    .name = "out_data_20",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_20),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_20),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_20),
-#endif
-  };
-  port47.param = __xlx_apatb_param_out_data_20;
-
-  static hls::sim::Register port48 {
-    .name = "out_data_21",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_21),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_21),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_21),
-#endif
-  };
-  port48.param = __xlx_apatb_param_out_data_21;
-
-  static hls::sim::Register port49 {
-    .name = "out_data_22",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_22),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_22),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_22),
-#endif
-  };
-  port49.param = __xlx_apatb_param_out_data_22;
-
-  static hls::sim::Register port50 {
-    .name = "out_data_23",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_23),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_23),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_23),
-#endif
-  };
-  port50.param = __xlx_apatb_param_out_data_23;
-
-  static hls::sim::Register port51 {
-    .name = "out_data_24",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_24),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_24),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_24),
-#endif
-  };
-  port51.param = __xlx_apatb_param_out_data_24;
-
-  static hls::sim::Register port52 {
-    .name = "out_data_25",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_25),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_25),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_25),
-#endif
-  };
-  port52.param = __xlx_apatb_param_out_data_25;
-
-  static hls::sim::Register port53 {
-    .name = "out_data_26",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_26),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_26),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_26),
-#endif
-  };
-  port53.param = __xlx_apatb_param_out_data_26;
-
-  static hls::sim::Register port54 {
-    .name = "out_data_27",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_27),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_27),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_27),
-#endif
-  };
-  port54.param = __xlx_apatb_param_out_data_27;
-
-  static hls::sim::Register port55 {
-    .name = "out_data_28",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_28),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_28),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_28),
-#endif
-  };
-  port55.param = __xlx_apatb_param_out_data_28;
-
-  static hls::sim::Register port56 {
-    .name = "out_data_29",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_29),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_29),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_29),
-#endif
-  };
-  port56.param = __xlx_apatb_param_out_data_29;
-
-  static hls::sim::Register port57 {
-    .name = "out_data_30",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_out_data_30),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_out_data_30),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_out_data_30),
-#endif
-  };
-  port57.param = __xlx_apatb_param_out_data_30;
+  port36.param = __xlx_apatb_param_out_data_18;
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
+    check(port18);
+    check(port19);
+    check(port20);
+    check(port21);
+    check(port22);
+    check(port23);
+    check(port24);
+    check(port25);
+    check(port26);
     check(port27);
     check(port28);
     check(port29);
@@ -2050,27 +1762,6 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     check(port34);
     check(port35);
     check(port36);
-    check(port37);
-    check(port38);
-    check(port39);
-    check(port40);
-    check(port41);
-    check(port42);
-    check(port43);
-    check(port44);
-    check(port45);
-    check(port46);
-    check(port47);
-    check(port48);
-    check(port49);
-    check(port50);
-    check(port51);
-    check(port52);
-    check(port53);
-    check(port54);
-    check(port55);
-    check(port56);
-    check(port57);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     tcl.containsVLA = 0;
@@ -2112,27 +1803,6 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     dump(port34, port34.iwriter, tcl.AESL_transaction);
     dump(port35, port35.iwriter, tcl.AESL_transaction);
     dump(port36, port36.iwriter, tcl.AESL_transaction);
-    dump(port37, port37.iwriter, tcl.AESL_transaction);
-    dump(port38, port38.iwriter, tcl.AESL_transaction);
-    dump(port39, port39.iwriter, tcl.AESL_transaction);
-    dump(port40, port40.iwriter, tcl.AESL_transaction);
-    dump(port41, port41.iwriter, tcl.AESL_transaction);
-    dump(port42, port42.iwriter, tcl.AESL_transaction);
-    dump(port43, port43.iwriter, tcl.AESL_transaction);
-    dump(port44, port44.iwriter, tcl.AESL_transaction);
-    dump(port45, port45.iwriter, tcl.AESL_transaction);
-    dump(port46, port46.iwriter, tcl.AESL_transaction);
-    dump(port47, port47.iwriter, tcl.AESL_transaction);
-    dump(port48, port48.iwriter, tcl.AESL_transaction);
-    dump(port49, port49.iwriter, tcl.AESL_transaction);
-    dump(port50, port50.iwriter, tcl.AESL_transaction);
-    dump(port51, port51.iwriter, tcl.AESL_transaction);
-    dump(port52, port52.iwriter, tcl.AESL_transaction);
-    dump(port53, port53.iwriter, tcl.AESL_transaction);
-    dump(port54, port54.iwriter, tcl.AESL_transaction);
-    dump(port55, port55.iwriter, tcl.AESL_transaction);
-    dump(port56, port56.iwriter, tcl.AESL_transaction);
-    dump(port57, port57.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
     port2.doTCL(tcl);
@@ -2170,30 +1840,18 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     port34.doTCL(tcl);
     port35.doTCL(tcl);
     port36.doTCL(tcl);
-    port37.doTCL(tcl);
-    port38.doTCL(tcl);
-    port39.doTCL(tcl);
-    port40.doTCL(tcl);
-    port41.doTCL(tcl);
-    port42.doTCL(tcl);
-    port43.doTCL(tcl);
-    port44.doTCL(tcl);
-    port45.doTCL(tcl);
-    port46.doTCL(tcl);
-    port47.doTCL(tcl);
-    port48.doTCL(tcl);
-    port49.doTCL(tcl);
-    port50.doTCL(tcl);
-    port51.doTCL(tcl);
-    port52.doTCL(tcl);
-    port53.doTCL(tcl);
-    port54.doTCL(tcl);
-    port55.doTCL(tcl);
-    port56.doTCL(tcl);
-    port57.doTCL(tcl);
     CodeState = CALL_C_DUT;
-    case_1_hw_stub_wrapper(__xlx_apatb_param_in_data_0, __xlx_apatb_param_in_data_1, __xlx_apatb_param_in_data_2, __xlx_apatb_param_in_data_3, __xlx_apatb_param_in_data_4, __xlx_apatb_param_in_data_5, __xlx_apatb_param_in_data_6, __xlx_apatb_param_in_data_7, __xlx_apatb_param_in_data_8, __xlx_apatb_param_in_data_9, __xlx_apatb_param_in_data_10, __xlx_apatb_param_in_data_11, __xlx_apatb_param_in_data_12, __xlx_apatb_param_in_data_13, __xlx_apatb_param_in_data_14, __xlx_apatb_param_in_data_15, __xlx_apatb_param_in_data_16, __xlx_apatb_param_in_data_17, __xlx_apatb_param_in_data_18, __xlx_apatb_param_in_data_19, __xlx_apatb_param_in_data_20, __xlx_apatb_param_in_data_21, __xlx_apatb_param_in_data_22, __xlx_apatb_param_in_data_23, __xlx_apatb_param_in_data_24, __xlx_apatb_param_in_data_25, __xlx_apatb_param_in_data_26, __xlx_apatb_param_out_data_0, __xlx_apatb_param_out_data_1, __xlx_apatb_param_out_data_2, __xlx_apatb_param_out_data_3, __xlx_apatb_param_out_data_4, __xlx_apatb_param_out_data_5, __xlx_apatb_param_out_data_6, __xlx_apatb_param_out_data_7, __xlx_apatb_param_out_data_8, __xlx_apatb_param_out_data_9, __xlx_apatb_param_out_data_10, __xlx_apatb_param_out_data_11, __xlx_apatb_param_out_data_12, __xlx_apatb_param_out_data_13, __xlx_apatb_param_out_data_14, __xlx_apatb_param_out_data_15, __xlx_apatb_param_out_data_16, __xlx_apatb_param_out_data_17, __xlx_apatb_param_out_data_18, __xlx_apatb_param_out_data_19, __xlx_apatb_param_out_data_20, __xlx_apatb_param_out_data_21, __xlx_apatb_param_out_data_22, __xlx_apatb_param_out_data_23, __xlx_apatb_param_out_data_24, __xlx_apatb_param_out_data_25, __xlx_apatb_param_out_data_26, __xlx_apatb_param_out_data_27, __xlx_apatb_param_out_data_28, __xlx_apatb_param_out_data_29, __xlx_apatb_param_out_data_30);
+    case_1_hw_stub_wrapper(__xlx_apatb_param_in_data_0, __xlx_apatb_param_in_data_1, __xlx_apatb_param_in_data_2, __xlx_apatb_param_in_data_3, __xlx_apatb_param_in_data_4, __xlx_apatb_param_in_data_5, __xlx_apatb_param_in_data_6, __xlx_apatb_param_in_data_7, __xlx_apatb_param_in_data_8, __xlx_apatb_param_in_data_9, __xlx_apatb_param_in_data_10, __xlx_apatb_param_in_data_11, __xlx_apatb_param_in_data_12, __xlx_apatb_param_in_data_13, __xlx_apatb_param_in_data_14, __xlx_apatb_param_in_data_15, __xlx_apatb_param_in_data_16, __xlx_apatb_param_in_data_17, __xlx_apatb_param_out_data_0, __xlx_apatb_param_out_data_1, __xlx_apatb_param_out_data_2, __xlx_apatb_param_out_data_3, __xlx_apatb_param_out_data_4, __xlx_apatb_param_out_data_5, __xlx_apatb_param_out_data_6, __xlx_apatb_param_out_data_7, __xlx_apatb_param_out_data_8, __xlx_apatb_param_out_data_9, __xlx_apatb_param_out_data_10, __xlx_apatb_param_out_data_11, __xlx_apatb_param_out_data_12, __xlx_apatb_param_out_data_13, __xlx_apatb_param_out_data_14, __xlx_apatb_param_out_data_15, __xlx_apatb_param_out_data_16, __xlx_apatb_param_out_data_17, __xlx_apatb_param_out_data_18);
     CodeState = DUMP_OUTPUTS;
+    dump(port18, port18.owriter, tcl.AESL_transaction);
+    dump(port19, port19.owriter, tcl.AESL_transaction);
+    dump(port20, port20.owriter, tcl.AESL_transaction);
+    dump(port21, port21.owriter, tcl.AESL_transaction);
+    dump(port22, port22.owriter, tcl.AESL_transaction);
+    dump(port23, port23.owriter, tcl.AESL_transaction);
+    dump(port24, port24.owriter, tcl.AESL_transaction);
+    dump(port25, port25.owriter, tcl.AESL_transaction);
+    dump(port26, port26.owriter, tcl.AESL_transaction);
     dump(port27, port27.owriter, tcl.AESL_transaction);
     dump(port28, port28.owriter, tcl.AESL_transaction);
     dump(port29, port29.owriter, tcl.AESL_transaction);
@@ -2204,27 +1862,6 @@ void apatb_case_1_hw(void* __xlx_apatb_param_in_data_0, void* __xlx_apatb_param_
     dump(port34, port34.owriter, tcl.AESL_transaction);
     dump(port35, port35.owriter, tcl.AESL_transaction);
     dump(port36, port36.owriter, tcl.AESL_transaction);
-    dump(port37, port37.owriter, tcl.AESL_transaction);
-    dump(port38, port38.owriter, tcl.AESL_transaction);
-    dump(port39, port39.owriter, tcl.AESL_transaction);
-    dump(port40, port40.owriter, tcl.AESL_transaction);
-    dump(port41, port41.owriter, tcl.AESL_transaction);
-    dump(port42, port42.owriter, tcl.AESL_transaction);
-    dump(port43, port43.owriter, tcl.AESL_transaction);
-    dump(port44, port44.owriter, tcl.AESL_transaction);
-    dump(port45, port45.owriter, tcl.AESL_transaction);
-    dump(port46, port46.owriter, tcl.AESL_transaction);
-    dump(port47, port47.owriter, tcl.AESL_transaction);
-    dump(port48, port48.owriter, tcl.AESL_transaction);
-    dump(port49, port49.owriter, tcl.AESL_transaction);
-    dump(port50, port50.owriter, tcl.AESL_transaction);
-    dump(port51, port51.owriter, tcl.AESL_transaction);
-    dump(port52, port52.owriter, tcl.AESL_transaction);
-    dump(port53, port53.owriter, tcl.AESL_transaction);
-    dump(port54, port54.owriter, tcl.AESL_transaction);
-    dump(port55, port55.owriter, tcl.AESL_transaction);
-    dump(port56, port56.owriter, tcl.AESL_transaction);
-    dump(port57, port57.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

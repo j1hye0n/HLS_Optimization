@@ -224,12 +224,13 @@ void case_%d(
     f_HLS.close()
 
     # Generate HLS directive file
+    # change directive command for Vitis-HLS "bind_op"
 
     f_directive = open("directive.tcl", "w")
 
     content = ""
     for i in range(prim_in_cnt+1, prim_in_cnt+op_cnt+1):
-        content += "set_directive_resource -core Mul_LUT \"case_%d\" m%d\n" % (case_id, i)
+        content += "set_directive_bind_op -op mul -impl fabric \"case_%d\" m%d\n" % (case_id, i)
     content += "\n"
 
     f_directive.write(content)

@@ -62,6 +62,36 @@
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
+        <name>in_data_12</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_data_13</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_data_14</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_data_15</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_data_16</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_data_17</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
         <name>out_data_0</name>
         <type>Signed</type>
         <fractionWidth>0</fractionWidth>
@@ -251,26 +281,6 @@
         <type>bool</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
-      <RtlPort>
-        <name>out_data_19</name>
-        <type>Signed</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>out_data_19_ap_vld</name>
-        <type>bool</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>out_data_20</name>
-        <type>Signed</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>out_data_20_ap_vld</name>
-        <type>bool</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
   </CTypeInfo>
   <DesignConstraint>
     <clk_period>10</clk_period>
@@ -278,7 +288,7 @@
   <Machine>64</Machine>
   <modelParameters>
     <combinational>0</combinational>
-    <latency>36</latency>
-    <II>37</II>
+    <latency>26</latency>
+    <II>27</II>
   </modelParameters>
 </AdditionalInfo>

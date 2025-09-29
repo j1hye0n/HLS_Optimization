@@ -2,9 +2,7 @@
 <Messages>
 	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
 	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1773" tag="" content="Starting RTL evaluation using Vivado ..." resolution=""/>
-	<Message severity="INFO" prefix="[Common 17-41]" key="Common 17-41" tag="" content="Interrupt caught. Command should exit soon." resolution=""/>
-	<Message severity="INFO" prefix="[Common 17-41]" key="Common 17-41" tag="" content="Interrupt caught. Command should exit soon." resolution=""/>
-	<Message severity="INFO" prefix="[Common 17-41]" key="Common 17-41" tag="" content="Interrupt caught. Command should exit soon." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command export_design Elapsed time: 01:04:19; Allocated memory: 27.629 MB." resolution=""/>
-	<Message severity="INFO" prefix="[Common 17-344]" key="Common 17-344" tag="" content="&apos;source&apos; was cancelled" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-802]" key="HLS 200-802" tag="" content="Generated output file project_tmp/solution_tmp/impl/export.zip" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-484]" key="HLS 200-484" tag="" content="The &apos;export_design -evaluate&apos; command is deprecated and will be removed in a future release." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command export_design Elapsed time: 00:05:43; Allocated memory: 6.707 MB." resolution=""/>
 </Messages>

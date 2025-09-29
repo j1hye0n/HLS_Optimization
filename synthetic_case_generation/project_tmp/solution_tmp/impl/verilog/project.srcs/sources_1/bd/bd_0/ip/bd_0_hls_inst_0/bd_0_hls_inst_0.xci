@@ -3,8 +3,8 @@
   "ip_inst": {
     "xci_name": "bd_0_hls_inst_0",
     "cell_name": "hls_inst",
-    "component_reference": "xilinx.com:hls:case_9:1.0",
-    "ip_revision": "2114263170",
+    "component_reference": "xilinx.com:hls:case_1:1.0",
+    "ip_revision": "2114277592",
     "gen_directory": "../../../../../../project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0",
     "parameters": {
       "component_parameters": {
@@ -12,8 +12,8 @@
         "clk_period": [ { "value": "10", "enabled": false, "usage": "all" } ],
         "machine": [ { "value": "64", "enabled": false, "usage": "all" } ],
         "combinational": [ { "value": "0", "enabled": false, "usage": "all" } ],
-        "latency": [ { "value": "36", "enabled": false, "usage": "all" } ],
-        "II": [ { "value": "37", "enabled": false, "usage": "all" } ]
+        "latency": [ { "value": "26", "enabled": false, "usage": "all" } ],
+        "II": [ { "value": "27", "enabled": false, "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -30,7 +30,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114263170" } ],
+        "IPREVISION": [ { "value": "2114277592" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -41,6 +41,15 @@
     },
     "boundary": {
       "ports": {
+        "in_data_18": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_19": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_20": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_21": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_22": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_23": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_24": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_25": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_26": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "out_data_0_ap_vld": [ { "direction": "out" } ],
         "out_data_1_ap_vld": [ { "direction": "out" } ],
         "out_data_2_ap_vld": [ { "direction": "out" } ],
@@ -60,8 +69,30 @@
         "out_data_16_ap_vld": [ { "direction": "out" } ],
         "out_data_17_ap_vld": [ { "direction": "out" } ],
         "out_data_18_ap_vld": [ { "direction": "out" } ],
+        "out_data_19": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
         "out_data_19_ap_vld": [ { "direction": "out" } ],
+        "out_data_20": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
         "out_data_20_ap_vld": [ { "direction": "out" } ],
+        "out_data_21": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_21_ap_vld": [ { "direction": "out" } ],
+        "out_data_22": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_22_ap_vld": [ { "direction": "out" } ],
+        "out_data_23": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_23_ap_vld": [ { "direction": "out" } ],
+        "out_data_24": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_24_ap_vld": [ { "direction": "out" } ],
+        "out_data_25": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_25_ap_vld": [ { "direction": "out" } ],
+        "out_data_26": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_26_ap_vld": [ { "direction": "out" } ],
+        "out_data_27": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_27_ap_vld": [ { "direction": "out" } ],
+        "out_data_28": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_28_ap_vld": [ { "direction": "out" } ],
+        "out_data_29": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_29_ap_vld": [ { "direction": "out" } ],
+        "out_data_30": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "out_data_30_ap_vld": [ { "direction": "out" } ],
         "ap_clk": [ { "direction": "in" } ],
         "ap_rst": [ { "direction": "in" } ],
         "ap_done": [ { "direction": "out" } ],
@@ -80,6 +111,12 @@
         "in_data_9": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "in_data_10": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "in_data_11": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_12": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_13": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_14": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_15": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_16": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "in_data_17": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "out_data_0": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
         "out_data_1": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
         "out_data_2": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
@@ -98,9 +135,7 @@
         "out_data_15": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
         "out_data_16": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
         "out_data_17": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
-        "out_data_18": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
-        "out_data_19": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
-        "out_data_20": [ { "direction": "out", "size_left": "15", "size_right": "0" } ]
+        "out_data_18": [ { "direction": "out", "size_left": "15", "size_right": "0" } ]
       },
       "interfaces": {
         "ap_clk": {
@@ -274,6 +309,72 @@
           },
           "port_maps": {
             "DATA": [ { "physical_name": "in_data_11" } ]
+          }
+        },
+        "in_data_12": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "in_data_12" } ]
+          }
+        },
+        "in_data_13": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "in_data_13" } ]
+          }
+        },
+        "in_data_14": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "in_data_14" } ]
+          }
+        },
+        "in_data_15": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "in_data_15" } ]
+          }
+        },
+        "in_data_16": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "in_data_16" } ]
+          }
+        },
+        "in_data_17": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "in_data_17" } ]
           }
         },
         "out_data_0": {
@@ -483,28 +584,6 @@
           },
           "port_maps": {
             "DATA": [ { "physical_name": "out_data_18" } ]
-          }
-        },
-        "out_data_19": {
-          "vlnv": "xilinx.com:signal:data:1.0",
-          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
-          "mode": "master",
-          "parameters": {
-            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "DATA": [ { "physical_name": "out_data_19" } ]
-          }
-        },
-        "out_data_20": {
-          "vlnv": "xilinx.com:signal:data:1.0",
-          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
-          "mode": "master",
-          "parameters": {
-            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "DATA": [ { "physical_name": "out_data_20" } ]
           }
         }
       }

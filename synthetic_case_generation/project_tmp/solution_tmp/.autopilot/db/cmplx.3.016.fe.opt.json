@@ -2,16 +2,16 @@
   "0": {
     "basicblocks": 1,
     "calls": "",
-    "file": "case_9.cc",
+    "file": "case_1.cc",
     "fileloc": 6,
-    "instructions": 920,
+    "instructions": 1004,
     "loads": {
-      "T": 8
+      "T": 13
     },
-    "name": "case_9",
+    "name": "case_1",
     "stores": {
-      "T": 21
+      "T": 19
     },
-    "total_instructions": 920
+    "total_instructions": 1004
   }
 }

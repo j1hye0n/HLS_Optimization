@@ -9,14 +9,18 @@ import re
 
 
 def get_LUT_op_list(directives):
-	LUT_op_list = []
-	for direct in directives:
-		if direct.startswith('#'):
-			continue
-		res = list(map(int, re.findall(r'\d+', direct)))
-		if len(res) == 2:
-			LUT_op_list.append(res[1])
-	return LUT_op_list
+    LUT_op_list = []
+    for direct in directives:
+        if direct.startswith('#'):
+            continue
+
+        print(f"directive={direct}")
+        res = list(map(int, re.findall(r'\d+', direct)))
+        print(f"res type={type(res)} res={res}")
+
+        if len(res) == 2:
+            LUT_op_list.append(res[1])
+    return LUT_op_list
 
 
 def run_one_case(case_id, path, samp_num = 5, sol = 1):
@@ -118,7 +122,7 @@ def run_one_case(case_id, path, samp_num = 5, sol = 1):
 		
 
 def main():
-	run_one_case(3, "/HLS_ML/data_collect/HLS/case_3/", samp_num = 10)
+	run_one_case(1, "./HLS/case_1/", samp_num = 5)
 
 if __name__ == "__main__":
     main()

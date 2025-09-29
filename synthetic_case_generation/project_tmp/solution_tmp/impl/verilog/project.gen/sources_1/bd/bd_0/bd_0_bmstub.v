@@ -12,7 +12,22 @@ module bd_0 (
   in_data_1,
   in_data_10,
   in_data_11,
+  in_data_12,
+  in_data_13,
+  in_data_14,
+  in_data_15,
+  in_data_16,
+  in_data_17,
+  in_data_18,
+  in_data_19,
   in_data_2,
+  in_data_20,
+  in_data_21,
+  in_data_22,
+  in_data_23,
+  in_data_24,
+  in_data_25,
+  in_data_26,
   in_data_3,
   in_data_4,
   in_data_5,
@@ -47,8 +62,28 @@ module bd_0 (
   out_data_2,
   out_data_20,
   out_data_20_ap_vld,
+  out_data_21,
+  out_data_21_ap_vld,
+  out_data_22,
+  out_data_22_ap_vld,
+  out_data_23,
+  out_data_23_ap_vld,
+  out_data_24,
+  out_data_24_ap_vld,
+  out_data_25,
+  out_data_25_ap_vld,
+  out_data_26,
+  out_data_26_ap_vld,
+  out_data_27,
+  out_data_27_ap_vld,
+  out_data_28,
+  out_data_28_ap_vld,
+  out_data_29,
+  out_data_29_ap_vld,
   out_data_2_ap_vld,
   out_data_3,
+  out_data_30,
+  out_data_30_ap_vld,
   out_data_3_ap_vld,
   out_data_4,
   out_data_4_ap_vld,
@@ -92,10 +127,52 @@ module bd_0 (
   (* X_INTERFACE_MODE = "slave DATA.IN_DATA_11" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_11, LAYERED_METADATA undef" *)
   input [15:0]in_data_11;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_12 DATA" *)
+  (* X_INTERFACE_MODE = "slave DATA.IN_DATA_12" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_12, LAYERED_METADATA undef" *)
+  input [15:0]in_data_12;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_13 DATA" *)
+  (* X_INTERFACE_MODE = "slave DATA.IN_DATA_13" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_13, LAYERED_METADATA undef" *)
+  input [15:0]in_data_13;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_14 DATA" *)
+  (* X_INTERFACE_MODE = "slave DATA.IN_DATA_14" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_14, LAYERED_METADATA undef" *)
+  input [15:0]in_data_14;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_15 DATA" *)
+  (* X_INTERFACE_MODE = "slave DATA.IN_DATA_15" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_15, LAYERED_METADATA undef" *)
+  input [15:0]in_data_15;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_16 DATA" *)
+  (* X_INTERFACE_MODE = "slave DATA.IN_DATA_16" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_16, LAYERED_METADATA undef" *)
+  input [15:0]in_data_16;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_17 DATA" *)
+  (* X_INTERFACE_MODE = "slave DATA.IN_DATA_17" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_17, LAYERED_METADATA undef" *)
+  input [15:0]in_data_17;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_18;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_19;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_2 DATA" *)
   (* X_INTERFACE_MODE = "slave DATA.IN_DATA_2" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_2, LAYERED_METADATA undef" *)
   input [15:0]in_data_2;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_20;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_21;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_22;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_23;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_24;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_25;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]in_data_26;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.IN_DATA_3 DATA" *)
   (* X_INTERFACE_MODE = "slave DATA.IN_DATA_3" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.IN_DATA_3, LAYERED_METADATA undef" *)
@@ -188,9 +265,7 @@ module bd_0 (
   output [15:0]out_data_18;
   (* X_INTERFACE_IGNORE = "true" *)
   output out_data_18_ap_vld;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.OUT_DATA_19 DATA" *)
-  (* X_INTERFACE_MODE = "master DATA.OUT_DATA_19" *)
-  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.OUT_DATA_19, LAYERED_METADATA undef" *)
+  (* X_INTERFACE_IGNORE = "true" *)
   output [15:0]out_data_19;
   (* X_INTERFACE_IGNORE = "true" *)
   output out_data_19_ap_vld;
@@ -200,18 +275,56 @@ module bd_0 (
   (* X_INTERFACE_MODE = "master DATA.OUT_DATA_2" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.OUT_DATA_2, LAYERED_METADATA undef" *)
   output [15:0]out_data_2;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.OUT_DATA_20 DATA" *)
-  (* X_INTERFACE_MODE = "master DATA.OUT_DATA_20" *)
-  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.OUT_DATA_20, LAYERED_METADATA undef" *)
+  (* X_INTERFACE_IGNORE = "true" *)
   output [15:0]out_data_20;
   (* X_INTERFACE_IGNORE = "true" *)
   output out_data_20_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_21;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_21_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_22;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_22_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_23;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_23_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_24;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_24_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_25;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_25_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_26;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_26_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_27;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_27_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_28;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_28_ap_vld;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_29;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_29_ap_vld;
   (* X_INTERFACE_IGNORE = "true" *)
   output out_data_2_ap_vld;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.OUT_DATA_3 DATA" *)
   (* X_INTERFACE_MODE = "master DATA.OUT_DATA_3" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.OUT_DATA_3, LAYERED_METADATA undef" *)
   output [15:0]out_data_3;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [15:0]out_data_30;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output out_data_30_ap_vld;
   (* X_INTERFACE_IGNORE = "true" *)
   output out_data_3_ap_vld;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.OUT_DATA_4 DATA" *)

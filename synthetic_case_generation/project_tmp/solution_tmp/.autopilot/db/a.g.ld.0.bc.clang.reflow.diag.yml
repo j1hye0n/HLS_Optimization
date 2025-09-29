@@ -1,19 +1,19 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-Function:        apatb_case_9_ir
+Function:        apatb_case_1_ir
 Args:            
-  - Callee:          'case_9(ap_int<16>*, ap_int<16>*)'
-    DebugLoc:        { File: HLS/case_9/case_9.cc, Line: 10, Column: 0 }
+  - Callee:          'case_1(ap_int<16>*, ap_int<16>*)'
+    DebugLoc:        { File: HLS/case_1/case_1.cc, Line: 10, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          apatb_case_9_ir
+  - Caller:          apatb_case_1_ir
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: HLS/case_9/case_9.cc, Line: 10, Column: 0 }
-Function:        _Z6case_9P6ap_intILi16EES1_
+DebugLoc:        { File: HLS/case_1/case_1.cc, Line: 10, Column: 0 }
+Function:        _Z6case_1P6ap_intILi16EES1_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -30,8 +30,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: HLS/case_9/case_9.cc, Line: 10, Column: 0 }
-Function:        _Z6case_9P6ap_intILi16EES1_
+DebugLoc:        { File: HLS/case_1/case_1.cc, Line: 10, Column: 0 }
+Function:        _Z6case_1P6ap_intILi16EES1_
 Args:            
   - String:          'Applying '
   - String:          array_partition

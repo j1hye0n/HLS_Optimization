@@ -47,14 +47,23 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:hls:case_9:1.0
-// IP Revision: 2114263170
+// IP VLNV: xilinx.com:hls:case_1:1.0
+// IP Revision: 2114277592
 
 `timescale 1ns/1ps
 
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (
+  in_data_18,
+  in_data_19,
+  in_data_20,
+  in_data_21,
+  in_data_22,
+  in_data_23,
+  in_data_24,
+  in_data_25,
+  in_data_26,
   out_data_0_ap_vld,
   out_data_1_ap_vld,
   out_data_2_ap_vld,
@@ -74,8 +83,30 @@ module bd_0_hls_inst_0 (
   out_data_16_ap_vld,
   out_data_17_ap_vld,
   out_data_18_ap_vld,
+  out_data_19,
   out_data_19_ap_vld,
+  out_data_20,
   out_data_20_ap_vld,
+  out_data_21,
+  out_data_21_ap_vld,
+  out_data_22,
+  out_data_22_ap_vld,
+  out_data_23,
+  out_data_23_ap_vld,
+  out_data_24,
+  out_data_24_ap_vld,
+  out_data_25,
+  out_data_25_ap_vld,
+  out_data_26,
+  out_data_26_ap_vld,
+  out_data_27,
+  out_data_27_ap_vld,
+  out_data_28,
+  out_data_28_ap_vld,
+  out_data_29,
+  out_data_29_ap_vld,
+  out_data_30,
+  out_data_30_ap_vld,
   ap_clk,
   ap_rst,
   ap_done,
@@ -94,6 +125,12 @@ module bd_0_hls_inst_0 (
   in_data_9,
   in_data_10,
   in_data_11,
+  in_data_12,
+  in_data_13,
+  in_data_14,
+  in_data_15,
+  in_data_16,
+  in_data_17,
   out_data_0,
   out_data_1,
   out_data_2,
@@ -112,11 +149,18 @@ module bd_0_hls_inst_0 (
   out_data_15,
   out_data_16,
   out_data_17,
-  out_data_18,
-  out_data_19,
-  out_data_20
+  out_data_18
 );
 
+input wire [15 : 0] in_data_18;
+input wire [15 : 0] in_data_19;
+input wire [15 : 0] in_data_20;
+input wire [15 : 0] in_data_21;
+input wire [15 : 0] in_data_22;
+input wire [15 : 0] in_data_23;
+input wire [15 : 0] in_data_24;
+input wire [15 : 0] in_data_25;
+input wire [15 : 0] in_data_26;
 output wire out_data_0_ap_vld;
 output wire out_data_1_ap_vld;
 output wire out_data_2_ap_vld;
@@ -136,8 +180,30 @@ output wire out_data_15_ap_vld;
 output wire out_data_16_ap_vld;
 output wire out_data_17_ap_vld;
 output wire out_data_18_ap_vld;
+output wire [15 : 0] out_data_19;
 output wire out_data_19_ap_vld;
+output wire [15 : 0] out_data_20;
 output wire out_data_20_ap_vld;
+output wire [15 : 0] out_data_21;
+output wire out_data_21_ap_vld;
+output wire [15 : 0] out_data_22;
+output wire out_data_22_ap_vld;
+output wire [15 : 0] out_data_23;
+output wire out_data_23_ap_vld;
+output wire [15 : 0] out_data_24;
+output wire out_data_24_ap_vld;
+output wire [15 : 0] out_data_25;
+output wire out_data_25_ap_vld;
+output wire [15 : 0] out_data_26;
+output wire out_data_26_ap_vld;
+output wire [15 : 0] out_data_27;
+output wire out_data_27_ap_vld;
+output wire [15 : 0] out_data_28;
+output wire out_data_28_ap_vld;
+output wire [15 : 0] out_data_29;
+output wire out_data_29_ap_vld;
+output wire [15 : 0] out_data_30;
+output wire out_data_30_ap_vld;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_RESET ap_rst, FREQ_HZ 100000000.0, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *)
@@ -203,6 +269,30 @@ input wire [15 : 0] in_data_10;
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_data_11, LAYERED_METADATA undef" *)
 input wire [15 : 0] in_data_11;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 in_data_12 DATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_data_12, LAYERED_METADATA undef" *)
+input wire [15 : 0] in_data_12;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 in_data_13 DATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_data_13, LAYERED_METADATA undef" *)
+input wire [15 : 0] in_data_13;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 in_data_14 DATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_data_14, LAYERED_METADATA undef" *)
+input wire [15 : 0] in_data_14;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 in_data_15 DATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_data_15, LAYERED_METADATA undef" *)
+input wire [15 : 0] in_data_15;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 in_data_16 DATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_data_16, LAYERED_METADATA undef" *)
+input wire [15 : 0] in_data_16;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 in_data_17 DATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_data_17, LAYERED_METADATA undef" *)
+input wire [15 : 0] in_data_17;
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 out_data_0 DATA" *)
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_data_0, LAYERED_METADATA undef" *)
@@ -279,19 +369,20 @@ output wire [15 : 0] out_data_17;
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_data_18, LAYERED_METADATA undef" *)
 output wire [15 : 0] out_data_18;
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 out_data_19 DATA" *)
-(* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_data_19, LAYERED_METADATA undef" *)
-output wire [15 : 0] out_data_19;
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 out_data_20 DATA" *)
-(* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_data_20, LAYERED_METADATA undef" *)
-output wire [15 : 0] out_data_20;
 
 (* SDX_KERNEL = "true" *)
 (* SDX_KERNEL_TYPE = "hls" *)
 (* SDX_KERNEL_SIM_INST = "" *)
-  case_9 inst (
+  case_1 inst (
+    .in_data_18(in_data_18),
+    .in_data_19(in_data_19),
+    .in_data_20(in_data_20),
+    .in_data_21(in_data_21),
+    .in_data_22(in_data_22),
+    .in_data_23(in_data_23),
+    .in_data_24(in_data_24),
+    .in_data_25(in_data_25),
+    .in_data_26(in_data_26),
     .out_data_0_ap_vld(out_data_0_ap_vld),
     .out_data_1_ap_vld(out_data_1_ap_vld),
     .out_data_2_ap_vld(out_data_2_ap_vld),
@@ -311,8 +402,30 @@ output wire [15 : 0] out_data_20;
     .out_data_16_ap_vld(out_data_16_ap_vld),
     .out_data_17_ap_vld(out_data_17_ap_vld),
     .out_data_18_ap_vld(out_data_18_ap_vld),
+    .out_data_19(out_data_19),
     .out_data_19_ap_vld(out_data_19_ap_vld),
+    .out_data_20(out_data_20),
     .out_data_20_ap_vld(out_data_20_ap_vld),
+    .out_data_21(out_data_21),
+    .out_data_21_ap_vld(out_data_21_ap_vld),
+    .out_data_22(out_data_22),
+    .out_data_22_ap_vld(out_data_22_ap_vld),
+    .out_data_23(out_data_23),
+    .out_data_23_ap_vld(out_data_23_ap_vld),
+    .out_data_24(out_data_24),
+    .out_data_24_ap_vld(out_data_24_ap_vld),
+    .out_data_25(out_data_25),
+    .out_data_25_ap_vld(out_data_25_ap_vld),
+    .out_data_26(out_data_26),
+    .out_data_26_ap_vld(out_data_26_ap_vld),
+    .out_data_27(out_data_27),
+    .out_data_27_ap_vld(out_data_27_ap_vld),
+    .out_data_28(out_data_28),
+    .out_data_28_ap_vld(out_data_28_ap_vld),
+    .out_data_29(out_data_29),
+    .out_data_29_ap_vld(out_data_29_ap_vld),
+    .out_data_30(out_data_30),
+    .out_data_30_ap_vld(out_data_30_ap_vld),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
     .ap_done(ap_done),
@@ -331,6 +444,12 @@ output wire [15 : 0] out_data_20;
     .in_data_9(in_data_9),
     .in_data_10(in_data_10),
     .in_data_11(in_data_11),
+    .in_data_12(in_data_12),
+    .in_data_13(in_data_13),
+    .in_data_14(in_data_14),
+    .in_data_15(in_data_15),
+    .in_data_16(in_data_16),
+    .in_data_17(in_data_17),
     .out_data_0(out_data_0),
     .out_data_1(out_data_1),
     .out_data_2(out_data_2),
@@ -349,8 +468,6 @@ output wire [15 : 0] out_data_20;
     .out_data_15(out_data_15),
     .out_data_16(out_data_16),
     .out_data_17(out_data_17),
-    .out_data_18(out_data_18),
-    .out_data_19(out_data_19),
-    .out_data_20(out_data_20)
+    .out_data_18(out_data_18)
   );
 endmodule

@@ -6593,475 +6593,655 @@ inline __attribute__((nodebug)) bool operator!=(
 # 370 "/tools/xilinx/Vitis/2024.2/common/technology/autopilot/ap_fixed.h" 2
 # 5 "HLS/case_1/case_1.cc" 2
 
-void case_1(
-    ap_int<16> in_data[27],
-    ap_int<16> out_data[31]
+__attribute__((sdx_kernel("case_1", 0))) void case_1(
+    ap_int<16> in_data[18],
+    ap_int<16> out_data[19]
 )
 {
+#line 10 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/script_tmp.tcl"
+#pragma HLSDIRECTIVE TOP name=case_1
+# 10 "HLS/case_1/case_1.cc"
+
 
 #pragma HLS array_partition variable=in_data complete
 #pragma HLS array_partition variable=out_data complete
 
 
 
-ap_int<6> in1;
-in1.range(5, 0) = in_data[0].range(5, 0);
-ap_int<12> in2;
-in2.range(11, 0) = in_data[1].range(11, 0);
-ap_int<10> in3;
-in3.range(9, 0) = in_data[2].range(9, 0);
-ap_int<16> in4;
-in4.range(15, 0) = in_data[3].range(15, 0);
-ap_int<8> in5;
-in5.range(7, 0) = in_data[4].range(7, 0);
-ap_int<11> in6;
-in6.range(10, 0) = in_data[5].range(10, 0);
-ap_int<15> in7;
-in7.range(14, 0) = in_data[6].range(14, 0);
-ap_int<15> in8;
-in8.range(14, 0) = in_data[7].range(14, 0);
-ap_int<10> in9;
-in9.range(9, 0) = in_data[8].range(9, 0);
-ap_int<15> in10;
-in10.range(14, 0) = in_data[9].range(14, 0);
-ap_int<6> in11;
-in11.range(5, 0) = in_data[10].range(5, 0);
+ap_int<3> in1;
+in1.range(2, 0) = in_data[0].range(2, 0);
+ap_int<11> in2;
+in2.range(10, 0) = in_data[1].range(10, 0);
+ap_int<12> in3;
+in3.range(11, 0) = in_data[2].range(11, 0);
+ap_int<8> in4;
+in4.range(7, 0) = in_data[3].range(7, 0);
+ap_int<16> in5;
+in5.range(15, 0) = in_data[4].range(15, 0);
+ap_int<16> in6;
+in6.range(15, 0) = in_data[5].range(15, 0);
+ap_int<14> in7;
+in7.range(13, 0) = in_data[6].range(13, 0);
+ap_int<4> in8;
+in8.range(3, 0) = in_data[7].range(3, 0);
+ap_int<8> in9;
+in9.range(7, 0) = in_data[8].range(7, 0);
+ap_int<5> in10;
+in10.range(4, 0) = in_data[9].range(4, 0);
+ap_int<9> in11;
+in11.range(8, 0) = in_data[10].range(8, 0);
 ap_int<5> in12;
 in12.range(4, 0) = in_data[11].range(4, 0);
-ap_int<8> in13;
-in13.range(7, 0) = in_data[12].range(7, 0);
-ap_int<3> in14;
-in14.range(2, 0) = in_data[13].range(2, 0);
-ap_int<16> in15;
-in15.range(15, 0) = in_data[14].range(15, 0);
-ap_int<15> in16;
-in16.range(14, 0) = in_data[15].range(14, 0);
-ap_int<16> in17;
-in17.range(15, 0) = in_data[16].range(15, 0);
-ap_int<7> in18;
-in18.range(6, 0) = in_data[17].range(6, 0);
-ap_int<4> in19;
-in19.range(3, 0) = in_data[18].range(3, 0);
-ap_int<5> in20;
-in20.range(4, 0) = in_data[19].range(4, 0);
-ap_int<5> in21;
-in21.range(4, 0) = in_data[20].range(4, 0);
-ap_int<10> in22;
-in22.range(9, 0) = in_data[21].range(9, 0);
-ap_int<2> in23;
-in23.range(1, 0) = in_data[22].range(1, 0);
-ap_int<4> in24;
-in24.range(3, 0) = in_data[23].range(3, 0);
-ap_int<16> in25;
-in25.range(15, 0) = in_data[24].range(15, 0);
-ap_int<15> in26;
-in26.range(14, 0) = in_data[25].range(14, 0);
-ap_int<9> in27;
-in27.range(8, 0) = in_data[26].range(8, 0);
+ap_int<5> in13;
+in13.range(4, 0) = in_data[12].range(4, 0);
+ap_int<8> in14;
+in14.range(7, 0) = in_data[13].range(7, 0);
+ap_int<11> in15;
+in15.range(10, 0) = in_data[14].range(10, 0);
+ap_int<9> in16;
+in16.range(8, 0) = in_data[15].range(8, 0);
+ap_int<14> in17;
+in17.range(13, 0) = in_data[16].range(13, 0);
+ap_int<9> in18;
+in18.range(8, 0) = in_data[17].range(8, 0);
 
-ap_int<14> m28;
-ap_int<7> m29;
-ap_int<8> m30;
-ap_int<13> m31;
-ap_int<3> m32;
-ap_int<14> m33;
-ap_int<3> m34;
-ap_int<8> m35;
-ap_int<4> m36;
-ap_int<4> m37;
-ap_int<3> m38;
-ap_int<9> m39;
-ap_int<7> m40;
-ap_int<16> m41;
-ap_int<16> m42;
-ap_int<16> m43;
-ap_int<13> m44;
-ap_int<14> m45;
-ap_int<3> m46;
-ap_int<13> m47;
+ap_int<10> m19;
+ap_int<4> m20;
+ap_int<13> m21;
+#line 3 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m21
+# 56 "HLS/case_1/case_1.cc"
+
+ap_int<15> m22;
+#line 4 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m22
+# 57 "HLS/case_1/case_1.cc"
+
+ap_int<14> m23;
+#line 5 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m23
+# 58 "HLS/case_1/case_1.cc"
+
+ap_int<6> m24;
+ap_int<9> m25;
+#line 7 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m25
+# 60 "HLS/case_1/case_1.cc"
+
+ap_int<11> m26;
+#line 8 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m26
+# 61 "HLS/case_1/case_1.cc"
+
+ap_int<10> m27;
+#line 9 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m27
+# 62 "HLS/case_1/case_1.cc"
+
+ap_int<7> m28;
+#line 10 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m28
+# 63 "HLS/case_1/case_1.cc"
+
+ap_int<13> m29;
+#line 11 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m29
+# 64 "HLS/case_1/case_1.cc"
+
+ap_int<3> m30;
+#line 12 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m30
+# 65 "HLS/case_1/case_1.cc"
+
+ap_int<15> m31;
+#line 13 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m31
+# 66 "HLS/case_1/case_1.cc"
+
+ap_int<11> m32;
+#line 14 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m32
+# 67 "HLS/case_1/case_1.cc"
+
+ap_int<15> m33;
+ap_int<11> m34;
+#line 16 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m34
+# 69 "HLS/case_1/case_1.cc"
+
+ap_int<9> m35;
+#line 17 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m35
+# 70 "HLS/case_1/case_1.cc"
+
+ap_int<13> m36;
+#line 18 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m36
+# 71 "HLS/case_1/case_1.cc"
+
+ap_int<16> m37;
+#line 19 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m37
+# 72 "HLS/case_1/case_1.cc"
+
+ap_int<11> m38;
+ap_int<8> m39;
+ap_int<16> m40;
+#line 22 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m40
+# 75 "HLS/case_1/case_1.cc"
+
+ap_int<3> m41;
+#line 23 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m41
+# 76 "HLS/case_1/case_1.cc"
+
+ap_int<9> m42;
+ap_int<11> m43;
+#line 25 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m43
+# 78 "HLS/case_1/case_1.cc"
+
+ap_int<5> m44;
+#line 26 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m44
+# 79 "HLS/case_1/case_1.cc"
+
+ap_int<8> m45;
+ap_int<5> m46;
+ap_int<8> m47;
 ap_int<14> m48;
-ap_int<6> m49;
-ap_int<9> m50;
-ap_int<9> m51;
-ap_int<14> m52;
-ap_int<4> m53;
-ap_int<6> m54;
-ap_int<4> m55;
-ap_int<16> m56;
-ap_int<10> m57;
-ap_int<16> m58;
-ap_int<13> m59;
-ap_int<13> m60;
-ap_int<3> m61;
-ap_int<8> m62;
-ap_int<2> m63;
-ap_int<9> m64;
-ap_int<7> m65;
-ap_int<4> m66;
-ap_int<14> m67;
-ap_int<10> m68;
-ap_int<8> m69;
-ap_int<6> m70;
-ap_int<16> m71;
-ap_int<8> m72;
-ap_int<14> m73;
-ap_int<10> m74;
-ap_int<2> m75;
-ap_int<12> m76;
-ap_int<10> m77;
-ap_int<5> m78;
-ap_int<7> m79;
+#line 30 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m48
+# 83 "HLS/case_1/case_1.cc"
+
+ap_int<7> m49;
+#line 31 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m49
+# 84 "HLS/case_1/case_1.cc"
+
+ap_int<7> m50;
+ap_int<14> m51;
+#line 33 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m51
+# 86 "HLS/case_1/case_1.cc"
+
+ap_int<9> m52;
+#line 34 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m52
+# 87 "HLS/case_1/case_1.cc"
+
+ap_int<9> m53;
+#line 35 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m53
+# 88 "HLS/case_1/case_1.cc"
+
+ap_int<4> m54;
+ap_int<7> m55;
+#line 37 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m55
+# 90 "HLS/case_1/case_1.cc"
+
+ap_int<4> m56;
+ap_int<13> m57;
+#line 39 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m57
+# 92 "HLS/case_1/case_1.cc"
+
+ap_int<3> m58;
+#line 40 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m58
+# 93 "HLS/case_1/case_1.cc"
+
+ap_int<5> m59;
+#line 41 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m59
+# 94 "HLS/case_1/case_1.cc"
+
+ap_int<2> m60;
+ap_int<8> m61;
+ap_int<11> m62;
+#line 44 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m62
+# 97 "HLS/case_1/case_1.cc"
+
+ap_int<3> m63;
+ap_int<16> m64;
+#line 46 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m64
+# 99 "HLS/case_1/case_1.cc"
+
+ap_int<13> m65;
+ap_int<6> m66;
+#line 48 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m66
+# 101 "HLS/case_1/case_1.cc"
+
+ap_int<8> m67;
+#line 49 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m67
+# 102 "HLS/case_1/case_1.cc"
+
+ap_int<4> m68;
+#line 50 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m68
+# 103 "HLS/case_1/case_1.cc"
+
+ap_int<9> m69;
+#line 51 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m69
+# 104 "HLS/case_1/case_1.cc"
+
+ap_int<14> m70;
+#line 52 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m70
+# 105 "HLS/case_1/case_1.cc"
+
+ap_int<10> m71;
+#line 53 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m71
+# 106 "HLS/case_1/case_1.cc"
+
+ap_int<4> m72;
+#line 54 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m72
+# 107 "HLS/case_1/case_1.cc"
+
+ap_int<11> m73;
+ap_int<4> m74;
+ap_int<8> m75;
+#line 57 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m75
+# 110 "HLS/case_1/case_1.cc"
+
+ap_int<7> m76;
+#line 58 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m76
+# 111 "HLS/case_1/case_1.cc"
+
+ap_int<5> m77;
+#line 59 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m77
+# 112 "HLS/case_1/case_1.cc"
+
+ap_int<13> m78;
+#line 60 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m78
+# 113 "HLS/case_1/case_1.cc"
+
+ap_int<9> m79;
+#line 61 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m79
+# 114 "HLS/case_1/case_1.cc"
+
 ap_int<9> m80;
-ap_int<10> m81;
-ap_int<12> m82;
-ap_int<7> m83;
-ap_int<13> m84;
-ap_int<4> m85;
-ap_int<9> m86;
-ap_int<9> m87;
-ap_int<11> m88;
-ap_int<3> m89;
-ap_int<10> m90;
-ap_int<3> m91;
-ap_int<4> m92;
-ap_int<6> m93;
-ap_int<6> m94;
-ap_int<7> m95;
-ap_int<9> m96;
-ap_int<3> m97;
-ap_int<6> m98;
-ap_int<14> m99;
-ap_int<12> m100;
-ap_int<14> m101;
-ap_int<13> m102;
-ap_int<9> m103;
-ap_int<6> m104;
-ap_int<10> m105;
-ap_int<7> m106;
-ap_int<6> m107;
-ap_int<10> m108;
-ap_int<7> m109;
-ap_int<13> m110;
-ap_int<12> m111;
-ap_int<13> m112;
-ap_int<12> m113;
-ap_int<12> m114;
-ap_int<15> m115;
-ap_int<13> m116;
-ap_int<5> m117;
-ap_int<7> m118;
-ap_int<14> m119;
+#line 62 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m80
+# 115 "HLS/case_1/case_1.cc"
+
+ap_int<11> m81;
+ap_int<14> m82;
+ap_int<8> m83;
+#line 65 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m83
+# 118 "HLS/case_1/case_1.cc"
+
+ap_int<8> m84;
+#line 66 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m84
+# 119 "HLS/case_1/case_1.cc"
+
+ap_int<10> m85;
+ap_int<8> m86;
+ap_int<13> m87;
+ap_int<12> m88;
+#line 70 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m88
+# 123 "HLS/case_1/case_1.cc"
+
+ap_int<6> m89;
+#line 71 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m89
+# 124 "HLS/case_1/case_1.cc"
+
+ap_int<8> m90;
+#line 72 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m90
+# 125 "HLS/case_1/case_1.cc"
+
+ap_int<4> m91;
+ap_int<13> m92;
+ap_int<16> m93;
+#line 75 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m93
+# 128 "HLS/case_1/case_1.cc"
+
+ap_int<9> m94;
+ap_int<9> m95;
+#line 77 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m95
+# 130 "HLS/case_1/case_1.cc"
+
+ap_int<13> m96;
+ap_int<16> m97;
+ap_int<16> m98;
+ap_int<11> m99;
+ap_int<15> m100;
+#line 82 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m100
+# 135 "HLS/case_1/case_1.cc"
+
+ap_int<16> m101;
+#line 83 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m101
+# 136 "HLS/case_1/case_1.cc"
+
+ap_int<10> m102;
+#line 84 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m102
+# 137 "HLS/case_1/case_1.cc"
+
+ap_int<6> m103;
+#line 85 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m103
+# 138 "HLS/case_1/case_1.cc"
+
+ap_int<11> m104;
+#line 86 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m104
+# 139 "HLS/case_1/case_1.cc"
+
+ap_int<7> m105;
+#line 87 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m105
+# 140 "HLS/case_1/case_1.cc"
+
+ap_int<8> m106;
+ap_int<15> m107;
+ap_int<8> m108;
+#line 90 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m108
+# 143 "HLS/case_1/case_1.cc"
+
+ap_int<9> m109;
+ap_int<8> m110;
+#line 92 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m110
+# 145 "HLS/case_1/case_1.cc"
+
+ap_int<5> m111;
+#line 93 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m111
+# 146 "HLS/case_1/case_1.cc"
+
+ap_int<7> m112;
+#line 94 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m112
+# 147 "HLS/case_1/case_1.cc"
+
+ap_int<9> m113;
+ap_int<7> m114;
+#line 96 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m114
+# 149 "HLS/case_1/case_1.cc"
+
+ap_int<11> m115;
+ap_int<11> m116;
+ap_int<14> m117;
+#line 99 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m117
+# 152 "HLS/case_1/case_1.cc"
+
+ap_int<13> m118;
+ap_int<7> m119;
+#line 101 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m119
+# 154 "HLS/case_1/case_1.cc"
+
 ap_int<8> m120;
-ap_int<9> m121;
-ap_int<16> m122;
-ap_int<12> m123;
-ap_int<6> m124;
-ap_int<11> m125;
-ap_int<15> m126;
-ap_int<15> m127;
-ap_int<12> m128;
+#line 102 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m120
+# 155 "HLS/case_1/case_1.cc"
+
+ap_int<7> m121;
+#line 103 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m121
+# 156 "HLS/case_1/case_1.cc"
+
+ap_int<13> m122;
+#line 104 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m122
+# 157 "HLS/case_1/case_1.cc"
+
+ap_int<9> m123;
+#line 105 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m123
+# 158 "HLS/case_1/case_1.cc"
+
+ap_int<8> m124;
+#line 106 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m124
+# 159 "HLS/case_1/case_1.cc"
+
+ap_int<10> m125;
+#line 107 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m125
+# 160 "HLS/case_1/case_1.cc"
+
+ap_int<7> m126;
+#line 108 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m126
+# 161 "HLS/case_1/case_1.cc"
+
+ap_int<14> m127;
+#line 109 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m127
+# 162 "HLS/case_1/case_1.cc"
+
+ap_int<13> m128;
+#line 110 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m128
+# 163 "HLS/case_1/case_1.cc"
+
 ap_int<6> m129;
-ap_int<11> m130;
-ap_int<11> m131;
-ap_int<11> m132;
-ap_int<12> m133;
-ap_int<12> m134;
-ap_int<14> m135;
-ap_int<10> m136;
-ap_int<11> m137;
-ap_int<8> m138;
-ap_int<12> m139;
-ap_int<6> m140;
-ap_int<15> m141;
-ap_int<16> m142;
-ap_int<7> m143;
-ap_int<7> m144;
-ap_int<9> m145;
-ap_int<9> m146;
-ap_int<13> m147;
-ap_int<13> m148;
-ap_int<7> m149;
-ap_int<9> m150;
-ap_int<9> m151;
-ap_int<14> m152;
-ap_int<5> m153;
-ap_int<6> m154;
-ap_int<15> m155;
-ap_int<12> m156;
-ap_int<8> m157;
-ap_int<11> m158;
-ap_int<5> m159;
-ap_int<4> m160;
-ap_int<13> m161;
-ap_int<11> m162;
-ap_int<13> m163;
-ap_int<13> m164;
-ap_int<13> m165;
-ap_int<12> m166;
-ap_int<9> m167;
-ap_int<7> m168;
-ap_int<12> m169;
-ap_int<8> m170;
-ap_int<6> m171;
-ap_int<10> m172;
-ap_int<9> m173;
-ap_int<5> m174;
-ap_int<15> m175;
-ap_int<14> m176;
-ap_int<15> m177;
-ap_int<6> m178;
-ap_int<9> m179;
-ap_int<8> m180;
-ap_int<6> m181;
-ap_int<13> m182;
-ap_int<6> m183;
-ap_int<7> m184;
-ap_int<14> m185;
-ap_int<12> m186;
-ap_int<12> m187;
-ap_int<11> m188;
-ap_int<16> m189;
-ap_int<4> m190;
-ap_int<14> m191;
-ap_int<16> m192;
-ap_int<14> m193;
-ap_int<12> m194;
-ap_int<7> m195;
-ap_int<7> m196;
-ap_int<9> m197;
-ap_int<10> m198;
-ap_int<15> m199;
-ap_int<15> m200;
-ap_int<12> m201;
-ap_int<8> m202;
-ap_int<12> m203;
-ap_int<15> m204;
-ap_int<5> m205;
-ap_int<4> m206;
-ap_int<13> m207;
-ap_int<14> m208;
-ap_int<13> m209;
-ap_int<7> m210;
-ap_int<9> m211;
-ap_int<7> m212;
+#line 111 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m129
+# 164 "HLS/case_1/case_1.cc"
 
-m28 = in16 * in8;
-m29 = in26 * in10;
-m30 = in20 * in22;
-m31 = in9 * in12;
-m32 = in19 * in21;
-m33 = in25 * in26;
-m34 = in21 * m30;
-m35 = m32 * m30;
-m36 = m32 * in23;
-m37 = m35 * m35;
-m38 = m37 + in12;
-m39 = in27 * m29;
-m40 = m37 * m33;
-m41 = in15 * in25;
-m42 = in17 * in21;
-m43 = m41 * in26;
-m44 = in18 * in27;
-m45 = m39 + m43;
-m46 = m38 * m34;
-m47 = in26 * in23;
-m48 = m33 * m47;
-m49 = m37 * m33;
-m50 = m39 * m44;
-m51 = in26 * m41;
-m52 = m43 * m28;
-m53 = m38 * m45;
-m54 = m52 * m29;
-m55 = m54 * m36;
-m56 = m31 * m51;
-m57 = m30 * m39;
-m58 = m57 * m42;
-m59 = m45 * m51;
-m60 = m47 * m46;
-m61 = m38 * m34;
-m62 = m56 * m58;
-m63 = m49 * m38;
-m64 = m42 + m50;
-m65 = m57 * m42;
-m66 = m50 * m65;
-m67 = m47 + m59;
-m68 = m45 + m64;
-m69 = m42 * m56;
-m70 = m68 * m69;
-m71 = m51 + m45;
-m72 = m70 * m56;
-m73 = m72 * m56;
-m74 = m48 + m59;
-m75 = m69 * m63;
-m76 = m69 * m57;
-m77 = m63 * m64;
-m78 = m62 * m77;
-m79 = m58 * m66;
-m80 = m70 * m54;
-m81 = m80 * m79;
-m82 = m60 * m55;
-m83 = m68 * m64;
-m84 = m83 * m72;
-m85 = m74 * m70;
-m86 = m77 * m84;
-m87 = m75 * m83;
-m88 = m62 * m86;
-m89 = m66 + m81;
-m90 = m74 + m84;
-m91 = m78 * m89;
-m92 = m72 * m74;
-m93 = m67 * m69;
-m94 = m87 * m78;
-m95 = m93 * m90;
-m96 = m92 + m71;
-m97 = m80 + m78;
-m98 = m86 + m77;
-m99 = m77 * m95;
-m100 = m92 * m84;
-m101 = m100 * m82;
-m102 = m99 * m98;
-m103 = m94 * m78;
-m104 = m78 * m90;
-m105 = m90 * m85;
-m106 = m81 * m84;
-m107 = m85 * m89;
-m108 = m82 * m100;
-m109 = m95 + m86;
-m110 = m87 + m87;
-m111 = m100 * m101;
-m112 = m94 + m110;
-m113 = m87 * m93;
-m114 = m113 * m94;
-m115 = m99 + m95;
-m116 = m111 * m92;
-m117 = m108 * m97;
-m118 = m98 * m93;
-m119 = m116 * m102;
-m120 = m93 * m101;
-m121 = m108 * m110;
-m122 = m104 * m111;
-m123 = m120 * m119;
-m124 = m116 * m106;
-m125 = m112 * m102;
-m126 = m103 * m122;
-m127 = m113 * m102;
-m128 = m107 * m127;
-m129 = m102 * m104;
-m130 = m109 * m127;
-m131 = m106 * m109;
-m132 = m117 * m125;
-m133 = m111 * m124;
-m134 = m129 + m133;
-m135 = m128 * m110;
-m136 = m121 * m127;
-m137 = m117 * m119;
-m138 = m127 + m112;
-m139 = m131 * m117;
-m140 = m117 * m118;
-m141 = m132 * m123;
-m142 = m134 * m126;
-m143 = m119 * m138;
-m144 = m121 + m134;
-m145 = m129 * m125;
-m146 = m144 * m121;
-m147 = m133 * m134;
-m148 = m136 + m139;
-m149 = m132 * m122;
-m150 = m146 * m131;
-m151 = m145 * m142;
-m152 = m151 * m145;
-m153 = m137 * m137;
-m154 = m146 * m150;
-m155 = m152 + m139;
-m156 = m155 + m150;
-m157 = m142 * m154;
-m158 = m134 * m148;
-m159 = m154 * m137;
-m160 = m145 * m150;
-m161 = m142 * m141;
-m162 = m159 * m141;
-m163 = m149 * m147;
-m164 = m159 * m156;
-m165 = m158 * m140;
-m166 = m165 + m142;
-m167 = m162 + m147;
-m168 = m156 * m161;
-m169 = m156 + m161;
-m170 = m145 * m149;
-m171 = m165 * m144;
-m172 = m152 * m162;
-m173 = m152 * m158;
-m174 = m171 * m168;
-m175 = m166 * m173;
-m176 = m161 * m175;
-m177 = m157 + m169;
-m178 = m172 * m160;
-m179 = m171 * m162;
-m180 = m178 * m167;
-m181 = m154 * m177;
-m182 = m166 * m170;
-m183 = m167 * m160;
-m184 = m170 * m166;
-m185 = m167 * m167;
-m186 = m165 * m185;
-m187 = m184 + m172;
-m188 = m161 * m185;
-m189 = m182 + m169;
-m190 = m186 * m174;
-m191 = m173 + m179;
-m192 = m191 * m185;
-m193 = m188 * m173;
-m194 = m189 + m182;
-m195 = m171 + m180;
-m196 = m178 * m172;
-m197 = m174 * m196;
-m198 = m174 * m195;
-m199 = m177 * m191;
-m200 = m188 + m196;
-m201 = m200 * m197;
-m202 = m197 * m188;
-m203 = m182 + m193;
-m204 = m203 * m192;
-m205 = m186 * m181;
-m206 = m184 * m197;
-m207 = m198 * m205;
-m208 = m193 * m194;
-m209 = m188 * m185;
-m210 = m194 * m185;
-m211 = m208 + m186;
-m212 = m208 * m205;
+ap_int<16> m130;
+ap_int<12> m131;
+ap_int<8> m132;
+#line 114 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m132
+# 167 "HLS/case_1/case_1.cc"
 
-out_data[0] = m40;
-out_data[1] = m53;
-out_data[2] = m61;
-out_data[3] = m73;
-out_data[4] = m76;
-out_data[5] = m88;
-out_data[6] = m91;
-out_data[7] = m96;
-out_data[8] = m105;
-out_data[9] = m114;
-out_data[10] = m115;
-out_data[11] = m130;
-out_data[12] = m135;
-out_data[13] = m143;
-out_data[14] = m153;
-out_data[15] = m163;
-out_data[16] = m164;
-out_data[17] = m176;
-out_data[18] = m183;
-out_data[19] = m187;
-out_data[20] = m190;
-out_data[21] = m199;
-out_data[22] = m201;
-out_data[23] = m202;
-out_data[24] = m204;
-out_data[25] = m206;
-out_data[26] = m207;
-out_data[27] = m209;
-out_data[28] = m210;
-out_data[29] = m211;
-out_data[30] = m212;
+ap_int<8> m133;
+ap_int<15> m134;
+#line 116 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m134
+# 169 "HLS/case_1/case_1.cc"
+
+ap_int<11> m135;
+ap_int<11> m136;
+#line 118 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m136
+# 171 "HLS/case_1/case_1.cc"
+
+ap_int<4> m137;
+#line 119 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m137
+# 172 "HLS/case_1/case_1.cc"
+
+ap_int<9> m138;
+ap_int<11> m139;
+#line 121 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m139
+# 174 "HLS/case_1/case_1.cc"
+
+ap_int<10> m140;
+#line 122 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m140
+# 175 "HLS/case_1/case_1.cc"
+
+ap_int<9> m141;
+#line 123 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m141
+# 176 "HLS/case_1/case_1.cc"
+
+ap_int<8> m142;
+#line 124 "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/directive_tmp.tcl"
+#pragma HLSDIRECTIVE BIND_OP impl=fabric op=mul variable=m142
+# 177 "HLS/case_1/case_1.cc"
+
+ap_int<16> m143;
+ap_int<8> m144;
+
+m19 = in3 * in8;
+m20 = in16 * in10;
+m21 = m19 * m19;
+m22 = in6 * in7;
+m23 = in5 * m21;
+m24 = in15 * in7;
+m25 = in13 + in14;
+m26 = in15 * m21;
+m27 = m24 + in14;
+m28 = m23 * in14;
+m29 = in18 + in11;
+m30 = in15 * m20;
+m31 = in17 + m29;
+m32 = in18 + in17;
+m33 = in17 * m26;
+m34 = in18 * m31;
+m35 = in17 * m22;
+m36 = m26 * m25;
+m37 = m23 * m32;
+m38 = m21 * m29;
+m39 = m29 * m28;
+m40 = m26 * m28;
+m41 = m28 * m39;
+m42 = m29 + m30;
+m43 = m32 * m33;
+m44 = m43 * m38;
+m45 = m42 * m34;
+m46 = m28 * m44;
+m47 = m45 * m44;
+m48 = m43 * m33;
+m49 = m42 * m43;
+m50 = m40 * m44;
+m51 = m43 * m34;
+m52 = m43 * m37;
+m53 = m36 * m41;
+m54 = m41 + m49;
+m55 = m49 + m50;
+m56 = m53 * m54;
+m57 = m45 + m43;
+m58 = m44 * m41;
+m59 = m44 * m58;
+m60 = m54 + m50;
+m61 = m50 + m59;
+m62 = m49 * m45;
+m63 = m50 * m54;
+m64 = m55 + m52;
+m65 = m51 * m48;
+m66 = m59 * m57;
+m67 = m63 * m61;
+m68 = m67 * m54;
+m69 = m67 * m51;
+m70 = m59 * m53;
+m71 = m58 + m57;
+m72 = m56 * m54;
+m73 = m69 + m66;
+m74 = m58 * m57;
+m75 = m69 * m59;
+m76 = m60 * m59;
+m77 = m69 * m71;
+m78 = m72 * m69;
+m79 = m69 * m74;
+m80 = m62 * m78;
+m81 = m79 * m73;
+m82 = m77 + m65;
+m83 = m71 * m80;
+m84 = m76 * m78;
+m85 = m71 * m67;
+m86 = m70 * m77;
+m87 = m73 * m76;
+m88 = m80 * m77;
+m89 = m76 * m78;
+m90 = m81 + m79;
+m91 = m89 * m87;
+m92 = m89 * m90;
+m93 = m87 + m81;
+m94 = m85 * m88;
+m95 = m82 * m80;
+m96 = m89 + m84;
+m97 = m90 * m85;
+m98 = m82 * m93;
+m99 = m82 * m96;
+m100 = m82 * m98;
+m101 = m92 * m89;
+m102 = m94 * m100;
+m103 = m86 * m93;
+m104 = m98 * m100;
+m105 = m98 * m92;
+m106 = m95 * m88;
+m107 = m98 + m104;
+m108 = m105 * m105;
+m109 = m96 * m102;
+m110 = m103 * m107;
+m111 = m110 * m110;
+m112 = m94 * m109;
+m113 = m101 * m96;
+m114 = m100 * m106;
+m115 = m102 * m105;
+m116 = m100 * m98;
+m117 = m111 * m99;
+m118 = m117 * m108;
+m119 = m116 * m116;
+m120 = m107 * m108;
+m121 = m117 * m106;
+m122 = m118 * m111;
+m123 = m122 * m115;
+m124 = m122 * m123;
+m125 = m113 + m118;
+m126 = m111 + m111;
+m127 = m122 * m114;
+m128 = m124 * m118;
+m129 = m122 * m120;
+m130 = m127 * m116;
+m131 = m122 * m117;
+m132 = m127 * m125;
+m133 = m120 * m125;
+m134 = m133 * m121;
+m135 = m124 * m127;
+m136 = m125 * m126;
+m137 = m120 * m132;
+m138 = m130 + m131;
+m139 = m135 + m121;
+m140 = m134 * m130;
+m141 = m128 * m137;
+m142 = m139 + m133;
+m143 = m133 + m133;
+m144 = m143 * m137;
+
+out_data[0] = m27;
+out_data[1] = m35;
+out_data[2] = m46;
+out_data[3] = m47;
+out_data[4] = m64;
+out_data[5] = m68;
+out_data[6] = m75;
+out_data[7] = m83;
+out_data[8] = m91;
+out_data[9] = m97;
+out_data[10] = m112;
+out_data[11] = m119;
+out_data[12] = m129;
+out_data[13] = m136;
+out_data[14] = m138;
+out_data[15] = m140;
+out_data[16] = m141;
+out_data[17] = m142;
+out_data[18] = m144;
 
 
 }

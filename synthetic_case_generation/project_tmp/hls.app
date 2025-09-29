@@ -1,4 +1,4 @@
-<AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" name="project_tmp" ideType="classic" top="case_9">
+<AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" name="project_tmp" ideType="classic" top="case_1">
     <files>
         <file name="HLS/case_9/case_9.cc" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="HLS/case_8/case_8.cc" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

@@ -2,17 +2,17 @@
   "0": {
     "basicblocks": 1,
     "calls": "",
-    "file": "case_9.cc",
+    "file": "case_1.cc",
     "fileloc": 6,
-    "instructions": 3722,
+    "instructions": 3214,
     "loads": {
-      "L": 181
+      "L": 143
     },
-    "name": "case_9",
+    "name": "case_1",
     "stores": {
-      "L": 160,
-      "T": 21
+      "L": 124,
+      "T": 19
     },
-    "total_instructions": 24862
+    "total_instructions": 20507
   }
 }

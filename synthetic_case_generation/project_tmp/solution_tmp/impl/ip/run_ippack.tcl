@@ -6,8 +6,8 @@
 # 
 # ==============================================================
 source -notrace "/tools/xilinx/Vitis/2024.2/common/scripts/ipxhls.tcl"
-set ip_dir "/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/impl/ip"
-set data_file "/home/hyeon/ironman/IronMan/synthetic_case_generation/project_tmp/solution_tmp/solution_tmp_data.json"
+set ip_dir "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip"
+set data_file "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/solution_tmp_data.json"
 set ip_types "vitis sysgen"
 if { [catch {::ipx::utils::package_hls_ip $ip_dir $data_file $ip_types } res] } {
   puts "Caught error:\n$::errorInfo"

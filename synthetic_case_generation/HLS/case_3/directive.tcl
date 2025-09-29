@@ -1,191 +1,111 @@
-set_directive_resource -core Mul_LUT "case_3" m6
-set_directive_resource -core Mul_LUT "case_3" m7
-set_directive_resource -core Mul_LUT "case_3" m8
-set_directive_resource -core Mul_LUT "case_3" m9
-set_directive_resource -core Mul_LUT "case_3" m10
-set_directive_resource -core Mul_LUT "case_3" m11
-set_directive_resource -core Mul_LUT "case_3" m12
-set_directive_resource -core Mul_LUT "case_3" m13
-set_directive_resource -core Mul_LUT "case_3" m14
-set_directive_resource -core Mul_LUT "case_3" m15
-set_directive_resource -core Mul_LUT "case_3" m16
-set_directive_resource -core Mul_LUT "case_3" m17
-set_directive_resource -core Mul_LUT "case_3" m18
-set_directive_resource -core Mul_LUT "case_3" m19
-set_directive_resource -core Mul_LUT "case_3" m20
-set_directive_resource -core Mul_LUT "case_3" m21
-set_directive_resource -core Mul_LUT "case_3" m22
-set_directive_resource -core Mul_LUT "case_3" m23
-set_directive_resource -core Mul_LUT "case_3" m24
-set_directive_resource -core Mul_LUT "case_3" m25
-set_directive_resource -core Mul_LUT "case_3" m26
-set_directive_resource -core Mul_LUT "case_3" m27
-set_directive_resource -core Mul_LUT "case_3" m28
-set_directive_resource -core Mul_LUT "case_3" m29
-set_directive_resource -core Mul_LUT "case_3" m30
-set_directive_resource -core Mul_LUT "case_3" m31
-set_directive_resource -core Mul_LUT "case_3" m32
-set_directive_resource -core Mul_LUT "case_3" m33
-set_directive_resource -core Mul_LUT "case_3" m34
-set_directive_resource -core Mul_LUT "case_3" m35
-set_directive_resource -core Mul_LUT "case_3" m36
-set_directive_resource -core Mul_LUT "case_3" m37
-set_directive_resource -core Mul_LUT "case_3" m38
-set_directive_resource -core Mul_LUT "case_3" m39
-set_directive_resource -core Mul_LUT "case_3" m40
-set_directive_resource -core Mul_LUT "case_3" m41
-set_directive_resource -core Mul_LUT "case_3" m42
-set_directive_resource -core Mul_LUT "case_3" m43
-set_directive_resource -core Mul_LUT "case_3" m44
-set_directive_resource -core Mul_LUT "case_3" m45
-set_directive_resource -core Mul_LUT "case_3" m46
-set_directive_resource -core Mul_LUT "case_3" m47
-set_directive_resource -core Mul_LUT "case_3" m48
-set_directive_resource -core Mul_LUT "case_3" m49
-set_directive_resource -core Mul_LUT "case_3" m50
-set_directive_resource -core Mul_LUT "case_3" m51
-set_directive_resource -core Mul_LUT "case_3" m52
-set_directive_resource -core Mul_LUT "case_3" m53
-set_directive_resource -core Mul_LUT "case_3" m54
-set_directive_resource -core Mul_LUT "case_3" m55
-set_directive_resource -core Mul_LUT "case_3" m56
-set_directive_resource -core Mul_LUT "case_3" m57
-set_directive_resource -core Mul_LUT "case_3" m58
-set_directive_resource -core Mul_LUT "case_3" m59
-set_directive_resource -core Mul_LUT "case_3" m60
-set_directive_resource -core Mul_LUT "case_3" m61
-set_directive_resource -core Mul_LUT "case_3" m62
-set_directive_resource -core Mul_LUT "case_3" m63
-set_directive_resource -core Mul_LUT "case_3" m64
-set_directive_resource -core Mul_LUT "case_3" m65
-set_directive_resource -core Mul_LUT "case_3" m66
-set_directive_resource -core Mul_LUT "case_3" m67
-set_directive_resource -core Mul_LUT "case_3" m68
-set_directive_resource -core Mul_LUT "case_3" m69
-set_directive_resource -core Mul_LUT "case_3" m70
-set_directive_resource -core Mul_LUT "case_3" m71
-set_directive_resource -core Mul_LUT "case_3" m72
-set_directive_resource -core Mul_LUT "case_3" m73
-set_directive_resource -core Mul_LUT "case_3" m74
-set_directive_resource -core Mul_LUT "case_3" m75
-set_directive_resource -core Mul_LUT "case_3" m76
-set_directive_resource -core Mul_LUT "case_3" m77
-set_directive_resource -core Mul_LUT "case_3" m78
-set_directive_resource -core Mul_LUT "case_3" m79
-set_directive_resource -core Mul_LUT "case_3" m80
-set_directive_resource -core Mul_LUT "case_3" m81
-set_directive_resource -core Mul_LUT "case_3" m82
-set_directive_resource -core Mul_LUT "case_3" m83
-set_directive_resource -core Mul_LUT "case_3" m84
-set_directive_resource -core Mul_LUT "case_3" m85
-set_directive_resource -core Mul_LUT "case_3" m86
-set_directive_resource -core Mul_LUT "case_3" m87
-set_directive_resource -core Mul_LUT "case_3" m88
-set_directive_resource -core Mul_LUT "case_3" m89
-set_directive_resource -core Mul_LUT "case_3" m90
-set_directive_resource -core Mul_LUT "case_3" m91
-set_directive_resource -core Mul_LUT "case_3" m92
-set_directive_resource -core Mul_LUT "case_3" m93
-set_directive_resource -core Mul_LUT "case_3" m94
-set_directive_resource -core Mul_LUT "case_3" m95
-set_directive_resource -core Mul_LUT "case_3" m96
-set_directive_resource -core Mul_LUT "case_3" m97
-set_directive_resource -core Mul_LUT "case_3" m98
-set_directive_resource -core Mul_LUT "case_3" m99
-set_directive_resource -core Mul_LUT "case_3" m100
-set_directive_resource -core Mul_LUT "case_3" m101
-set_directive_resource -core Mul_LUT "case_3" m102
-set_directive_resource -core Mul_LUT "case_3" m103
-set_directive_resource -core Mul_LUT "case_3" m104
-set_directive_resource -core Mul_LUT "case_3" m105
-set_directive_resource -core Mul_LUT "case_3" m106
-set_directive_resource -core Mul_LUT "case_3" m107
-set_directive_resource -core Mul_LUT "case_3" m108
-set_directive_resource -core Mul_LUT "case_3" m109
-set_directive_resource -core Mul_LUT "case_3" m110
-set_directive_resource -core Mul_LUT "case_3" m111
-set_directive_resource -core Mul_LUT "case_3" m112
-set_directive_resource -core Mul_LUT "case_3" m113
-set_directive_resource -core Mul_LUT "case_3" m114
-set_directive_resource -core Mul_LUT "case_3" m115
-set_directive_resource -core Mul_LUT "case_3" m116
-set_directive_resource -core Mul_LUT "case_3" m117
-set_directive_resource -core Mul_LUT "case_3" m118
-set_directive_resource -core Mul_LUT "case_3" m119
-set_directive_resource -core Mul_LUT "case_3" m120
-set_directive_resource -core Mul_LUT "case_3" m121
-set_directive_resource -core Mul_LUT "case_3" m122
-set_directive_resource -core Mul_LUT "case_3" m123
-set_directive_resource -core Mul_LUT "case_3" m124
-set_directive_resource -core Mul_LUT "case_3" m125
-set_directive_resource -core Mul_LUT "case_3" m126
-set_directive_resource -core Mul_LUT "case_3" m127
-set_directive_resource -core Mul_LUT "case_3" m128
-set_directive_resource -core Mul_LUT "case_3" m129
-set_directive_resource -core Mul_LUT "case_3" m130
-set_directive_resource -core Mul_LUT "case_3" m131
-set_directive_resource -core Mul_LUT "case_3" m132
-set_directive_resource -core Mul_LUT "case_3" m133
-set_directive_resource -core Mul_LUT "case_3" m134
-set_directive_resource -core Mul_LUT "case_3" m135
-set_directive_resource -core Mul_LUT "case_3" m136
-set_directive_resource -core Mul_LUT "case_3" m137
-set_directive_resource -core Mul_LUT "case_3" m138
-set_directive_resource -core Mul_LUT "case_3" m139
-set_directive_resource -core Mul_LUT "case_3" m140
-set_directive_resource -core Mul_LUT "case_3" m141
-set_directive_resource -core Mul_LUT "case_3" m142
-set_directive_resource -core Mul_LUT "case_3" m143
-set_directive_resource -core Mul_LUT "case_3" m144
-set_directive_resource -core Mul_LUT "case_3" m145
-set_directive_resource -core Mul_LUT "case_3" m146
-set_directive_resource -core Mul_LUT "case_3" m147
-set_directive_resource -core Mul_LUT "case_3" m148
-set_directive_resource -core Mul_LUT "case_3" m149
-set_directive_resource -core Mul_LUT "case_3" m150
-set_directive_resource -core Mul_LUT "case_3" m151
-set_directive_resource -core Mul_LUT "case_3" m152
-set_directive_resource -core Mul_LUT "case_3" m153
-set_directive_resource -core Mul_LUT "case_3" m154
-set_directive_resource -core Mul_LUT "case_3" m155
-set_directive_resource -core Mul_LUT "case_3" m156
-set_directive_resource -core Mul_LUT "case_3" m157
-set_directive_resource -core Mul_LUT "case_3" m158
-set_directive_resource -core Mul_LUT "case_3" m159
-set_directive_resource -core Mul_LUT "case_3" m160
-set_directive_resource -core Mul_LUT "case_3" m161
-set_directive_resource -core Mul_LUT "case_3" m162
-set_directive_resource -core Mul_LUT "case_3" m163
-set_directive_resource -core Mul_LUT "case_3" m164
-set_directive_resource -core Mul_LUT "case_3" m165
-set_directive_resource -core Mul_LUT "case_3" m166
-set_directive_resource -core Mul_LUT "case_3" m167
-set_directive_resource -core Mul_LUT "case_3" m168
-set_directive_resource -core Mul_LUT "case_3" m169
-set_directive_resource -core Mul_LUT "case_3" m170
-set_directive_resource -core Mul_LUT "case_3" m171
-set_directive_resource -core Mul_LUT "case_3" m172
-set_directive_resource -core Mul_LUT "case_3" m173
-set_directive_resource -core Mul_LUT "case_3" m174
-set_directive_resource -core Mul_LUT "case_3" m175
-set_directive_resource -core Mul_LUT "case_3" m176
-set_directive_resource -core Mul_LUT "case_3" m177
-set_directive_resource -core Mul_LUT "case_3" m178
-set_directive_resource -core Mul_LUT "case_3" m179
-set_directive_resource -core Mul_LUT "case_3" m180
-set_directive_resource -core Mul_LUT "case_3" m181
-set_directive_resource -core Mul_LUT "case_3" m182
-set_directive_resource -core Mul_LUT "case_3" m183
-set_directive_resource -core Mul_LUT "case_3" m184
-set_directive_resource -core Mul_LUT "case_3" m185
-set_directive_resource -core Mul_LUT "case_3" m186
-set_directive_resource -core Mul_LUT "case_3" m187
-set_directive_resource -core Mul_LUT "case_3" m188
-set_directive_resource -core Mul_LUT "case_3" m189
-set_directive_resource -core Mul_LUT "case_3" m190
-set_directive_resource -core Mul_LUT "case_3" m191
-set_directive_resource -core Mul_LUT "case_3" m192
-set_directive_resource -core Mul_LUT "case_3" m193
-set_directive_resource -core Mul_LUT "case_3" m194
-set_directive_resource -core Mul_LUT "case_3" m195
+set_directive_bind_op -op mul -impl fabric "case_3" m31
+set_directive_bind_op -op mul -impl fabric "case_3" m32
+set_directive_bind_op -op mul -impl fabric "case_3" m33
+set_directive_bind_op -op mul -impl fabric "case_3" m34
+set_directive_bind_op -op mul -impl fabric "case_3" m35
+set_directive_bind_op -op mul -impl fabric "case_3" m36
+set_directive_bind_op -op mul -impl fabric "case_3" m37
+set_directive_bind_op -op mul -impl fabric "case_3" m38
+set_directive_bind_op -op mul -impl fabric "case_3" m39
+set_directive_bind_op -op mul -impl fabric "case_3" m40
+set_directive_bind_op -op mul -impl fabric "case_3" m41
+set_directive_bind_op -op mul -impl fabric "case_3" m42
+set_directive_bind_op -op mul -impl fabric "case_3" m43
+set_directive_bind_op -op mul -impl fabric "case_3" m44
+set_directive_bind_op -op mul -impl fabric "case_3" m45
+set_directive_bind_op -op mul -impl fabric "case_3" m46
+set_directive_bind_op -op mul -impl fabric "case_3" m47
+set_directive_bind_op -op mul -impl fabric "case_3" m48
+set_directive_bind_op -op mul -impl fabric "case_3" m49
+set_directive_bind_op -op mul -impl fabric "case_3" m50
+set_directive_bind_op -op mul -impl fabric "case_3" m51
+set_directive_bind_op -op mul -impl fabric "case_3" m52
+set_directive_bind_op -op mul -impl fabric "case_3" m53
+set_directive_bind_op -op mul -impl fabric "case_3" m54
+set_directive_bind_op -op mul -impl fabric "case_3" m55
+set_directive_bind_op -op mul -impl fabric "case_3" m56
+set_directive_bind_op -op mul -impl fabric "case_3" m57
+set_directive_bind_op -op mul -impl fabric "case_3" m58
+set_directive_bind_op -op mul -impl fabric "case_3" m59
+set_directive_bind_op -op mul -impl fabric "case_3" m60
+set_directive_bind_op -op mul -impl fabric "case_3" m61
+set_directive_bind_op -op mul -impl fabric "case_3" m62
+set_directive_bind_op -op mul -impl fabric "case_3" m63
+set_directive_bind_op -op mul -impl fabric "case_3" m64
+set_directive_bind_op -op mul -impl fabric "case_3" m65
+set_directive_bind_op -op mul -impl fabric "case_3" m66
+set_directive_bind_op -op mul -impl fabric "case_3" m67
+set_directive_bind_op -op mul -impl fabric "case_3" m68
+set_directive_bind_op -op mul -impl fabric "case_3" m69
+set_directive_bind_op -op mul -impl fabric "case_3" m70
+set_directive_bind_op -op mul -impl fabric "case_3" m71
+set_directive_bind_op -op mul -impl fabric "case_3" m72
+set_directive_bind_op -op mul -impl fabric "case_3" m73
+set_directive_bind_op -op mul -impl fabric "case_3" m74
+set_directive_bind_op -op mul -impl fabric "case_3" m75
+set_directive_bind_op -op mul -impl fabric "case_3" m76
+set_directive_bind_op -op mul -impl fabric "case_3" m77
+set_directive_bind_op -op mul -impl fabric "case_3" m78
+set_directive_bind_op -op mul -impl fabric "case_3" m79
+set_directive_bind_op -op mul -impl fabric "case_3" m80
+set_directive_bind_op -op mul -impl fabric "case_3" m81
+set_directive_bind_op -op mul -impl fabric "case_3" m82
+set_directive_bind_op -op mul -impl fabric "case_3" m83
+set_directive_bind_op -op mul -impl fabric "case_3" m84
+set_directive_bind_op -op mul -impl fabric "case_3" m85
+set_directive_bind_op -op mul -impl fabric "case_3" m86
+set_directive_bind_op -op mul -impl fabric "case_3" m87
+set_directive_bind_op -op mul -impl fabric "case_3" m88
+set_directive_bind_op -op mul -impl fabric "case_3" m89
+set_directive_bind_op -op mul -impl fabric "case_3" m90
+set_directive_bind_op -op mul -impl fabric "case_3" m91
+set_directive_bind_op -op mul -impl fabric "case_3" m92
+set_directive_bind_op -op mul -impl fabric "case_3" m93
+set_directive_bind_op -op mul -impl fabric "case_3" m94
+set_directive_bind_op -op mul -impl fabric "case_3" m95
+set_directive_bind_op -op mul -impl fabric "case_3" m96
+set_directive_bind_op -op mul -impl fabric "case_3" m97
+set_directive_bind_op -op mul -impl fabric "case_3" m98
+set_directive_bind_op -op mul -impl fabric "case_3" m99
+set_directive_bind_op -op mul -impl fabric "case_3" m100
+set_directive_bind_op -op mul -impl fabric "case_3" m101
+set_directive_bind_op -op mul -impl fabric "case_3" m102
+set_directive_bind_op -op mul -impl fabric "case_3" m103
+set_directive_bind_op -op mul -impl fabric "case_3" m104
+set_directive_bind_op -op mul -impl fabric "case_3" m105
+set_directive_bind_op -op mul -impl fabric "case_3" m106
+set_directive_bind_op -op mul -impl fabric "case_3" m107
+set_directive_bind_op -op mul -impl fabric "case_3" m108
+set_directive_bind_op -op mul -impl fabric "case_3" m109
+set_directive_bind_op -op mul -impl fabric "case_3" m110
+set_directive_bind_op -op mul -impl fabric "case_3" m111
+set_directive_bind_op -op mul -impl fabric "case_3" m112
+set_directive_bind_op -op mul -impl fabric "case_3" m113
+set_directive_bind_op -op mul -impl fabric "case_3" m114
+set_directive_bind_op -op mul -impl fabric "case_3" m115
+set_directive_bind_op -op mul -impl fabric "case_3" m116
+set_directive_bind_op -op mul -impl fabric "case_3" m117
+set_directive_bind_op -op mul -impl fabric "case_3" m118
+set_directive_bind_op -op mul -impl fabric "case_3" m119
+set_directive_bind_op -op mul -impl fabric "case_3" m120
+set_directive_bind_op -op mul -impl fabric "case_3" m121
+set_directive_bind_op -op mul -impl fabric "case_3" m122
+set_directive_bind_op -op mul -impl fabric "case_3" m123
+set_directive_bind_op -op mul -impl fabric "case_3" m124
+set_directive_bind_op -op mul -impl fabric "case_3" m125
+set_directive_bind_op -op mul -impl fabric "case_3" m126
+set_directive_bind_op -op mul -impl fabric "case_3" m127
+set_directive_bind_op -op mul -impl fabric "case_3" m128
+set_directive_bind_op -op mul -impl fabric "case_3" m129
+set_directive_bind_op -op mul -impl fabric "case_3" m130
+set_directive_bind_op -op mul -impl fabric "case_3" m131
+set_directive_bind_op -op mul -impl fabric "case_3" m132
+set_directive_bind_op -op mul -impl fabric "case_3" m133
+set_directive_bind_op -op mul -impl fabric "case_3" m134
+set_directive_bind_op -op mul -impl fabric "case_3" m135
+set_directive_bind_op -op mul -impl fabric "case_3" m136
+set_directive_bind_op -op mul -impl fabric "case_3" m137
+set_directive_bind_op -op mul -impl fabric "case_3" m138
+set_directive_bind_op -op mul -impl fabric "case_3" m139
+set_directive_bind_op -op mul -impl fabric "case_3" m140
 

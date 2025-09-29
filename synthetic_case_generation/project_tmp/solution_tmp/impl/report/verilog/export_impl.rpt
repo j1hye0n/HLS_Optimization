@@ -1,0 +1,393 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Fri Sep 26 17:57:58 KST 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         project_tmp
+    * Solution:        solution_tmp (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg484-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              1599
+FF:               648
+DSP:              74
+BRAM:             0
+URAM:             0
+SRL:              0
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 8.326       |
+| Post-Route     | 9.509       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++----------------------------------------------------+------+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                               | LUT  | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++----------------------------------------------------+------+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                               | 1599 | 648 | 74  |      |      |     |        |      |         |          |        |
+|   (inst)                                           | 77   | 579 | 33  |      |      |     |        |      |         |          |        |
+|   am_addmul_11s_10s_11s_11_4_1_U145                | 10   |     | 1   |      |      |     |        |      |         |          |        |
+|     case_1_am_addmul_11s_10s_11s_11_4_1_DSP48_0_U  | 10   |     | 1   |      |      |     |        |      |         |          |        |
+|   am_addmul_11s_7s_9s_12_4_1_U147                  | 1    |     | 1   |      |      |     |        |      |         |          |        |
+|     case_1_am_addmul_11s_7s_9s_12_4_1_DSP48_0_U    | 1    |     | 1   |      |      |     |        |      |         |          |        |
+|   am_addmul_6ns_6ns_6s_6_4_1_U143                  | 24   | 24  |     |      |      |     |        |      |         |          |        |
+|     case_1_am_addmul_6ns_6ns_6s_6_4_1_DSP48_0_U    | 24   | 24  |     |      |      |     |        |      |         |          |        |
+|   am_addmul_7ns_7ns_7s_7_4_1_U144                  | 24   | 21  | 1   |      |      |     |        |      |         |          |        |
+|     case_1_am_addmul_7ns_7ns_7s_7_4_1_DSP48_0_U    | 24   | 21  | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_10s_10s_10s_10_4_1_U142               | 12   |     | 2   |      |      |     |        |      |         |          |        |
+|     case_1_mac_muladd_10s_10s_10s_10_4_1_DSP48_0_U | 12   |     | 2   |      |      |     |        |      |         |          |        |
+|   mac_muladd_7s_6s_6s_7_4_1_U146                   | 52   | 24  |     |      |      |     |        |      |         |          |        |
+|     case_1_mac_muladd_7s_6s_6s_7_4_1_DSP48_0_U     | 52   | 24  |     |      |      |     |        |      |         |          |        |
+|   mul_10s_10s_10_1_1_U111                          | 45   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_10s_4s_10_1_1_U54                            | 40   |     |     |      |      |     |        |      |         |          |        |
+|   mul_10s_5s_10_1_1_U107                           | 6    |     |     |      |      |     |        |      |         |          |        |
+|   mul_10s_5s_13_1_1_U141                           | 26   |     |     |      |      |     |        |      |         |          |        |
+|   mul_10s_5s_13_1_1_U3                             | 45   |     |     |      |      |     |        |      |         |          |        |
+|   mul_10s_7s_14_1_1_U59                            | 14   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_10s_8s_12_1_1_U34                            | 13   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_11s_11s_11_1_1_U123                          |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_11s_11s_11_1_1_U83                           | 9    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_11s_5s_11_1_1_U89                            | 40   |     |     |      |      |     |        |      |         |          |        |
+|   mul_11s_5s_12_1_1_U87                            | 34   |     |     |      |      |     |        |      |         |          |        |
+|   mul_11s_6s_13_1_1_U108                           | 9    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_11s_7s_11_1_1_U79                            |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12ns_2s_13_1_1_U12                           | 8    |     |     |      |      |     |        |      |         |          |        |
+|   mul_12s_10s_14_1_1_U85                           | 4    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_11s_15_1_1_U99                           |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_12s_12_1_1_U71                           |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_12s_12_1_1_U75                           |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_12s_13_1_1_U95                           |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_12s_24_1_1_U60                           |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_4s_12_1_1_U53                            | 37   |     |     |      |      |     |        |      |         |          |        |
+|   mul_12s_4s_13_1_1_U70                            | 38   |     |     |      |      |     |        |      |         |          |        |
+|   mul_12s_5s_13_1_1_U116                           | 26   |     |     |      |      |     |        |      |         |          |        |
+|   mul_12s_6s_12_1_1_U62                            |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_6s_12_1_1_U69                            | 5    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_6s_16_1_1_U81                            | 5    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_12s_8s_20_1_1_U113                           | 3    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_13s_10s_15_1_1_U129                          | 10   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_13s_11s_13_1_1_U132                          |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_13s_12s_13_1_1_U93                           |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_13s_13s_13_1_1_U109                          |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_13s_7s_13_1_1_U103                           | 13   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_13s_9s_16_1_1_U17                            | 1    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_14s_13s_14_1_1_U125                          |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_14s_8s_14_1_1_U44                            | 2    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_15s_14s_15_1_1_U139                          |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_16s_16s_16_1_1_U2                            |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_16s_5s_16_1_1_U11                            |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_4s_3s_7_1_1_U35                              | 10   |     |     |      |      |     |        |      |         |          |        |
+|   mul_4s_4s_4_1_1_U32                              | 4    |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_3s_5_1_1_U66                              | 20   |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_5s_5_1_1_U102                             |      |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_5s_5_1_1_U117                             | 18   |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_5s_5_1_1_U118                             | 4    |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_5s_5_1_1_U130                             | 3    |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_5s_5_1_1_U131                             | 3    |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_5s_5_1_1_U49                              | 14   |     |     |      |      |     |        |      |         |          |        |
+|   mul_5s_5s_5_1_1_U90                              | 12   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_4s_6_1_1_U114                             | 6    |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_4s_6_1_1_U120                             |      |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_5s_6_1_1_U61                              | 11   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_5s_6_1_1_U63                              | 11   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_5s_6_1_1_U68                              | 3    |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_5s_9_1_1_U74                              | 28   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U101                             | 9    |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U110                             | 11   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U14                              | 18   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U15                              | 18   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U24                              | 24   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U33                              | 16   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U73                              | 11   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_6_1_1_U77                              | 17   |     |     |      |      |     |        |      |         |          |        |
+|   mul_6s_6s_9_1_1_U40                              | 23   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_2s_9_1_1_U57                              | 4    |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_4s_7_1_1_U19                              | 12   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_4s_7_1_1_U39                              | 19   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_5s_10_1_1_U137                            | 1    |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_5s_12_1_1_U133                            | 25   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_5s_7_1_1_U140                             | 7    |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_6s_7_1_1_U128                             |      |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_7s_11_1_1_U80                             | 45   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_7s_7_1_1_U1                               | 24   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_7s_7_1_1_U124                             | 30   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_7s_7_1_1_U36                              | 32   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_7s_7_1_1_U47                              | 26   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_7s_7_1_1_U55                              | 24   |     |     |      |      |     |        |      |         |          |        |
+|   mul_7s_7s_7_1_1_U96                              | 12   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_5s_8_1_1_U8                               | 19   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_6s_8_1_1_U106                             | 13   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_6s_8_1_1_U38                              | 32   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_6s_8_1_1_U67                              | 29   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_7s_13_1_1_U48                             | 51   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_7s_8_1_1_U104                             | 29   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_8s_8_1_1_U138                             | 27   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_8s_8_1_1_U29                              | 19   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_8s_8_1_1_U30                              | 32   |     |     |      |      |     |        |      |         |          |        |
+|   mul_8s_8s_8_1_1_U37                              | 20   |     |     |      |      |     |        |      |         |          |        |
+|   mul_9s_2s_10_1_1_U46                             | 1    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_6s_9_1_1_U121                             | 18   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_6s_9_1_1_U94                              | 1    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_7s_9_1_1_U91                              | 38   |     |     |      |      |     |        |      |         |          |        |
+|   mul_9s_8s_10_1_1_U26                             | 16   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_8s_11_1_1_U58                             | 13   |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_9s_14_1_1_U105                            |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_9s_14_1_1_U115                            | 7    |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_9s_9_1_1_U122                             |      |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_9s_9s_9_1_1_U76                              | 32   |     |     |      |      |     |        |      |         |          |        |
+|   mul_9s_9s_9_1_1_U97                              | 33   |     |     |      |      |     |        |      |         |          |        |
++----------------------------------------------------+------+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 3.01%  | OK     |
+| FD                                                        | 50%       | 0.61%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.00%  | OK     |
+| MUXF7                                                     | 15%       | 0.03%  | OK     |
+| DSP                                                       | 80%       | 33.64% | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 33.64% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 23     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 3.02   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+---------------------------------+-------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                  | ENDPOINT PIN                              | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                 |                                           |              |            |                |          DELAY |        DELAY |
++-------+-------+---------------------------------+-------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.491 | trunc_ln397_1_reg_3395_reg[3]/C | mul_13s_11s_13_1_1_U132/tmp_product/A[23] |            3 |         32 |          9.063 |          5.221 |        3.842 |
+| Path2 | 0.498 | trunc_ln397_1_reg_3395_reg[3]/C | mul_15s_14s_15_1_1_U139/tmp_product/B[12] |            3 |         32 |          8.968 |          5.221 |        3.747 |
+| Path3 | 0.502 | trunc_ln397_1_reg_3395_reg[3]/C | mul_13s_11s_13_1_1_U132/tmp_product/A[22] |            3 |         32 |          9.052 |          5.221 |        3.831 |
+| Path4 | 0.572 | trunc_ln397_1_reg_3395_reg[3]/C | mul_13s_11s_13_1_1_U132/tmp_product/A[28] |            3 |         32 |          8.982 |          5.221 |        3.761 |
+| Path5 | 0.572 | trunc_ln397_1_reg_3395_reg[3]/C | mul_13s_11s_13_1_1_U132/tmp_product/A[29] |            3 |         32 |          8.982 |          5.221 |        3.761 |
++-------+-------+---------------------------------+-------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +------------------------------------------+----------------------+
+    | Path1 Cells                              | Primitive Type       |
+    +------------------------------------------+----------------------+
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_15s_14s_15_1_1_U139/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    +------------------------------------------+----------------------+
+
+    +------------------------------------------+----------------------+
+    | Path2 Cells                              | Primitive Type       |
+    +------------------------------------------+----------------------+
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_15s_14s_15_1_1_U139/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    +------------------------------------------+----------------------+
+
+    +------------------------------------------+----------------------+
+    | Path3 Cells                              | Primitive Type       |
+    +------------------------------------------+----------------------+
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_15s_14s_15_1_1_U139/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    +------------------------------------------+----------------------+
+
+    +------------------------------------------+----------------------+
+    | Path4 Cells                              | Primitive Type       |
+    +------------------------------------------+----------------------+
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_15s_14s_15_1_1_U139/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    +------------------------------------------+----------------------+
+
+    +------------------------------------------+----------------------+
+    | Path5 Cells                              | Primitive Type       |
+    +------------------------------------------+----------------------+
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_15s_14s_15_1_1_U139/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    | trunc_ln397_1_reg_3395_reg[3]            | FLOP_LATCH.flop.FDRE |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_2__0 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product_i_1__3 | CARRY.others.CARRY4  |
+    | mul_9s_9s_14_1_1_U115/tmp_product        | MULT.dsp.DSP48E1     |
+    | mul_13s_11s_13_1_1_U132/tmp_product      | MULT.dsp.DSP48E1     |
+    +------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+----------------------------------------------------------------+
+| Report Type              | Report Location                                                |
++--------------------------+----------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/case_1_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/case_1_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/case_1_power_routed.rpt                    |
+| status                   | impl/verilog/report/case_1_status_routed.rpt                   |
+| timing                   | impl/verilog/report/case_1_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/case_1_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/case_1_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/case_1_utilization_hierarchical_routed.rpt |
++--------------------------+----------------------------------------------------------------+
+
+

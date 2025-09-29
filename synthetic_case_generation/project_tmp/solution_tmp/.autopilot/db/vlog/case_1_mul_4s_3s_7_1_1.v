@@ -2,7 +2,7 @@
 
 `timescale 1 ns / 1 ps
 
- module case_1_mul_4s_3s_7_1_1(din0, din1, dout);
+ (* use_dsp = "no" *)  module case_1_mul_4s_3s_7_1_1(din0, din1, dout);
 parameter ID = 1;
 parameter NUM_STAGE = 0;
 parameter din0_WIDTH = 14;
