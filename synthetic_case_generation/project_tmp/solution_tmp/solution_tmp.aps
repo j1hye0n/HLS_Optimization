@@ -1,10 +1,4 @@
 <AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
-    <clockList>
-        <clock name="default" period="10" default="false"/>
-    </clockList>
-    <config>
-        <config_export format="ip_catalog"/>
-    </config>
     <name>
         <value string="solution_tmp"/>
     </name>
@@ -18,5 +12,11 @@
     <libraryList>
         <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
     </libraryList>
+    <clockList>
+        <clock name="default" period="10" default="false"/>
+    </clockList>
+    <config>
+        <config_export format="ip_catalog"/>
+    </config>
 </AutoPilot:solution>
 

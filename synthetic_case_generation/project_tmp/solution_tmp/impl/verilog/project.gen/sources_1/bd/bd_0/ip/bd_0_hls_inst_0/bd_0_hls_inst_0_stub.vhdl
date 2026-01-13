@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
--- Date        : Fri Sep 26 17:55:04 2025
--- Host        : DESKTOP-S15BKKL running 64-bit Ubuntu 22.04.5 LTS
+-- Tool Version: Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+-- Date        : Tue Dec 23 15:18:33 2025
+-- Host        : woong-Super-Server running 64-bit Ubuntu 24.04.3 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_stub.vhdl
+--               /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_stub.vhdl
 -- Design      : bd_0_hls_inst_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1
@@ -15,58 +15,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity bd_0_hls_inst_0 is
   Port ( 
-    in_data_18 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_19 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_20 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_21 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_22 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_23 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_24 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_25 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    in_data_26 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_0_ap_vld : out STD_LOGIC;
-    out_data_1_ap_vld : out STD_LOGIC;
-    out_data_2_ap_vld : out STD_LOGIC;
-    out_data_3_ap_vld : out STD_LOGIC;
-    out_data_4_ap_vld : out STD_LOGIC;
-    out_data_5_ap_vld : out STD_LOGIC;
-    out_data_6_ap_vld : out STD_LOGIC;
-    out_data_7_ap_vld : out STD_LOGIC;
-    out_data_8_ap_vld : out STD_LOGIC;
-    out_data_9_ap_vld : out STD_LOGIC;
-    out_data_10_ap_vld : out STD_LOGIC;
-    out_data_11_ap_vld : out STD_LOGIC;
-    out_data_12_ap_vld : out STD_LOGIC;
-    out_data_13_ap_vld : out STD_LOGIC;
-    out_data_14_ap_vld : out STD_LOGIC;
-    out_data_15_ap_vld : out STD_LOGIC;
-    out_data_16_ap_vld : out STD_LOGIC;
-    out_data_17_ap_vld : out STD_LOGIC;
-    out_data_18_ap_vld : out STD_LOGIC;
-    out_data_19 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_19_ap_vld : out STD_LOGIC;
-    out_data_20 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_20_ap_vld : out STD_LOGIC;
-    out_data_21 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_21_ap_vld : out STD_LOGIC;
-    out_data_22 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_22_ap_vld : out STD_LOGIC;
-    out_data_23 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_23_ap_vld : out STD_LOGIC;
-    out_data_24 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_24_ap_vld : out STD_LOGIC;
-    out_data_25 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_25_ap_vld : out STD_LOGIC;
-    out_data_26 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_26_ap_vld : out STD_LOGIC;
-    out_data_27 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_27_ap_vld : out STD_LOGIC;
-    out_data_28 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_28_ap_vld : out STD_LOGIC;
-    out_data_29 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_29_ap_vld : out STD_LOGIC;
-    out_data_30 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_30_ap_vld : out STD_LOGIC;
     ap_clk : in STD_LOGIC;
     ap_rst : in STD_LOGIC;
     ap_done : out STD_LOGIC;
@@ -91,6 +39,12 @@ entity bd_0_hls_inst_0 is
     in_data_15 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     in_data_16 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     in_data_17 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    in_data_18 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    in_data_19 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    in_data_20 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    in_data_21 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    in_data_22 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    in_data_23 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     out_data_0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     out_data_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     out_data_2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -109,13 +63,19 @@ entity bd_0_hls_inst_0 is
     out_data_15 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     out_data_16 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     out_data_17 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    out_data_18 : out STD_LOGIC_VECTOR ( 15 downto 0 )
+    out_data_18 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    out_data_19 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    out_data_20 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    out_data_21 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    out_data_22 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    out_data_23 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    out_data_24 : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
 
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of bd_0_hls_inst_0 : entity is "bd_0_hls_inst_0,case_1,{}";
+  attribute CHECK_LICENSE_TYPE of bd_0_hls_inst_0 : entity is "bd_0_hls_inst_0,case_11,{}";
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of bd_0_hls_inst_0 : entity is "bd_0_hls_inst_0,case_1,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=case_1,x_ipVersion=1.0,x_ipCoreRevision=2114277592,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
+  attribute CORE_GENERATION_INFO of bd_0_hls_inst_0 : entity is "bd_0_hls_inst_0,case_11,{x_ipProduct=Vivado 2025.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=case_11,x_ipVersion=1.0,x_ipCoreRevision=2114404156,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bd_0_hls_inst_0 : entity is "yes";
   attribute IP_DEFINITION_SOURCE : string;
@@ -128,7 +88,7 @@ architecture stub of bd_0_hls_inst_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "in_data_18[15:0],in_data_19[15:0],in_data_20[15:0],in_data_21[15:0],in_data_22[15:0],in_data_23[15:0],in_data_24[15:0],in_data_25[15:0],in_data_26[15:0],out_data_0_ap_vld,out_data_1_ap_vld,out_data_2_ap_vld,out_data_3_ap_vld,out_data_4_ap_vld,out_data_5_ap_vld,out_data_6_ap_vld,out_data_7_ap_vld,out_data_8_ap_vld,out_data_9_ap_vld,out_data_10_ap_vld,out_data_11_ap_vld,out_data_12_ap_vld,out_data_13_ap_vld,out_data_14_ap_vld,out_data_15_ap_vld,out_data_16_ap_vld,out_data_17_ap_vld,out_data_18_ap_vld,out_data_19[15:0],out_data_19_ap_vld,out_data_20[15:0],out_data_20_ap_vld,out_data_21[15:0],out_data_21_ap_vld,out_data_22[15:0],out_data_22_ap_vld,out_data_23[15:0],out_data_23_ap_vld,out_data_24[15:0],out_data_24_ap_vld,out_data_25[15:0],out_data_25_ap_vld,out_data_26[15:0],out_data_26_ap_vld,out_data_27[15:0],out_data_27_ap_vld,out_data_28[15:0],out_data_28_ap_vld,out_data_29[15:0],out_data_29_ap_vld,out_data_30[15:0],out_data_30_ap_vld,ap_clk,ap_rst,ap_done,ap_idle,ap_ready,ap_start,in_data_0[15:0],in_data_1[15:0],in_data_2[15:0],in_data_3[15:0],in_data_4[15:0],in_data_5[15:0],in_data_6[15:0],in_data_7[15:0],in_data_8[15:0],in_data_9[15:0],in_data_10[15:0],in_data_11[15:0],in_data_12[15:0],in_data_13[15:0],in_data_14[15:0],in_data_15[15:0],in_data_16[15:0],in_data_17[15:0],out_data_0[15:0],out_data_1[15:0],out_data_2[15:0],out_data_3[15:0],out_data_4[15:0],out_data_5[15:0],out_data_6[15:0],out_data_7[15:0],out_data_8[15:0],out_data_9[15:0],out_data_10[15:0],out_data_11[15:0],out_data_12[15:0],out_data_13[15:0],out_data_14[15:0],out_data_15[15:0],out_data_16[15:0],out_data_17[15:0],out_data_18[15:0]";
+  attribute black_box_pad_pin of stub : architecture is "ap_clk,ap_rst,ap_done,ap_idle,ap_ready,ap_start,in_data_0[15:0],in_data_1[15:0],in_data_2[15:0],in_data_3[15:0],in_data_4[15:0],in_data_5[15:0],in_data_6[15:0],in_data_7[15:0],in_data_8[15:0],in_data_9[15:0],in_data_10[15:0],in_data_11[15:0],in_data_12[15:0],in_data_13[15:0],in_data_14[15:0],in_data_15[15:0],in_data_16[15:0],in_data_17[15:0],in_data_18[15:0],in_data_19[15:0],in_data_20[15:0],in_data_21[15:0],in_data_22[15:0],in_data_23[15:0],out_data_0[15:0],out_data_1[15:0],out_data_2[15:0],out_data_3[15:0],out_data_4[15:0],out_data_5[15:0],out_data_6[15:0],out_data_7[15:0],out_data_8[15:0],out_data_9[15:0],out_data_10[15:0],out_data_11[15:0],out_data_12[15:0],out_data_13[15:0],out_data_14[15:0],out_data_15[15:0],out_data_16[15:0],out_data_17[15:0],out_data_18[15:0],out_data_19[15:0],out_data_20[15:0],out_data_21[15:0],out_data_22[15:0],out_data_23[15:0],out_data_24[15:0]";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of ap_clk : signal is "xilinx.com:signal:clock:1.0 ap_clk CLK";
   attribute X_INTERFACE_MODE : string;
@@ -197,6 +157,24 @@ architecture stub of bd_0_hls_inst_0 is
   attribute X_INTERFACE_INFO of in_data_17 : signal is "xilinx.com:signal:data:1.0 in_data_17 DATA";
   attribute X_INTERFACE_MODE of in_data_17 : signal is "slave";
   attribute X_INTERFACE_PARAMETER of in_data_17 : signal is "XIL_INTERFACENAME in_data_17, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of in_data_18 : signal is "xilinx.com:signal:data:1.0 in_data_18 DATA";
+  attribute X_INTERFACE_MODE of in_data_18 : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of in_data_18 : signal is "XIL_INTERFACENAME in_data_18, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of in_data_19 : signal is "xilinx.com:signal:data:1.0 in_data_19 DATA";
+  attribute X_INTERFACE_MODE of in_data_19 : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of in_data_19 : signal is "XIL_INTERFACENAME in_data_19, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of in_data_20 : signal is "xilinx.com:signal:data:1.0 in_data_20 DATA";
+  attribute X_INTERFACE_MODE of in_data_20 : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of in_data_20 : signal is "XIL_INTERFACENAME in_data_20, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of in_data_21 : signal is "xilinx.com:signal:data:1.0 in_data_21 DATA";
+  attribute X_INTERFACE_MODE of in_data_21 : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of in_data_21 : signal is "XIL_INTERFACENAME in_data_21, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of in_data_22 : signal is "xilinx.com:signal:data:1.0 in_data_22 DATA";
+  attribute X_INTERFACE_MODE of in_data_22 : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of in_data_22 : signal is "XIL_INTERFACENAME in_data_22, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of in_data_23 : signal is "xilinx.com:signal:data:1.0 in_data_23 DATA";
+  attribute X_INTERFACE_MODE of in_data_23 : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of in_data_23 : signal is "XIL_INTERFACENAME in_data_23, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of out_data_0 : signal is "xilinx.com:signal:data:1.0 out_data_0 DATA";
   attribute X_INTERFACE_MODE of out_data_0 : signal is "master";
   attribute X_INTERFACE_PARAMETER of out_data_0 : signal is "XIL_INTERFACENAME out_data_0, LAYERED_METADATA undef";
@@ -254,7 +232,25 @@ architecture stub of bd_0_hls_inst_0 is
   attribute X_INTERFACE_INFO of out_data_18 : signal is "xilinx.com:signal:data:1.0 out_data_18 DATA";
   attribute X_INTERFACE_MODE of out_data_18 : signal is "master";
   attribute X_INTERFACE_PARAMETER of out_data_18 : signal is "XIL_INTERFACENAME out_data_18, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of out_data_19 : signal is "xilinx.com:signal:data:1.0 out_data_19 DATA";
+  attribute X_INTERFACE_MODE of out_data_19 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of out_data_19 : signal is "XIL_INTERFACENAME out_data_19, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of out_data_20 : signal is "xilinx.com:signal:data:1.0 out_data_20 DATA";
+  attribute X_INTERFACE_MODE of out_data_20 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of out_data_20 : signal is "XIL_INTERFACENAME out_data_20, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of out_data_21 : signal is "xilinx.com:signal:data:1.0 out_data_21 DATA";
+  attribute X_INTERFACE_MODE of out_data_21 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of out_data_21 : signal is "XIL_INTERFACENAME out_data_21, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of out_data_22 : signal is "xilinx.com:signal:data:1.0 out_data_22 DATA";
+  attribute X_INTERFACE_MODE of out_data_22 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of out_data_22 : signal is "XIL_INTERFACENAME out_data_22, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of out_data_23 : signal is "xilinx.com:signal:data:1.0 out_data_23 DATA";
+  attribute X_INTERFACE_MODE of out_data_23 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of out_data_23 : signal is "XIL_INTERFACENAME out_data_23, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of out_data_24 : signal is "xilinx.com:signal:data:1.0 out_data_24 DATA";
+  attribute X_INTERFACE_MODE of out_data_24 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of out_data_24 : signal is "XIL_INTERFACENAME out_data_24, LAYERED_METADATA undef";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of stub : architecture is "case_1,Vivado 2024.2";
+  attribute X_CORE_INFO of stub : architecture is "case_11,Vivado 2025.1";
 begin
 end;

@@ -80,7 +80,7 @@ def run_one_case(case_id, path, samp_num = 5, sol = 1):
 		f_script.close()
 
 		print("Running Vitis HLS for solution_%d" % sol)
-		subprocess.call(['vitis_hls', '-f', f_script_name])
+		subprocess.call(['vitis-run','--mode','hls','--tcl', f_script_name])
 
 		rpt_name = 'project_tmp/solution_tmp/impl/report/verilog/case_%d_export.rpt' % (case_id)
 		f_rpt = open(rpt_name, 'r')
@@ -122,7 +122,7 @@ def run_one_case(case_id, path, samp_num = 5, sol = 1):
 		
 
 def main():
-	run_one_case(1, "./HLS/case_1/", samp_num = 5)
+	run_one_case(7, "./CASE/case_7/", samp_num = 50)
 
 if __name__ == "__main__":
     main()

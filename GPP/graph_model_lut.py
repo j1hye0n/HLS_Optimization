@@ -10,7 +10,7 @@ from sklearn import model_selection
 
 from tensorflow.keras import Model
 from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Dense,LeakyReLU,Dropout
+from tensorflow.keras.layers import Dense,LeakyReLU,Dropout, ReLU
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
@@ -41,9 +41,9 @@ def create_graph_model(generator):
 
     predictions1 = Dense(units=64, kernel_initializer=tf.keras.initializers.Constant(value=0.5))(x_out)
     predictions1 = Dropout(0.1)(predictions1)
-    predictions1 = LeakyReLU(alpha=0.2)(predictions1)
+    predictions1 = LeakyReLU(alpha=0.1)(predictions1)
 
-    predictions1 = Dense(units=64, kernel_initializer=tf.keras.initializers.Constant(value=0.5))(x_out)
+    predictions1 = Dense(units=64, kernel_initializer=tf.keras.initializers.Constant(value=0.5))(predictions1)
     predictions1 = Dropout(0.1)(predictions1)
     predictions1 = LeakyReLU(alpha=0.1)(predictions1)
 
@@ -56,7 +56,7 @@ def create_graph_model(generator):
     # Let's create the Keras model and prepare it for training
     model = Model(inputs=x_inp, outputs=predictions)
     model0 = Model(inputs=x_inp, outputs=predictions2)
-    lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(initial_learning_rate=0.02,decay_steps=100000,decay_rate=0.9)
+    lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(initial_learning_rate=0.01,decay_steps=100000,decay_rate=0.9)
     opt = Adam(learning_rate=lr_schedule)
     model.compile(optimizer=opt, loss=tf.keras.losses.MeanAbsoluteError(),metrics=["mae"])
 
@@ -105,7 +105,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='provide arguments for the graph embedding model with LUT predictions')
 
-    parser.add_argument('--epoch', help='the number of epochs per fold', default=50)
+    parser.add_argument('--epoch', help='the number of epochs per fold', default=200)
     parser.add_argument('--fold', help='the number of folds', default=10)
     parser.add_argument('--batch-size', help='the size of batch', default=32)
     parser.add_argument('--random-seed', help='random seed for repeatability', default=42)

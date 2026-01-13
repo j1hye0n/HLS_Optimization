@@ -1,5 +1,5 @@
 
-set TopModule "case_1"
+set TopModule "case_11"
 set ClockPeriod 10
 set ClockList ap_clk
 set AxiliteClockList {}
@@ -24,7 +24,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix case_1_
+set RtlSubPrefix case_11_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -43,8 +43,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
-set SourceFiles {sc {} c {../../HLS/case_9/case_9.cc ../../HLS/case_8/case_8.cc ../../HLS/case_7/case_7.cc ../../HLS/case_6/case_6.cc ../../HLS/case_5/case_5.cc ../../HLS/case_4/case_4.cc ../../HLS/case_3/case_3.cc ../../HLS/case_2/case_2.cc ../../HLS/case_1/case_1.cc}}
-set SourceFlags {sc {} c {{} {} {} {} {} {} {} {} {}}}
+set SourceFiles {sc {} c ../../CASE/case_11/case_11.cc}
+set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage C

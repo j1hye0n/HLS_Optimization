@@ -7,7 +7,7 @@ from stellargraph import StellarGraph
 import pickle
 
 #case_index=[0,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,26,27,29,30]+[i for i in range(31,44)]+[i for i in range(47,60)]+[100,101,102,103,104,105,106]
-case_index=[1,2,3,4,5,6,7,8]
+case_index=[1,2,3,4,5,6,7,8,9,10]
 # rename stencil as case 0
 # rename gemm as case 100
 # rename stencil_4_4_4 as case 101
@@ -286,7 +286,7 @@ for k in range(len(case_index)):
     df['f10']=f10
     # save plain graphs (with no directives)
     df.to_csv('CASE/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_plain.csv',index=False)
-    if case_index[k] in [100,101,103,104,105,106]:
+    if case_index[k] in range(len(case_index)):
         with open('info_case_'+str(case_index[k])+'_node_number_mapping', 'wb') as fp:
             pickle.dump(node_number_mapping, fp)
 

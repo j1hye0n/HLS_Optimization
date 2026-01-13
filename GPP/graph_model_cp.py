@@ -10,7 +10,7 @@ from sklearn import model_selection
 
 from tensorflow.keras import Model
 from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Dense,LeakyReLU,Dropout
+from tensorflow.keras.layers import Dense,LeakyReLU,Dropout,ReLU
 from tensorflow.keras import initializers
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -42,9 +42,9 @@ def create_graph_model(generator):
 
     predictions1 = Dense(units=64, kernel_initializer=initializers.Constant(value=0.05))(x_out)
     predictions1 = Dropout(0.1)(predictions1)
-    predictions1 = LeakyReLU(alpha=0.2)(predictions1)
+    predictions1 = LeakyReLU(alpha=0.1)(predictions1)
 
-    predictions1 = Dense(units=64, kernel_initializer=initializers.Constant(value=0.05))(x_out)
+    predictions1 = Dense(units=64, kernel_initializer=initializers.Constant(value=0.05))(predictions1)
     predictions1 = Dropout(0.1)(predictions1)
     predictions1 = LeakyReLU(alpha=0.1)(predictions1)
 
@@ -88,8 +88,10 @@ def main(args):
     folds = int(args['fold'])
     batch_size = int(args['batch_size'])
     seed(int(args['random_seed']))
+    #tf.random.set_seed(int(args['random_seed']))
 
     model, model0 = create_graph_model(generator)
+
     test_mse=[]
 
     for i in range(folds):
@@ -106,7 +108,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='provide arguments for the graph embedding model with CP predictions')
 
-    parser.add_argument('--epoch', help='the number of epochs per fold', default=50)
+    parser.add_argument('--epoch', help='the number of epochs per fold', default=200)
     parser.add_argument('--fold', help='the number of folds', default=10)
     parser.add_argument('--batch-size', help='the size of batch', default=32)
     parser.add_argument('--random-seed', help='random seed for repeatability', default=42)

@@ -1,13 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB44D0AA712A02377",
+      "boundary_crc": "0x9C2DFF8C96AFA0EF",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../project.gen/sources_1/bd/bd_0",
       "name": "bd_0",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
+      "tool_version": "2025.1",
       "validated": "true"
     },
     "design_tree": {
@@ -202,14 +202,28 @@
         }
       },
       "in_data_18": {
+        "type": "data",
         "direction": "I",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "in_data_19": {
+        "type": "data",
         "direction": "I",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "in_data_2": {
         "type": "data",
@@ -224,39 +238,52 @@
         }
       },
       "in_data_20": {
+        "type": "data",
         "direction": "I",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "in_data_21": {
+        "type": "data",
         "direction": "I",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "in_data_22": {
+        "type": "data",
         "direction": "I",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "in_data_23": {
+        "type": "data",
         "direction": "I",
         "left": "15",
-        "right": "0"
-      },
-      "in_data_24": {
-        "direction": "I",
-        "left": "15",
-        "right": "0"
-      },
-      "in_data_25": {
-        "direction": "I",
-        "left": "15",
-        "right": "0"
-      },
-      "in_data_26": {
-        "direction": "I",
-        "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "in_data_3": {
         "type": "data",
@@ -354,9 +381,6 @@
           }
         }
       },
-      "out_data_0_ap_vld": {
-        "direction": "O"
-      },
       "out_data_1": {
         "type": "data",
         "direction": "O",
@@ -381,9 +405,6 @@
           }
         }
       },
-      "out_data_10_ap_vld": {
-        "direction": "O"
-      },
       "out_data_11": {
         "type": "data",
         "direction": "O",
@@ -395,9 +416,6 @@
             "value_src": "default"
           }
         }
-      },
-      "out_data_11_ap_vld": {
-        "direction": "O"
       },
       "out_data_12": {
         "type": "data",
@@ -411,9 +429,6 @@
           }
         }
       },
-      "out_data_12_ap_vld": {
-        "direction": "O"
-      },
       "out_data_13": {
         "type": "data",
         "direction": "O",
@@ -425,9 +440,6 @@
             "value_src": "default"
           }
         }
-      },
-      "out_data_13_ap_vld": {
-        "direction": "O"
       },
       "out_data_14": {
         "type": "data",
@@ -441,9 +453,6 @@
           }
         }
       },
-      "out_data_14_ap_vld": {
-        "direction": "O"
-      },
       "out_data_15": {
         "type": "data",
         "direction": "O",
@@ -455,9 +464,6 @@
             "value_src": "default"
           }
         }
-      },
-      "out_data_15_ap_vld": {
-        "direction": "O"
       },
       "out_data_16": {
         "type": "data",
@@ -471,9 +477,6 @@
           }
         }
       },
-      "out_data_16_ap_vld": {
-        "direction": "O"
-      },
       "out_data_17": {
         "type": "data",
         "direction": "O",
@@ -485,9 +488,6 @@
             "value_src": "default"
           }
         }
-      },
-      "out_data_17_ap_vld": {
-        "direction": "O"
       },
       "out_data_18": {
         "type": "data",
@@ -501,19 +501,17 @@
           }
         }
       },
-      "out_data_18_ap_vld": {
-        "direction": "O"
-      },
       "out_data_19": {
+        "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
-      },
-      "out_data_19_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_1_ap_vld": {
-        "direction": "O"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "out_data_2": {
         "type": "data",
@@ -528,87 +526,64 @@
         }
       },
       "out_data_20": {
+        "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
-      },
-      "out_data_20_ap_vld": {
-        "direction": "O"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "out_data_21": {
+        "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
-      },
-      "out_data_21_ap_vld": {
-        "direction": "O"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "out_data_22": {
+        "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
-      },
-      "out_data_22_ap_vld": {
-        "direction": "O"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "out_data_23": {
+        "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
-      },
-      "out_data_23_ap_vld": {
-        "direction": "O"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "out_data_24": {
+        "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
-      },
-      "out_data_24_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_25": {
-        "direction": "O",
-        "left": "15",
-        "right": "0"
-      },
-      "out_data_25_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_26": {
-        "direction": "O",
-        "left": "15",
-        "right": "0"
-      },
-      "out_data_26_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_27": {
-        "direction": "O",
-        "left": "15",
-        "right": "0"
-      },
-      "out_data_27_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_28": {
-        "direction": "O",
-        "left": "15",
-        "right": "0"
-      },
-      "out_data_28_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_29": {
-        "direction": "O",
-        "left": "15",
-        "right": "0"
-      },
-      "out_data_29_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_2_ap_vld": {
-        "direction": "O"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "out_data_3": {
         "type": "data",
@@ -622,17 +597,6 @@
           }
         }
       },
-      "out_data_30": {
-        "direction": "O",
-        "left": "15",
-        "right": "0"
-      },
-      "out_data_30_ap_vld": {
-        "direction": "O"
-      },
-      "out_data_3_ap_vld": {
-        "direction": "O"
-      },
       "out_data_4": {
         "type": "data",
         "direction": "O",
@@ -644,9 +608,6 @@
             "value_src": "default"
           }
         }
-      },
-      "out_data_4_ap_vld": {
-        "direction": "O"
       },
       "out_data_5": {
         "type": "data",
@@ -660,9 +621,6 @@
           }
         }
       },
-      "out_data_5_ap_vld": {
-        "direction": "O"
-      },
       "out_data_6": {
         "type": "data",
         "direction": "O",
@@ -674,9 +632,6 @@
             "value_src": "default"
           }
         }
-      },
-      "out_data_6_ap_vld": {
-        "direction": "O"
       },
       "out_data_7": {
         "type": "data",
@@ -690,9 +645,6 @@
           }
         }
       },
-      "out_data_7_ap_vld": {
-        "direction": "O"
-      },
       "out_data_8": {
         "type": "data",
         "direction": "O",
@@ -705,9 +657,6 @@
           }
         }
       },
-      "out_data_8_ap_vld": {
-        "direction": "O"
-      },
       "out_data_9": {
         "type": "data",
         "direction": "O",
@@ -719,18 +668,16 @@
             "value_src": "default"
           }
         }
-      },
-      "out_data_9_ap_vld": {
-        "direction": "O"
       }
     },
     "components": {
       "hls_inst": {
-        "vlnv": "xilinx.com:hls:case_1:1.0",
-        "ip_revision": "2114277592",
+        "vlnv": "xilinx.com:hls:case_11:1.0",
+        "ip_revision": "2114404156",
         "xci_name": "bd_0_hls_inst_0",
         "xci_path": "ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci",
-        "inst_hier_path": "hls_inst"
+        "inst_hier_path": "hls_inst",
+        "has_run_ip_tcl": "true"
       }
     },
     "interface_nets": {
@@ -760,124 +707,10 @@
           "out_data_0"
         ]
       },
-      "hls_inst_out_data_0_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_0_ap_vld",
-          "out_data_0_ap_vld"
-        ]
-      },
       "hls_inst_out_data_1": {
         "ports": [
           "hls_inst/out_data_1",
           "out_data_1"
-        ]
-      },
-      "hls_inst_out_data_10": {
-        "ports": [
-          "hls_inst/out_data_10",
-          "out_data_10"
-        ]
-      },
-      "hls_inst_out_data_10_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_10_ap_vld",
-          "out_data_10_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_11": {
-        "ports": [
-          "hls_inst/out_data_11",
-          "out_data_11"
-        ]
-      },
-      "hls_inst_out_data_11_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_11_ap_vld",
-          "out_data_11_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_12": {
-        "ports": [
-          "hls_inst/out_data_12",
-          "out_data_12"
-        ]
-      },
-      "hls_inst_out_data_12_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_12_ap_vld",
-          "out_data_12_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_13": {
-        "ports": [
-          "hls_inst/out_data_13",
-          "out_data_13"
-        ]
-      },
-      "hls_inst_out_data_13_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_13_ap_vld",
-          "out_data_13_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_14": {
-        "ports": [
-          "hls_inst/out_data_14",
-          "out_data_14"
-        ]
-      },
-      "hls_inst_out_data_14_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_14_ap_vld",
-          "out_data_14_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_15": {
-        "ports": [
-          "hls_inst/out_data_15",
-          "out_data_15"
-        ]
-      },
-      "hls_inst_out_data_15_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_15_ap_vld",
-          "out_data_15_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_16": {
-        "ports": [
-          "hls_inst/out_data_16",
-          "out_data_16"
-        ]
-      },
-      "hls_inst_out_data_16_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_16_ap_vld",
-          "out_data_16_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_17_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_17_ap_vld",
-          "out_data_17_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_18_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_18_ap_vld",
-          "out_data_18_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_19_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_19_ap_vld",
-          "out_data_19_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_1_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_1_ap_vld",
-          "out_data_1_ap_vld"
         ]
       },
       "hls_inst_out_data_2": {
@@ -886,88 +719,10 @@
           "out_data_2"
         ]
       },
-      "hls_inst_out_data_20_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_20_ap_vld",
-          "out_data_20_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_21_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_21_ap_vld",
-          "out_data_21_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_22_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_22_ap_vld",
-          "out_data_22_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_23_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_23_ap_vld",
-          "out_data_23_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_24_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_24_ap_vld",
-          "out_data_24_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_25_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_25_ap_vld",
-          "out_data_25_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_26_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_26_ap_vld",
-          "out_data_26_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_27_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_27_ap_vld",
-          "out_data_27_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_28_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_28_ap_vld",
-          "out_data_28_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_29_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_29_ap_vld",
-          "out_data_29_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_2_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_2_ap_vld",
-          "out_data_2_ap_vld"
-        ]
-      },
       "hls_inst_out_data_3": {
         "ports": [
           "hls_inst/out_data_3",
           "out_data_3"
-        ]
-      },
-      "hls_inst_out_data_30_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_30_ap_vld",
-          "out_data_30_ap_vld"
-        ]
-      },
-      "hls_inst_out_data_3_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_3_ap_vld",
-          "out_data_3_ap_vld"
         ]
       },
       "hls_inst_out_data_4": {
@@ -976,22 +731,10 @@
           "out_data_4"
         ]
       },
-      "hls_inst_out_data_4_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_4_ap_vld",
-          "out_data_4_ap_vld"
-        ]
-      },
       "hls_inst_out_data_5": {
         "ports": [
           "hls_inst/out_data_5",
           "out_data_5"
-        ]
-      },
-      "hls_inst_out_data_5_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_5_ap_vld",
-          "out_data_5_ap_vld"
         ]
       },
       "hls_inst_out_data_6": {
@@ -1000,22 +743,10 @@
           "out_data_6"
         ]
       },
-      "hls_inst_out_data_6_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_6_ap_vld",
-          "out_data_6_ap_vld"
-        ]
-      },
       "hls_inst_out_data_7": {
         "ports": [
           "hls_inst/out_data_7",
           "out_data_7"
-        ]
-      },
-      "hls_inst_out_data_7_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_7_ap_vld",
-          "out_data_7_ap_vld"
         ]
       },
       "hls_inst_out_data_8": {
@@ -1024,16 +755,52 @@
           "out_data_8"
         ]
       },
-      "hls_inst_out_data_8_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_8_ap_vld",
-          "out_data_8_ap_vld"
-        ]
-      },
       "hls_inst_out_data_9": {
         "ports": [
           "hls_inst/out_data_9",
           "out_data_9"
+        ]
+      },
+      "hls_inst_out_data_10": {
+        "ports": [
+          "hls_inst/out_data_10",
+          "out_data_10"
+        ]
+      },
+      "hls_inst_out_data_11": {
+        "ports": [
+          "hls_inst/out_data_11",
+          "out_data_11"
+        ]
+      },
+      "hls_inst_out_data_12": {
+        "ports": [
+          "hls_inst/out_data_12",
+          "out_data_12"
+        ]
+      },
+      "hls_inst_out_data_13": {
+        "ports": [
+          "hls_inst/out_data_13",
+          "out_data_13"
+        ]
+      },
+      "hls_inst_out_data_14": {
+        "ports": [
+          "hls_inst/out_data_14",
+          "out_data_14"
+        ]
+      },
+      "hls_inst_out_data_15": {
+        "ports": [
+          "hls_inst/out_data_15",
+          "out_data_15"
+        ]
+      },
+      "hls_inst_out_data_16": {
+        "ports": [
+          "hls_inst/out_data_16",
+          "out_data_16"
         ]
       },
       "hls_inst_out_data_17": {
@@ -1082,48 +849,6 @@
         "ports": [
           "hls_inst/out_data_24",
           "out_data_24"
-        ]
-      },
-      "hls_inst_out_data_25": {
-        "ports": [
-          "hls_inst/out_data_25",
-          "out_data_25"
-        ]
-      },
-      "hls_inst_out_data_26": {
-        "ports": [
-          "hls_inst/out_data_26",
-          "out_data_26"
-        ]
-      },
-      "hls_inst_out_data_27": {
-        "ports": [
-          "hls_inst/out_data_27",
-          "out_data_27"
-        ]
-      },
-      "hls_inst_out_data_28": {
-        "ports": [
-          "hls_inst/out_data_28",
-          "out_data_28"
-        ]
-      },
-      "hls_inst_out_data_29": {
-        "ports": [
-          "hls_inst/out_data_29",
-          "out_data_29"
-        ]
-      },
-      "hls_inst_out_data_30": {
-        "ports": [
-          "hls_inst/out_data_30",
-          "out_data_30"
-        ]
-      },
-      "hls_inst_out_data_9_ap_vld": {
-        "ports": [
-          "hls_inst/out_data_9_ap_vld",
-          "out_data_9_ap_vld"
         ]
       },
       "in_data_0_0_1": {
@@ -1220,24 +945,6 @@
         "ports": [
           "in_data_23",
           "hls_inst/in_data_23"
-        ]
-      },
-      "in_data_24_0_1": {
-        "ports": [
-          "in_data_24",
-          "hls_inst/in_data_24"
-        ]
-      },
-      "in_data_25_0_1": {
-        "ports": [
-          "in_data_25",
-          "hls_inst/in_data_25"
-        ]
-      },
-      "in_data_26_0_1": {
-        "ports": [
-          "in_data_26",
-          "hls_inst/in_data_26"
         ]
       },
       "in_data_2_0_1": {

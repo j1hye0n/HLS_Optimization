@@ -3,7 +3,7 @@ import os
 import subprocess
 
 
-all_cases = 10
+all_cases = 100
 for case in range(1, 1 + all_cases):
 	Gen_one_case( case_id = case, max_prim_in = 30, max_op_cnt = 200 )
 	case_dir = "case_" + str(case)

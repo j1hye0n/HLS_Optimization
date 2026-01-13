@@ -1,14 +1,14 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
-# Tool Version Limit: 2024.11
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1 (64-bit)
+# Tool Version Limit: 2025.05
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 # ==============================================================
 #
 # Settings for Vivado implementation flow
 #
-set top_module case_1
+set top_module case_11
 set language verilog
 set family zynq
 set device xc7z020

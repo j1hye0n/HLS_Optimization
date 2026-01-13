@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2024.2 (64-bit)
-# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
-# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
-# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri Sep 26 17:52:45 2025
-# Process ID         : 38237
-# Current directory  : /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Dec 23 15:16:06 2025
+# Process ID         : 3423347
+# Current directory  : /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip
 # Command line       : vivado -notrace -mode batch -source run_ippack.tcl
-# Log file           : /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.log
-# Journal file       : /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.jou
-# Running On         : DESKTOP-S15BKKL
+# Log file           : /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.log
+# Journal file       : /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.jou
+# Running On         : woong-Super-Server
 # Platform           : Ubuntu
-# Operating System   : Ubuntu 22.04.5 LTS
-# Processor Detail   : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
-# CPU Frequency      : 2808.011 MHz
-# CPU Physical cores : 6
-# CPU Logical cores  : 6
-# Host memory        : 4050 MB
-# Swap memory        : 1073 MB
-# Total Virtual      : 5124 MB
-# Available Virtual  : 4143 MB
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : Intel(R) Xeon(R) W-3235 CPU @ 3.30GHz
+# CPU Frequency      : 3703.315 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 201168 MB
+# Swap memory        : 16000 MB
+# Total Virtual      : 217169 MB
+# Available Virtual  : 126090 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace

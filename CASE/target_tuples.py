@@ -1,6 +1,6 @@
 import pandas as pd
 #case_ind=[0,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,26,27,29,30]+[i for i in range(31,44)]+[i for i in range(47,60)]+[100,101,102,103,104,105,106]
-case_ind=[1,2,3,4,5,6,7,8]
+case_ind=[1,2,3,4,5,6,7,8,9,10]
 
 tuples=[]
 for i in range(len(case_ind)):

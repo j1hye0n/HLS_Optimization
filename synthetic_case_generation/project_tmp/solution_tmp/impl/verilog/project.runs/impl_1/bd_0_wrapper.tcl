@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/impl_1/bd_0_wrapper.tcl"
+  variable script "/home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/impl_1/bd_0_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -106,14 +106,15 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 1
+  set_param general.usePosixSpawnForFork 1
   set_param runs.launchOptions { -jobs 1  }
   reset_param project.defaultXPMLibraries 
-  open_checkpoint /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
-  set_property webtalk.parent_dir /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.cache/wt [current_project]
-  set_property parent.project_path /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.xpr [current_project]
-  set_property ip_repo_paths /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip [current_project]
+  open_checkpoint /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
+  set_property webtalk.parent_dir /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.cache/wt [current_project]
+  set_property parent.project_path /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.xpr [current_project]
+  set_property ip_repo_paths /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.cache/ip [current_project]
+  set_property ip_output_repo /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "init_design_reports" START { REPORT }
@@ -175,7 +176,9 @@ OPTRACE "implement_debug_core" START { }
 OPTRACE "implement_debug_core" END { }
   } 
 OPTRACE "place_design" START { }
+  set_param project.isImplRun true
   place_design 
+  set_param project.isImplRun false
 OPTRACE "place_design" END { }
 OPTRACE "read constraints: place_design_post" START { }
 OPTRACE "read constraints: place_design_post" END { }
@@ -240,7 +243,7 @@ OPTRACE "read constraints: route_design_post" START { }
 OPTRACE "read constraints: route_design_post" END { }
 OPTRACE "route_design reports" START { REPORT }
   set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx" "report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx" "report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx" "report_route_status -file bd_0_wrapper_route_status.rpt -pb bd_0_wrapper_route_status.pb" "report_timing_summary -max_paths 10 -report_unconstrained -file bd_0_wrapper_timing_summary_routed.rpt -pb bd_0_wrapper_timing_summary_routed.pb -rpx bd_0_wrapper_timing_summary_routed.rpx -warn_on_violation " "report_incremental_reuse -file bd_0_wrapper_incremental_reuse_routed.rpt" "report_clock_utilization -file bd_0_wrapper_clock_utilization_routed.rpt" "report_bus_skew -warn_on_violation -file bd_0_wrapper_bus_skew_routed.rpt -pb bd_0_wrapper_bus_skew_routed.pb -rpx bd_0_wrapper_bus_skew_routed.rpx"  }
+  generate_parallel_reports -reports { "report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx" "report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx" "report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx" "report_route_status -file bd_0_wrapper_route_status.rpt -pb bd_0_wrapper_route_status.pb" "report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file bd_0_wrapper_timing_summary_routed.rpt -pb bd_0_wrapper_timing_summary_routed.pb -rpx bd_0_wrapper_timing_summary_routed.rpx -warn_on_violation " "report_incremental_reuse -file bd_0_wrapper_incremental_reuse_routed.rpt" "report_clock_utilization -file bd_0_wrapper_clock_utilization_routed.rpt" "report_bus_skew -warn_on_violation -file bd_0_wrapper_bus_skew_routed.rpt -pb bd_0_wrapper_bus_skew_routed.pb -rpx bd_0_wrapper_bus_skew_routed.rpx"  }
   set_param project.isImplRun false
 OPTRACE "route_design reports" END { }
 OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }

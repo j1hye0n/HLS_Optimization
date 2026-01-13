@@ -1,0 +1,24 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/script.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=case_3" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="case_3.cc:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="case_3.cc:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out_data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="case_3.cc:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=in_data" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="case_3.cc:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=out_data" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="case_3.cc:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="case_3" ARG_PragmaIsValid="1" ARG_PragmaOptions="impl=fabric op=mul variable=m44" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

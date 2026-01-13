@@ -1,8 +1,8 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
-# Tool Version Limit: 2024.11
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1 (64-bit)
+# Tool Version Limit: 2025.05
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 # ==============================================================
 source ./settings.tcl
@@ -14,7 +14,7 @@ set target_device "${device}${package}${speed}"
 set target_clk_period_ns "10.000"
 set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
 set other_clks_freq_hz {}
-set ip_vlnv xilinx.com:hls:case_1:1.0
+set ip_vlnv xilinx.com:hls:case_11:1.0
 set ip_repo_path ../ip
 set bd_design_name bd_0
 set bd_inst_name hls_inst
@@ -27,6 +27,7 @@ set synth_props {}
 
 set has_impl 1
 set impl_props {}
+set has_subcore 0
 
 set report_options [dict create]
 dict set report_options report_level 2
@@ -46,9 +47,9 @@ dict set report_options target_device $target_device
 dict set report_options language $language
 dict set report_options clock_name $clock
 dict set report_options error_if_impl_timing_fails false
-dict set report_options topmodule "case_1"
+dict set report_options topmodule "case_11"
 dict set report_options funcmodules {}
-dict set report_options bindmodules {case_1_mul_10s_4s_10_1_1 case_1_mul_10s_10s_20_1_1 case_1_mul_16ns_9ns_19_1_1 case_1_mul_16ns_10ns_19_1_1 case_1_mul_6s_6s_6_1_1 case_1_mul_10ns_10ns_20_1_1 case_1_mul_9ns_8ns_15_1_1 case_1_mul_10s_10s_10_1_1 case_1_mul_9ns_9ns_18_1_1 case_1_mul_5s_5s_5_1_1 case_1_mul_3s_3s_3_1_1 case_1_mul_3ns_3ns_6_1_1 case_1_mul_10ns_9s_19_1_1 case_1_mul_10ns_5ns_11_1_1 case_1_mul_9ns_10ns_19_1_1 case_1_mul_10ns_7s_15_1_1 case_1_mul_3ns_7s_7_1_1 case_1_mul_5ns_10ns_11_1_1 case_1_mul_8s_8s_8_1_1 case_1_mul_10ns_7ns_15_1_1 case_1_mul_7s_5s_7_1_1 case_1_mul_5ns_3s_7_1_1 case_1_mul_8s_5s_8_1_1 case_1_mul_5s_3s_8_1_1 case_1_mul_8s_7s_15_1_1 case_1_mul_4s_3s_4_1_1 case_1_mul_5ns_3s_8_1_1 case_1_mul_8s_3s_11_1_1 case_1_mul_4s_4s_4_1_1 case_1_mul_10ns_5s_13_1_1 case_1_mul_8ns_4s_9_1_1 case_1_mul_9ns_8s_17_1_1 case_1_mul_4s_4s_8_1_1 case_1_mul_5ns_5s_10_1_1 case_1_mul_9ns_5s_14_1_1 case_1_mul_5s_2s_7_1_1 case_1_mul_10ns_9ns_11_1_1 case_1_mul_9s_4s_13_1_1 case_1_mul_8ns_8ns_16_1_1 case_1_mul_10s_9s_19_1_1 case_1_mul_8ns_7s_15_1_1 case_1_mul_10s_8s_10_1_1 case_1_mul_10s_7s_13_1_1 case_1_mul_10ns_8ns_17_1_1 case_1_mul_8ns_5s_13_1_1 case_1_mul_8s_6s_13_1_1 case_1_mul_10s_8s_16_1_1 case_1_mul_10ns_8ns_15_1_1 case_1_mul_13ns_6s_19_1_1 case_1_mul_10ns_13ns_15_1_1 case_1_mul_10s_9s_10_1_1 case_1_mul_7s_7s_7_1_1 case_1_mul_9s_9s_9_1_1 case_1_mul_8s_7s_8_1_1 case_1_mul_10ns_10ns_15_1_1 case_1_mul_8ns_5ns_11_1_1 case_1_mul_7ns_8ns_15_1_1 case_1_mul_5ns_5ns_10_1_1 case_1_mul_7s_7s_14_1_1 case_1_mul_10ns_5s_15_1_1 case_1_mul_8ns_8s_16_1_1 case_1_mul_7ns_7ns_14_1_1 case_1_mul_10s_6s_16_1_1 case_1_mul_10ns_7s_17_1_1 case_1_mul_10ns_8ns_13_1_1 case_1_mul_4ns_4ns_8_1_1 case_1_mul_10ns_8s_18_1_1 case_1_mul_4ns_8ns_9_1_1 case_1_mul_9ns_4s_13_1_1 case_1_mul_7s_4s_7_1_1 case_1_mac_muladd_10s_10s_5s_10_4_1 case_1_mac_muladd_9s_9s_9ns_9_4_1 case_1_mac_muladd_8s_8s_7s_8_4_1}
+dict set report_options bindmodules {case_11_mul_6s_6s_6_1_1 case_11_mul_14s_6s_16_1_1 case_11_mul_5s_5s_5_1_1 case_11_mul_7s_5s_7_1_1 case_11_mul_12s_12s_12_1_1 case_11_mul_12s_7s_12_1_1 case_11_mul_11s_3s_14_1_1 case_11_mul_7s_7s_7_1_1 case_11_mul_3s_3s_3_1_1 case_11_mul_14s_7s_14_1_1 case_11_mul_7s_5s_11_1_1 case_11_mul_10s_10s_10_1_1 case_11_mul_14s_12s_14_1_1 case_11_mul_12ns_7s_13_1_1 case_11_mul_11s_10s_12_1_1 case_11_mul_11s_7s_15_1_1 case_11_mul_9s_9s_9_1_1 case_11_mul_14s_10s_14_1_1 case_11_mul_12s_9s_12_1_1 case_11_mul_6s_5s_6_1_1 case_11_mul_8s_8s_8_1_1 case_11_mul_10s_9s_10_1_1 case_11_mul_7s_6s_7_1_1 case_11_mul_6s_6s_12_1_1 case_11_mul_11s_7s_11_1_1 case_11_mul_9s_7s_9_1_1 case_11_mul_8s_7s_8_1_1 case_11_mul_9s_7s_10_1_1 case_11_mul_10s_7s_15_1_1 case_11_mul_12s_6s_18_1_1 case_11_mul_9s_8s_9_1_1 case_11_mul_9s_6s_9_1_1 case_11_mul_12s_10s_16_1_1 case_11_mul_11s_11s_11_1_1 case_11_mul_4s_4s_4_1_1 case_11_mul_9s_9s_14_1_1 case_11_mul_9s_6s_10_1_1 case_11_mul_6s_4s_6_1_1 case_11_mul_10s_6s_10_1_1 case_11_mul_11s_6s_17_1_1 case_11_mul_13s_11s_13_1_1 case_11_mul_12s_6s_12_1_1 case_11_mul_7s_4s_8_1_1 case_11_mul_12s_4s_12_1_1 case_11_mul_7s_4s_7_1_1 case_11_mul_9s_5s_9_1_1 case_11_mul_2s_2s_2_1_1 case_11_mul_10s_5s_14_1_1 case_11_mul_8s_5s_9_1_1 case_11_mul_9s_2s_9_1_1 case_11_am_addmul_9s_5s_9s_9_4_1 case_11_am_addmul_12s_11s_12s_12_4_1 case_11_ama_addmuladd_9ns_9ns_9s_5s_9_4_1 case_11_am_addmul_10s_7s_11s_11_4_1 case_11_am_addmul_8s_7s_6s_8_4_1 case_11_am_addmul_7s_6s_7s_7_4_1 case_11_am_addmul_5ns_5ns_5s_5_4_1 case_11_am_addmul_7s_7s_7s_7_4_1 case_11_mac_muladd_6s_4s_6ns_6_4_1 case_11_mac_muladd_7s_7s_7ns_7_4_1 case_11_am_addmul_8s_4s_8s_8_4_1}
 dict set report_options max_module_depth 5
 
 
@@ -138,6 +139,7 @@ foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
 set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
 
 hls_vivado_reports_setup $report_options
+if { $has_subcore } { report_ip_status }
 if { $has_synth || $has_impl } {
   # synth properties setting
   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]

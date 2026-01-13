@@ -1,8 +1,8 @@
 
 
-open_project project_tmp
-set_top case_1
-add_files ./HLS/case_1//case_1.cc
+open_project -reset project_tmp
+set_top case_11
+add_files ./CASE/case_11//case_11.cc
 open_solution "solution_tmp"
 set_part {xc7z020clg484-1}
 create_clock -period 10 -name default

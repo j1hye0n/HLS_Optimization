@@ -89,7 +89,7 @@ def main(args):
     g_ind_dsp_tar=pickle.load(fp)
     total_trials=len(g_ind_dsp_tar)
     # exploration rate
-    epsilon=0.1
+    epsilon=0.08
     ff=0
     p00=[0.1,0.9]
 
@@ -138,6 +138,7 @@ def main(args):
             if done:
                 break
 
+        print(episode_reward)
         # Update running reward to check condition for solving
         print(lut, dsp, cp)
         ah=action_history.copy()
@@ -218,7 +219,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='provide arguments for the actor critic')
 
-    parser.add_argument('--max-episode', help='the number of max episodes', default=9000)
+    parser.add_argument('--max-episode', help='the number of max episodes', default=900)
     parser.add_argument('--max-step', help='max steps per episode', default=10000)
     parser.add_argument('--mu', help='the importance of LUT in optimization', default=0.5)
     parser.add_argument('--gamma', help='the discount factor', default=0.95)

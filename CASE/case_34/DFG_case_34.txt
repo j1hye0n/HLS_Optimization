@@ -1,0 +1,179 @@
+# Primary Inputs:
+in1 INT5
+in2 INT14
+in3 INT6
+in4 INT8
+in5 INT5
+
+
+# Intermediate Operations:
+m6 * INT9
+m7 * INT7
+m8 * INT11
+m9 * INT9
+m10 * INT11
+m11 * INT10
+m12 * INT16
+m13 * INT7
+m14 * INT5
+m15 * INT11
+m16 * INT9
+m17 * INT9
+m18 * INT11
+m19 * INT8
+m20 * INT15
+m21 * INT10
+m22 * INT16
+m23 + INT13
+m24 * INT13
+m25 * INT11
+m26 * INT10
+m27 * INT9
+m28 * INT15
+m29 + INT7
+m30 * INT8
+m31 + INT5
+m32 * INT5
+m33 + INT7
+m34 * INT13
+m35 + INT4
+m36 * INT14
+m37 * INT12
+m38 * INT4
+m39 + INT8
+m40 * INT5
+m41 * INT14
+m42 * INT5
+m43 * INT4
+m44 + INT8
+m45 * INT3
+m46 + INT6
+m47 + INT8
+m48 * INT6
+m49 * INT4
+m50 * INT6
+m51 * INT11
+m52 * INT9
+m53 * INT5
+m54 * INT16
+m55 * INT14
+
+
+# Edges:
+in1 m6
+in2 m6
+in4 m7
+in3 m7
+in4 m8
+m7 m8
+m7 m9
+m7 m9
+m9 m10
+m7 m10
+m8 m11
+m6 m11
+m11 m12
+m11 m12
+m12 m13
+m9 m13
+m11 m14
+m11 m14
+m11 m15
+m14 m15
+m11 m16
+m15 m16
+m12 m17
+m16 m17
+m15 m18
+m14 m18
+m16 m19
+m17 m19
+m18 m20
+m18 m20
+m19 m21
+m16 m21
+m20 m22
+m20 m22
+m18 m23
+m19 m23
+m22 m24
+m23 m24
+m23 m25
+m20 m25
+m23 m26
+m21 m26
+m26 m27
+m26 m27
+m24 m28
+m27 m28
+m25 m29
+m28 m29
+m26 m30
+m28 m30
+m29 m31
+m27 m31
+m29 m32
+m28 m32
+m31 m33
+m31 m33
+m30 m34
+m33 m34
+m32 m35
+m34 m35
+m34 m36
+m31 m36
+m34 m37
+m32 m37
+m35 m38
+m34 m38
+m35 m39
+m35 m39
+m35 m40
+m38 m40
+m37 m41
+m38 m41
+m38 m42
+m40 m42
+m39 m43
+m38 m43
+m41 m44
+m43 m44
+m40 m45
+m40 m45
+m43 m46
+m43 m46
+m42 m47
+m44 m47
+m46 m48
+m46 m48
+m46 m49
+m48 m49
+m48 m50
+m45 m50
+m50 m51
+m46 m51
+m48 m52
+m47 m52
+m49 m53
+m51 m53
+m51 m54
+m51 m54
+m51 m55
+m51 m55
+m10 o56
+m13 o57
+m36 o58
+m52 o59
+m53 o60
+m54 o61
+m55 o62
+
+
+# Primary Outputs:
+o56
+o57
+o58
+o59
+o60
+o61
+o62

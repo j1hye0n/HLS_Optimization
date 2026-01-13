@@ -7,6 +7,7 @@ from random import sample
 import copy
 
 
+
 def Gen_one_case( case_id, max_prim_in, max_op_cnt ):
 
     prim_in_cnt  = random.randint(5, max_prim_in)
@@ -169,6 +170,10 @@ void case_%d(
 
 #pragma HLS array_partition variable=in_data complete
 #pragma HLS array_partition variable=out_data complete
+#pragma HLS INTERFACE ap_none port=in_data
+#pragma HLS INTERFACE ap_none port=out_data
+#pragma HLS INTERFACE ap_ctrl_hs port=return
+
 
     """ % (case_id, prim_in_cnt, prim_out_cnt)
 
@@ -239,7 +244,7 @@ void case_%d(
     f_script = open("script.tcl", "w")
     content = """
 
-open_project project_
+open_project -reset project_
 set_top case_
 add_files PATH/case_.cc
 open_solution "solution_"

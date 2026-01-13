@@ -1,15 +1,17 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
-# Tool Version Limit: 2024.11
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1 (64-bit)
+# Tool Version Limit: 2025.05
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 # ==============================================================
-source -notrace "/tools/xilinx/Vitis/2024.2/common/scripts/ipxhls.tcl"
-set ip_dir "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip"
-set data_file "/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/solution_tmp_data.json"
-set ip_types "vitis sysgen"
-if { [catch {::ipx::utils::package_hls_ip $ip_dir $data_file $ip_types } res] } {
+source -notrace "/tools/Xilinx/2025.1/Vitis/common/scripts/ipxhls.tcl"
+set ip_out_dir "/home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip"
+set data_file "/home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/solution_tmp_data.json"
+set src_dir [file dir $data_file]
+set ip_types {vitis sysgen}
+set ippack_opts_dict {}
+if { [catch {::ipx::utils::package_hls_ip $ip_out_dir $data_file $ip_types $src_dir $ippack_opts_dict} res] } {
   puts "Caught error:\n$::errorInfo"
   error $res
 }

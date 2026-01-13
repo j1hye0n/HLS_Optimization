@@ -1,6 +1,6 @@
 
 
-open_project project_
+open_project -reset project_
 set_top case_
 add_files PATH/case_.cc
 open_solution "solution_"

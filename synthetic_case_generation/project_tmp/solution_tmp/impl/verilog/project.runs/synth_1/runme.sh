@@ -4,13 +4,13 @@
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/tools/xilinx/Vitis/2024.2/bin:/tools/xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64:/tools/xilinx/Vivado/2024.2/bin
+  PATH=/tools/Xilinx/2025.1/Vitis/bin:/tools/Xilinx/2025.1/Vitis/bin:/tools/Xilinx/2025.1/Vitis/bin:/tools/Xilinx/2025.1/Vivado/bin
 else
-  PATH=/tools/xilinx/Vitis/2024.2/bin:/tools/xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64:/tools/xilinx/Vivado/2024.2/bin:$PATH
+  PATH=/tools/Xilinx/2025.1/Vitis/bin:/tools/Xilinx/2025.1/Vitis/bin:/tools/Xilinx/2025.1/Vitis/bin:/tools/Xilinx/2025.1/Vivado/bin:$PATH
 fi
 export PATH
 
@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/synth_1'
+HD_PWD='/home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/verilog/project.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,3 @@
+1 error generated.
+Error while processing /home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/project_tmp/solution_tmp/.autopilot/db/case_3.pp.0.cc.
+clang-tidy applied 4 of 4 suggested fixes.

@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Tue Dec 23 15:20:18 2025
+| Host         : woong-Super-Server running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/case_11_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                       Instance                       |                            Module                           | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                         |                                                       (top) |       1469 |       1469 |       0 |    0 | 799 |      0 |      0 |         69 |
+|   bd_0_i                                             |                                                        bd_0 |       1469 |       1469 |       0 |    0 | 799 |      0 |      0 |         69 |
+|     hls_inst                                         |                                             bd_0_hls_inst_0 |       1469 |       1469 |       0 |    0 | 799 |      0 |      0 |         69 |
+|       inst                                           |                                     bd_0_hls_inst_0_case_11 |       1469 |       1469 |       0 |    0 | 799 |      0 |      0 |         69 |
+|         (inst)                                       |                                     bd_0_hls_inst_0_case_11 |         74 |         74 |       0 |    0 | 687 |      0 |      0 |         26 |
+|         am_addmul_7s_6s_7s_7_4_1_U115                |            bd_0_hls_inst_0_case_11_am_addmul_7s_6s_7s_7_4_1 |         71 |         71 |       0 |    0 |  21 |      0 |      0 |          1 |
+|           case_11_am_addmul_7s_6s_7s_7_4_1_DSP48_0_U | bd_0_hls_inst_0_case_11_am_addmul_7s_6s_7s_7_4_1_DSP48_0_39 |         71 |         71 |       0 |    0 |  21 |      0 |      0 |          1 |
+|         am_addmul_8s_4s_8s_8_4_1_U121                |            bd_0_hls_inst_0_case_11_am_addmul_8s_4s_8s_8_4_1 |         55 |         55 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           case_11_am_addmul_8s_4s_8s_8_4_1_DSP48_0_U |    bd_0_hls_inst_0_case_11_am_addmul_8s_4s_8s_8_4_1_DSP48_0 |         55 |         55 |       0 |    0 |   0 |      0 |      0 |          1 |
+|         mul_10s_5s_14_1_1_U102                       |                   bd_0_hls_inst_0_case_11_mul_10s_5s_14_1_1 |         56 |         56 |       0 |    0 |   0 |      0 |      0 |          0 |
++------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

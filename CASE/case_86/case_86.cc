@@ -1,0 +1,286 @@
+
+
+#include <stdio.h>
+#include "ap_fixed.h"
+
+void case_86(
+    ap_int<16> in_data[13],
+    ap_int<16> out_data[23]
+)
+{
+
+#pragma HLS array_partition variable=in_data complete
+#pragma HLS array_partition variable=out_data complete
+#pragma HLS INTERFACE ap_none port=in_data
+#pragma HLS INTERFACE ap_none port=out_data
+#pragma HLS INTERFACE ap_ctrl_hs port=return
+
+
+    
+
+ap_int<16> in1;
+in1.range(15, 0) = in_data[0].range(15, 0);
+ap_int<10> in2;
+in2.range(9, 0) = in_data[1].range(9, 0);
+ap_int<11> in3;
+in3.range(10, 0) = in_data[2].range(10, 0);
+ap_int<5> in4;
+in4.range(4, 0) = in_data[3].range(4, 0);
+ap_int<2> in5;
+in5.range(1, 0) = in_data[4].range(1, 0);
+ap_int<16> in6;
+in6.range(15, 0) = in_data[5].range(15, 0);
+ap_int<13> in7;
+in7.range(12, 0) = in_data[6].range(12, 0);
+ap_int<10> in8;
+in8.range(9, 0) = in_data[7].range(9, 0);
+ap_int<15> in9;
+in9.range(14, 0) = in_data[8].range(14, 0);
+ap_int<6> in10;
+in10.range(5, 0) = in_data[9].range(5, 0);
+ap_int<2> in11;
+in11.range(1, 0) = in_data[10].range(1, 0);
+ap_int<16> in12;
+in12.range(15, 0) = in_data[11].range(15, 0);
+ap_int<16> in13;
+in13.range(15, 0) = in_data[12].range(15, 0);
+
+ap_int<10> m14;
+ap_int<8> m15;
+ap_int<2> m16;
+ap_int<5> m17;
+ap_int<5> m18;
+ap_int<13> m19;
+ap_int<16> m20;
+ap_int<12> m21;
+ap_int<9> m22;
+ap_int<16> m23;
+ap_int<11> m24;
+ap_int<6> m25;
+ap_int<3> m26;
+ap_int<6> m27;
+ap_int<8> m28;
+ap_int<5> m29;
+ap_int<8> m30;
+ap_int<10> m31;
+ap_int<10> m32;
+ap_int<13> m33;
+ap_int<16> m34;
+ap_int<13> m35;
+ap_int<13> m36;
+ap_int<11> m37;
+ap_int<7> m38;
+ap_int<8> m39;
+ap_int<11> m40;
+ap_int<10> m41;
+ap_int<15> m42;
+ap_int<13> m43;
+ap_int<12> m44;
+ap_int<11> m45;
+ap_int<7> m46;
+ap_int<5> m47;
+ap_int<11> m48;
+ap_int<7> m49;
+ap_int<10> m50;
+ap_int<15> m51;
+ap_int<10> m52;
+ap_int<14> m53;
+ap_int<16> m54;
+ap_int<9> m55;
+ap_int<8> m56;
+ap_int<7> m57;
+ap_int<15> m58;
+ap_int<10> m59;
+ap_int<6> m60;
+ap_int<14> m61;
+ap_int<9> m62;
+ap_int<7> m63;
+ap_int<10> m64;
+ap_int<11> m65;
+ap_int<13> m66;
+ap_int<10> m67;
+ap_int<10> m68;
+ap_int<12> m69;
+ap_int<9> m70;
+ap_int<12> m71;
+ap_int<16> m72;
+ap_int<11> m73;
+ap_int<14> m74;
+ap_int<14> m75;
+ap_int<6> m76;
+ap_int<6> m77;
+ap_int<6> m78;
+ap_int<7> m79;
+ap_int<8> m80;
+ap_int<12> m81;
+ap_int<10> m82;
+ap_int<14> m83;
+ap_int<12> m84;
+ap_int<12> m85;
+ap_int<8> m86;
+ap_int<14> m87;
+ap_int<10> m88;
+ap_int<10> m89;
+ap_int<12> m90;
+ap_int<9> m91;
+ap_int<8> m92;
+ap_int<13> m93;
+ap_int<9> m94;
+ap_int<15> m95;
+ap_int<14> m96;
+ap_int<10> m97;
+ap_int<8> m98;
+ap_int<15> m99;
+ap_int<13> m100;
+ap_int<15> m101;
+ap_int<13> m102;
+ap_int<7> m103;
+ap_int<13> m104;
+ap_int<11> m105;
+ap_int<8> m106;
+ap_int<13> m107;
+ap_int<7> m108;
+ap_int<6> m109;
+ap_int<11> m110;
+ap_int<7> m111;
+ap_int<5> m112;
+ap_int<15> m113;
+ap_int<15> m114;
+ap_int<12> m115;
+ap_int<13> m116;
+ap_int<14> m117;
+ap_int<11> m118;
+
+m14 = in3 * in11;
+m15 = in2 + in9;
+m16 = m15 + in5;
+m17 = in8 + in11;
+m18 = in8 * in11;
+m19 = in6 * m15;
+m20 = in13 * in8;
+m21 = in11 * in9;
+m22 = m18 * in10;
+m23 = m17 * m21;
+m24 = in13 * m19;
+m25 = in13 + m16;
+m26 = m17 * m15;
+m27 = m15 * m16;
+m28 = m16 * m21;
+m29 = m17 + m27;
+m30 = m17 * m20;
+m31 = m20 + m23;
+m32 = m31 * m21;
+m33 = m26 * m32;
+m34 = m27 * m33;
+m35 = m23 * m26;
+m36 = m31 * m23;
+m37 = m35 * m36;
+m38 = m37 * m29;
+m39 = m28 * m26;
+m40 = m35 + m38;
+m41 = m40 * m39;
+m42 = m31 * m39;
+m43 = m31 * m38;
+m44 = m41 * m37;
+m45 = m39 * m35;
+m46 = m43 * m33;
+m47 = m35 * m39;
+m48 = m38 + m36;
+m49 = m36 * m47;
+m50 = m45 * m43;
+m51 = m38 + m43;
+m52 = m42 * m42;
+m53 = m41 + m51;
+m54 = m44 * m42;
+m55 = m47 * m49;
+m56 = m46 * m48;
+m57 = m52 + m56;
+m58 = m54 * m46;
+m59 = m49 * m49;
+m60 = m56 * m59;
+m61 = m48 + m54;
+m62 = m56 * m60;
+m63 = m51 * m57;
+m64 = m52 * m52;
+m65 = m64 * m58;
+m66 = m54 * m58;
+m67 = m61 * m61;
+m68 = m66 * m67;
+m69 = m59 * m62;
+m70 = m63 * m57;
+m71 = m61 + m67;
+m72 = m70 * m63;
+m73 = m62 * m63;
+m74 = m67 * m62;
+m75 = m62 + m66;
+m76 = m67 * m64;
+m77 = m71 * m68;
+m78 = m68 * m75;
+m79 = m66 * m73;
+m80 = m69 * m67;
+m81 = m80 * m79;
+m82 = m77 * m80;
+m83 = m79 * m81;
+m84 = m78 * m81;
+m85 = m80 * m79;
+m86 = m83 * m77;
+m87 = m85 + m82;
+m88 = m75 * m75;
+m89 = m77 * m79;
+m90 = m84 * m85;
+m91 = m84 * m90;
+m92 = m84 * m84;
+m93 = m89 * m81;
+m94 = m83 * m90;
+m95 = m91 * m88;
+m96 = m85 * m95;
+m97 = m93 * m95;
+m98 = m94 * m89;
+m99 = m91 * m89;
+m100 = m98 * m91;
+m101 = m93 * m96;
+m102 = m89 * m96;
+m103 = m96 * m93;
+m104 = m102 * m92;
+m105 = m98 * m100;
+m106 = m99 * m95;
+m107 = m94 * m95;
+m108 = m102 + m107;
+m109 = m102 * m105;
+m110 = m104 * m107;
+m111 = m108 * m108;
+m112 = m111 * m102;
+m113 = m111 * m101;
+m114 = m105 * m105;
+m115 = m102 * m114;
+m116 = m113 * m115;
+m117 = m109 * m113;
+m118 = m108 * m113;
+
+out_data[0] = m14;
+out_data[1] = m22;
+out_data[2] = m24;
+out_data[3] = m25;
+out_data[4] = m30;
+out_data[5] = m34;
+out_data[6] = m50;
+out_data[7] = m53;
+out_data[8] = m55;
+out_data[9] = m65;
+out_data[10] = m72;
+out_data[11] = m74;
+out_data[12] = m76;
+out_data[13] = m86;
+out_data[14] = m87;
+out_data[15] = m97;
+out_data[16] = m103;
+out_data[17] = m106;
+out_data[18] = m110;
+out_data[19] = m112;
+out_data[20] = m116;
+out_data[21] = m117;
+out_data[22] = m118;
+
+
+}
+    

@@ -1,32 +1,32 @@
 #-----------------------------------------------------------
-# Vivado v2024.2 (64-bit)
-# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
-# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
-# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri Sep 26 17:52:45 2025
-# Process ID         : 38237
-# Current directory  : /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Dec 23 15:16:06 2025
+# Process ID         : 3423347
+# Current directory  : /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip
 # Command line       : vivado -notrace -mode batch -source run_ippack.tcl
-# Log file           : /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.log
-# Journal file       : /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.jou
-# Running On         : DESKTOP-S15BKKL
+# Log file           : /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.log
+# Journal file       : /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/vivado.jou
+# Running On         : woong-Super-Server
 # Platform           : Ubuntu
-# Operating System   : Ubuntu 22.04.5 LTS
-# Processor Detail   : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
-# CPU Frequency      : 2808.011 MHz
-# CPU Physical cores : 6
-# CPU Logical cores  : 6
-# Host memory        : 4050 MB
-# Swap memory        : 1073 MB
-# Total Virtual      : 5124 MB
-# Available Virtual  : 4143 MB
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : Intel(R) Xeon(R) W-3235 CPU @ 3.30GHz
+# CPU Frequency      : 3703.315 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 201168 MB
+# Swap memory        : 16000 MB
+# Total Virtual      : 217169 MB
+# Available Virtual  : 126090 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
-INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/solution_tmp_data.json outdir=/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip srcdir=/home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp sort_interfaces_ports=false
-INFO: Copied 1 ipmisc file(s) to /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/misc
-INFO: Copied 1486 verilog file(s) to /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/verilog
-INFO: Copied 1478 vhdl file(s) to /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/vhdl
-INFO: Import ports from HDL: /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/vhdl/case_1.vhd (case_1)
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/solution_tmp_data.json outdir=/home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip srcdir=/home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/misc
+INFO: Copied 62 verilog file(s) to /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/verilog
+INFO: Copied 62 vhdl file(s) to /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/vhdl
+INFO: Import ports from HDL: /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/hdl/vhdl/case_11.vhd (case_11)
 INFO: Add clock interface ap_clk
 INFO: Add reset interface ap_rst
 INFO: Add ap_ctrl interface ap_ctrl
@@ -48,10 +48,16 @@ INFO: Add data interface in_data_14
 INFO: Add data interface in_data_15
 INFO: Add data interface in_data_16
 INFO: Add data interface in_data_17
+INFO: Add data interface in_data_18
+INFO: Add data interface in_data_19
+INFO: Add data interface in_data_20
+INFO: Add data interface in_data_21
+INFO: Add data interface in_data_22
+INFO: Add data interface in_data_23
 INFO: Add data interface out_data_0
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
 INFO: Add data interface out_data_1
 INFO: Add data interface out_data_2
 INFO: Add data interface out_data_3
@@ -70,9 +76,15 @@ INFO: Add data interface out_data_15
 INFO: Add data interface out_data_16
 INFO: Add data interface out_data_17
 INFO: Add data interface out_data_18
+INFO: Add data interface out_data_19
+INFO: Add data interface out_data_20
+INFO: Add data interface out_data_21
+INFO: Add data interface out_data_22
+INFO: Add data interface out_data_23
+INFO: Add data interface out_data_24
 INFO: Calling post_process_vitis to specialize IP
 INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
-INFO: Created IP /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/component.xml
-INFO: Created IP archive /home/hyeon/ironman/IronMan/test/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/xilinx_com_hls_case_1_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 26 17:53:23 2025...
+INFO: Created IP /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/component.xml
+INFO: Created IP archive /home/jjh/RL_test/HLS_Optimization/synthetic_case_generation/project_tmp/solution_tmp/impl/ip/xilinx_com_hls_case_11_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 23 15:16:13 2025...

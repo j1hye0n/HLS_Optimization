@@ -4,7 +4,7 @@ from numpy.random import seed
 
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 import tensorflow as tf
 from tensorflow import keras
@@ -31,12 +31,11 @@ import pickle
 
 from tensorflow.python.framework import ops
 
-from hls_env_r import hls_env
+from hls_env import hls_env
 
 import argparse
 import pprint as pp
 
-case_ind=[0,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,26,27,29,30]+[i for i in range(31,44)]+[i for i in range(47,60)]+[100,101,102,103,104,105,106]
 
 
 def main(args):
@@ -236,8 +235,8 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='provide arguments for the actor critic')
 
-    parser.add_argument('--max-episode', help='the number of max episodes', default=9000)
-    parser.add_argument('--max-step', help='max steps per episode', default=10000)
+    parser.add_argument('--max-episode', help='the number of max episodes', default=1000)
+    parser.add_argument('--max-step', help='max steps per episode', default=100)
     parser.add_argument('--mu', help='the importance of LUT in optimization', default=0.5)
     parser.add_argument('--gamma', help='the discount factor', default=0.95)
     parser.add_argument('--random-seed', help='the random number seed', default=100)

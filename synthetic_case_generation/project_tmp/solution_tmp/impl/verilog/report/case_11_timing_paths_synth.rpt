@@ -1,0 +1,542 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Tue Dec 23 15:20:29 2025
+| Host         : woong-Super-Server running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_timing -max_paths 10 -file ./report/case_11_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[0])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[0]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_8
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[0]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[8])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[8]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_0
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[15]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[15]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[1])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[1]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_7
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[1]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[2])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[2]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_6
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[2]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[3])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[3]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_5
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[3]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[3]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[4])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[4]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_4
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[4]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[4]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[5])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[5]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_3
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[5]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[5]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[6])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[6]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_2
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[6]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[6]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.422ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/out_data_4_preg_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.494ns  (logic 6.095ns (71.755%)  route 2.399ns (28.245%))
+  Logic Levels:           2  (DSP48E1=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     1.407 r  bd_0_i/hls_inst/inst/m37_reg_1988_reg/P[4]
+                         net (fo=111, unplaced)       0.800     2.207    bd_0_i/hls_inst/inst/m37_reg_1988_reg_n_101
+                         DSP48E1 (Prop_dsp48e1_C[47]_P[8])
+                                                      1.820     4.027 r  bd_0_i/hls_inst/inst/m46_fu_779_p2/P[8]
+                         net (fo=46, unplaced)        0.800     4.826    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product_1[8]
+                         DSP48E1 (Prop_dsp48e1_A[29]_P[7])
+                                                      3.841     8.667 r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23/tmp_product/P[7]
+                         net (fo=2, unplaced)         0.800     9.467    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U23_n_1
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/out_data_4_preg_reg[7]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.000    10.889    bd_0_i/hls_inst/inst/out_data_4_preg_reg[7]
+  -------------------------------------------------------------------
+                         required time                         10.889    
+                         arrival time                          -9.467    
+  -------------------------------------------------------------------
+                         slack                                  1.422    
+
+Slack (MET) :             1.898ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/trunc_ln286_reg_2351_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U60/tmp_product/A[0]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.656ns  (logic 5.518ns (72.070%)  route 2.138ns (27.930%))
+  Logic Levels:           4  (CARRY4=2 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/trunc_ln286_reg_2351_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/trunc_ln286_reg_2351_reg[1]/Q
+                         net (fo=20, unplaced)        0.530     2.021    bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/trunc_ln286_reg_2351[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295     2.316 r  bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/tmp_product_i_4__1/O
+                         net (fo=1, unplaced)         0.000     2.316    bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/tmp_product_i_4__1_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.849 r  bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/tmp_product_i_1/CO[3]
+                         net (fo=1, unplaced)         0.009     2.858    bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/tmp_product_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     3.195 r  bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/sext_ln306_reg_2476_reg[7]_i_1/O[1]
+                         net (fo=2, unplaced)         0.800     3.995    bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/B[5]
+                         DSP48E1 (Prop_dsp48e1_B[5]_P[0])
+                                                      3.835     7.830 r  bd_0_i/hls_inst/inst/mul_9s_8s_9_1_1_U58/tmp_product/P[0]
+                         net (fo=2, unplaced)         0.800     8.629    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U60/tmp_product_1[0]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U60/tmp_product/A[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=864, unset)          0.924    10.924    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U60/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U60/tmp_product/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[0])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mul_9s_9s_9_1_1_U60/tmp_product
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -8.629    
+  -------------------------------------------------------------------
+                         slack                                  1.898    
+
+
+
+

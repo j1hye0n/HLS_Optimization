@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1758876827">
-  <File Type="VDS-TIMING-PB" Name="bd_0_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1766470602">
   <File Type="VDS-TIMINGSUMMARY" Name="bd_0_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="bd_0_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="bd_0_wrapper_utilization_synth.pb"/>
@@ -8,6 +7,7 @@
   <File Type="RDS-PROPCONSTRS" Name="bd_0_wrapper_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="bd_0_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="bd_0_wrapper_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="bd_0_wrapper_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="bd_0_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -33,55 +33,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/case_3.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_5.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_4.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_1.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_8.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_7.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_9.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_6.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/case_2.xdc">
+    <File Path="$PPRDIR/case_11.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -98,7 +50,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
       <Desc>Vivado Synthesis Defaults</Desc>
     </StratHandle>
     <Step Id="synth_design">

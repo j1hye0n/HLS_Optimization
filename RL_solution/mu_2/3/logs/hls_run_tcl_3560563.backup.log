@@ -1,0 +1,72 @@
+  **** HLS Build v2025.1 6135595
+Sourcing Tcl script '/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/script.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset project_tmp 
+WARNING: [HLS 200-2182] The 'project_tmp' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Creating and opening solution '/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/project_tmp'.
+INFO: [HLS 200-1510] Running: set_top case_3 
+INFO: [HLS 200-1510] Running: add_files cc/case_3.cc 
+WARNING: [HLS 200-40] Cannot find design file 'cc/case_3.cc'
+INFO: [HLS 200-1510] Running: open_solution solution_tmp -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/project_tmp/solution_tmp'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./directive.tcl
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m33 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m34 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m37 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m38 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m39 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m40 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m43 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m44 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m45 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m47 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m48 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m50 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m52 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m53 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m55 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m58 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m60 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m61 
+INFO: [HLS 200-1510] Running: set_directive_bind_op -op mul -impl fabric case_3 m62 
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Cannot find source file cc/case_3.cc; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.16 seconds; current allocated memory: 247.879 MB.
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:1)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:2)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:3)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:4)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:5)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:6)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:7)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:8)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:9)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:10)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:11)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:12)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:13)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:14)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:15)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:16)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:17)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:18)
+WARNING: [HLS 200-1986] Could not apply BIND_OP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/directive.tcl:19)
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (/home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/script.tcl:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 248.426 MB.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:00; Allocated memory: 0.770 MB.
+Error in linking the design.
+    while executing
+"source /home/jjh/RL_test/HLS_Optimization/RL_solution/mu_2/3/script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 2.19 seconds. Total CPU system time: 0.4 seconds. Total elapsed time: 2.47 seconds; peak allocated memory: 248.551 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.
